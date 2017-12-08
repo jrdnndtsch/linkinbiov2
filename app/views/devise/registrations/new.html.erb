@@ -1,0 +1,25 @@
+<div class="bg-dark full-page--center-content">
+  <div class="modal">
+    <h2>Sign up</h2>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+        <%= f.label :email %>
+        <%= f.email_field :email, autofocus: true %>
+
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %>
+        <%= f.password_field :password, autocomplete: "off" %>
+
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+
+      <div class="button--group">
+        <%= link_to "Log in", new_session_path(resource_name), class: 'link' %>
+        <%= f.submit "Sign up", class: 'button' %>
+      </div>
+    <% end %>
+  </div>
+</div>

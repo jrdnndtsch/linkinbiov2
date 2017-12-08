@@ -1,0 +1,101 @@
+@import 'variables'
+@import 'base'
+
+.button
+	:background $fiord
+	:color $concrete
+	:border-radius 3px
+	@extend .type-ui-sm
+	:padding 10px 20px
+	:border none
+	&--with-icon
+		:display inline-flex
+		img 
+			:margin-right 10px
+a.button 
+	:text-decoration none
+
+.link
+	:color $fiord
+	@extend .type-ui-sm
+	:text-decoration none
+
+.link + .button
+	:margin-left 24px
+
+.button--group
+	:display flex
+	:align-items center
+	:justify-content flex-end
+	:margin-top 56px		
+
+.modal
+	:max-width 586px
+	:width 96%
+	:box-shadow 0 0 44px rgba(65,76,102,0.14)
+	:background $white
+	:padding 40px 80px 56px
+	h2 
+		@extend .type-site-md
+		:text-align center
+		:margin 0 0 56px
+.modal-large
+	@extend .modal
+	:max-width 1175px
+	:margin 48px 0
+	h2 
+		@extend .type-site-xs
+		:margin-bottom 40px
+
+
+
+// NAVIGATION
+
+.nav-main
+	:background $fiord
+	:color $concrete
+	:padding 26px 0
+	@extend .type-ui-sm
+	a 
+		:color $concrete
+		:text-decoration none
+	&--title 
+		:font-size 2.1rem
+	.wrapper 
+		:display flex
+		:align-items center 
+		:justify-content space-between		
+
+
+// DASHBOARD
+.dashboard
+	&--empty 
+		:text-align center
+		h2 
+			@extend .type-site-xxl
+			:margin 160px 0 16px
+		p 
+			@extend .type-site-xs	
+			:margin 0 0 48px
+
+
+
+// CREATE POST
+
+.gram-grid 
+	:display flex
+	:flex-wrap wrap 
+	:justify-content space-between
+	>div 
+		:width calc((100% - (24px * 4))/ 5) 
+		:height calc((100% - (24px * 4))/ 5) 
+		:flex-basis 180px
+		:background white 
+		:display flex 
+		:align-items center 
+		:justify-content center
+		// :margin-right 24px
+		:margin-bottom 24px
+		:border 1px solid $concrete
+		img 
+			:max-height 100%			

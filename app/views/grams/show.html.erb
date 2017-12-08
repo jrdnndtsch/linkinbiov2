@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @gram.image_url %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @gram.link %>
+</p>
+
+<p>
+  <strong>Blog text:</strong>
+  <%= @gram.blog_text %>
+</p>
+
+<p>
+  <strong>Post type:</strong>
+  <%= @gram.post_type %>
+</p>
+
+<p>
+  <strong>Published:</strong>
+  <%= @gram.published %>
+</p>
+
+<p>
+  <strong>Insta posted date:</strong>
+  <%= @gram.insta_posted_date %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @gram.user %>
+</p>
+
+<%= link_to 'Edit', edit_gram_path(@gram) %> |
+<%= link_to 'Back', grams_path %>

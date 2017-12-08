@@ -1,0 +1,17 @@
+<div class="bg-dark full-page--center-content">
+    <div class="modal-large">
+        <h2><%= t('choose_gram')%></h2>
+        <%= form_tag(:grams, method: 'create')  do %>
+            <div class="gram-grid">
+                <% @user_grams.each do |gram|%>
+                    <div>
+                        <img src="<%= gram.image_url%>" alt="">
+                    </div>
+                <% end %>
+            </div>
+        <% end %>
+    </div>
+</div>
+<%= render 'form', gram: @gram %>
+
+<%= link_to 'Back', grams_path %>

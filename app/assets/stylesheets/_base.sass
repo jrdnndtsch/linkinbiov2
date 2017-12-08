@@ -1,0 +1,101 @@
+@import 'variables'
+//general 
+html
+	:font-size 62.5%
+body 
+	:color $fiord	
+img 
+	:max-width 100%	
+// typography 
+@mixin build-type($family, $size, $space, $weight) 
+	:font-family $family
+	:font-size $size
+	:letter-spacing $space
+	:font-weight $weight
+
+
+.type-ui-xxl
+	+build-type($roboto, 5rem, 1.2px, 400)
+.type-ui-xl
+	+build-type($roboto, 3.8rem, 1.2px, 400)
+.type-ui-lg	
+	+build-type($roboto, 2.5rem, 1.3px, 400)
+.type-ui-md
+	+build-type($roboto, 2.1rem, 1.4px, 400)	
+.type-ui-sm
+	+build-type($roboto, 1.6rem, 1.5px, 400)	
+.type-ui-sm-bold
+	+build-type($roboto, 1.6rem, 1.5px, 600)		
+.type-ui-xs	
+	+build-type($roboto, 1.4rem, 1.5px, 400)
+.type-ui-xxs
+	+build-type($roboto, 1.2rem, 1.5px, 400)	
+
+.type-site-xxl
+	+build-type($font-secondary, 6.4rem, 1.2px, bold)
+.type-site-xl
+	+build-type($font-secondary, 6.4rem, 1.2px, 400)	
+.type-site-lg
+	+build-type($font-secondary, 5rem, 1.2px, 400)	
+.type-site-md
+	+build-type($font-secondary, 3.8rem, 1.2px, 400)
+.type-site-sm
+	+build-type($font-secondary, 2.5rem, 1.4px, 400)				
+.type-site-xs	
+	+build-type($font-secondary, 2.1rem, 1.5px, 400)	
+
+
+
+
+
+.wrapper 
+	:width 90%
+	:margin 0 auto
+	:max-width 1200px
+
+.bg-dark 
+	:background	$solitude
+
+.full-page--center-content
+	:min-height 90vh
+	:display flex
+	:align-items center
+	:justify-content center
+
+
+
+	// FORM
+
+form 
+	input[type="text"], 
+	input[type="email"], 
+	input[type="password"]
+		:border 2px solid $concrete
+		:border-radius 3px
+		:padding 16px 24px
+		:width 100%
+		:color $concrete
+		@extend .type-ui-md
+		:line-height 24px
+
+	label
+		@extend	.type-ui-sm
+		:margin-bottom 16px
+		:display block
+	label + em 
+		:color $regent
+		@extend .type-ui-xs	
+		:font-style normal
+		:margin -14px 0 16px
+		:display block	
+	input + label 
+		:margin-top 48px	
+	input + a 
+		:margin-top 16px
+		@extend .type-ui-xs	
+		:letter-spacing 1		
+		:color $regent
+		:text-decoration none
+		:display block
+		:text-align right
+		

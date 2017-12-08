@@ -1,0 +1,52 @@
+<%= form_for(gram) do |f| %>
+  <% if gram.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(gram.errors.count, "error") %> prohibited this gram from being saved:</h2>
+
+      <ul>
+      <% gram.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :image_url %>
+    <%= f.text_field :image_url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :link %>
+    <%= f.text_field :link %>
+  </div>
+
+  <div class="field">
+    <%= f.label :blog_text %>
+    <%= f.text_area :blog_text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :post_type %>
+    <%= f.text_field :post_type %>
+  </div>
+
+  <div class="field">
+    <%= f.label :published %>
+    <%= f.check_box :published %>
+  </div>
+
+  <div class="field">
+    <%= f.label :insta_posted_date %>
+    <%= f.datetime_select :insta_posted_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

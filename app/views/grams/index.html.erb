@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+<div class="wrapper">
+    <% if @grams.present? %>
+        There are grams
+    <% else %>
+        <section class="dashboard--empty">
+            <h2><%= t('welcome') %></h2>
+            <p><%= t('start') %></p>
+            <%= link_to new_gram_path, class: 'button button--with-icon' do %><%= image_tag 'add_icon.svg'%> <span><%= t('new_post')%></span><% end %>
+        </section>
+    <% end %>
+</div>
+
