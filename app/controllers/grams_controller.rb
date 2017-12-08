@@ -19,10 +19,10 @@ class GramsController < ApplicationController
     if current_user.present?
         @user_grams_existing = Gram.all.where(user_id: current_user.id, selected: false)
         if @user_grams_existing.present?
-          @user_grams = @user_grams_existing
+          @user_grams = @user_grams_existing.order('insta_posted_date DESC')
         else 
-          current_user.authenticate_and_import_gram(current_user)
-          @user_grams = Gram.all.where(user_id: current_user.id, selected: false)
+          current_user.authenticate_and_import_gram
+          @user_grams = Gram.all.where(user_id: current_user.id, selected: false).order('insta_posted_date DESC')
         end
     end
   end
@@ -48,7 +48,7 @@ class GramsController < ApplicationController
 
   def import
     if current_user.present?
-      current_user.authenticate_and_import_gram(current_user)
+      current_user.authenticate_and_import_gram
     end
   end
 
