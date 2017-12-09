@@ -77,6 +77,30 @@ a.button
 		p 
 			@extend .type-site-xs	
 			:margin 0 0 48px
+	&--gram-list		
+		:margin 0
+		:padding 0
+		li  
+			:display flex
+			:padding 24px 0
+			:align-items center
+			:justify-content space-between
+			>span
+				:background lightcyan
+				&:nth-of-type(1)
+					:width 80px
+				&:nth-of-type(2)
+					:flex-basis 350px	
+				&.actions 
+					:flex-basis 420px
+					:display flex
+					:justify-content center 
+					span 
+						:margin-right 24px 
+						&:last-of-type
+							:margin-right 0	
+				&:nth-of-type(4)
+					:flex-basis 200px							
 
 
 
