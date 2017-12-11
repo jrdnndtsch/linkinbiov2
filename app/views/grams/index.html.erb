@@ -24,8 +24,10 @@
                     </span>
                     <span>
                         <%= form_for(gram, remote: true) do |f| %>
-                            <%= f.label :published %>
-                            <%= f.check_box :published %>
+                            <%= f.label :published, for: "published-#{gram.id}" %>
+                            <%= f.check_box :published,
+                              id: "published-#{gram.id}", class: 'published-checkbox'
+                            %>
                         <% end %>
 
                         <span class="date">
@@ -43,4 +45,14 @@
         </section>
     <% end %>
 </div>
+
+<script>
+    $('.published-checkbox').on('change', (e) =>{
+        console.log('submitting')
+        let form = $(e.target).parent('form').get(0);
+        
+        $(form).trigger('submit.rails');
+        
+    })
+</script>
 

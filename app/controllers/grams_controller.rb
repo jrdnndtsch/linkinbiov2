@@ -59,6 +59,7 @@ class GramsController < ApplicationController
       if @gram.update(gram_params)
         format.html { redirect_to @gram, notice: 'Gram was successfully updated.' }
         format.json { render :show, status: :ok, location: @gram }
+        format.js
       else
         format.html { render :edit }
         format.json { render json: @gram.errors, status: :unprocessable_entity }
