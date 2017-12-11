@@ -85,12 +85,15 @@ a.button
 			:padding 24px 0
 			:align-items center
 			:justify-content space-between
+			:border-bottom 1px solid $concrete
+			&:last-of-type
+				:border-bottom none
 			>span
-				:background lightcyan
 				&:nth-of-type(1)
 					:width 80px
 				&:nth-of-type(2)
-					:flex-basis 350px	
+					:flex-basis 350px
+					@extend .type-ui-xs	
 				&.actions 
 					:flex-basis 420px
 					:display flex
@@ -100,7 +103,33 @@ a.button
 						&:last-of-type
 							:margin-right 0	
 				&:nth-of-type(4)
-					:flex-basis 200px							
+					:flex-basis 200px
+		.actions 	
+			a  
+				:text-decoration none
+				:color $regent
+				@extend .type-ui-xs				
+		.publishing 
+			:display flex
+			:justify-content flex-end 
+			:color $regent
+			:align-items center
+			span 
+				:margin-left 12px	
+				&:first-of-type
+					@extend .type-ui-xs	
+					:position relative
+					:text-align right
+					&:after 
+						:content 'Published'
+						:height 1px
+						:overflow hidden
+						:visibility hidden
+						:color transparent 
+						:display block
+
+				&:last-of-type
+					@extend .type-ui-xxs										
 
 
 

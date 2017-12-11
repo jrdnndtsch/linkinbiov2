@@ -1,41 +1,15 @@
 <p id="notice"><%= notice %></p>
 <div class="wrapper">
     <% if @grams.present? %>
-        <ul class="dashboard--gram-list">
-            <% @grams.each do |gram|%>
-                <li>
-                    <span>
-                        <img src="<%= gram.image_url %>" alt="">
-                    </span>
-                    <span>
-                        <%= gram.link if gram.link.present? %>
-                        link
-                    </span>
-                    <span class="actions">
-                        <span>
-                            <%= link_to edit_gram_path(gram) do %><i class="fa fa-pencil" aria-hidden="true"></i> Edit<% end %>
-                        </span>
-                        <span>
-                            <%= link_to gram_path(gram) do %><i class="fa fa-eye" aria-hidden="true"></i> Show<% end %>
-                        </span>
-                        <span>
-                            <%= link_to gram_path(gram), method: 'delete' do %><i class="fa fa-trash" aria-hidden="true"></i> Delete<% end %>
-                        </span>
-                    </span>
-                    <span>
-                        <%= form_for(gram, remote: true) do |f| %>
-                            <%= f.label :published, for: "published-#{gram.id}" %>
-                            <%= f.check_box :published,
-                              id: "published-#{gram.id}", class: 'published-checkbox'
-                            %>
-                        <% end %>
-
-                        <span class="date">
-                            <%= gram.insta_posted_date.strftime('%-d/%m/%y') if gram.insta_posted_date.present? %>
-                        </span>
-                    </span>
-                </li>
+        <div class="dashboard--gram-list-actions">
+            <%= link_to new_gram_path, class: 'button button--with-icon' do %><%= image_tag 'add_icon.svg'%> <span><%= t('new_post')%></span><% end %>
+            <%= form_tag('filter_grams', method: 'post', remote: true) do %>
+                <%= select_tag("filter_grams", options_for_select([["All","all_selected"],["Published","published"],["Draft","draft"]],params[:filter].to_i),{:name => "filter_grams"} ) %>
+                <input type="submit">
             <% end %>
+        </div>
+        <ul class="dashboard--gram-list" id="dashboard-gram-list">
+           <%= render 'gram_list'%>
         </ul>
     <% else %>
         <section class="dashboard--empty">
@@ -47,10 +21,8 @@
 </div>
 
 <script>
-    $('.published-checkbox').on('change', (e) =>{
-        console.log('submitting')
+    $('body').on('change','.published-checkbox', (e) =>{
         let form = $(e.target).parent('form').get(0);
-        
         $(form).trigger('submit.rails');
         
     })

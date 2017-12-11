@@ -1,0 +1,59 @@
+@import 'variables';
+$custom-easing: cubic-bezier(1, .1, 0, 0.9);
+.published-checkbox + label {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: $mid;
+  width: 48px;
+  height: 18px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s $custom-easing;
+  margin: 0 0 0 12px;
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $success;
+    border-radius: 100px;
+    transition: all 0.3s $custom-easing 0.1s;
+    transform: translateZ(0) scale(0);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: block;
+    height: 10px;
+    width: 22px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s $custom-easing;
+    transform: translateZ(0) translateX(0);
+  }
+}
+
+input[type="checkbox"]:checked + label {
+  background: $success;
+  &:after {
+    left: calc(100% - 26px);
+    transform: translateZ(0);
+  }
+}
+
+.published-checkbox {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+}

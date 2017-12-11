@@ -4,7 +4,7 @@ class GramsController < ApplicationController
   # GET /grams
   # GET /grams.json
   def index
-    @grams = Gram.all.where(user_id: current_user.id, selected: true)
+    @grams = Gram.all.where(user_id: current_user.id, selected: true).order('insta_posted_date DESC')
 
   end
 
@@ -52,9 +52,19 @@ class GramsController < ApplicationController
     end
   end
 
+  def filter
+    puts params['filter_grams']
+    filter = params['filter_grams'].to_sym
+    @grams = Gram.send(filter)
+    respond_to do |format|
+      format.js
+    end 
+  end
+
   # PATCH/PUT /grams/1
   # PATCH/PUT /grams/1.json
   def update
+    @grams = Gram.all.where(user_id: current_user.id, selected: true).order('insta_posted_date DESC')
     respond_to do |format|
       if @gram.update(gram_params)
         format.html { redirect_to @gram, notice: 'Gram was successfully updated.' }
