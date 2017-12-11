@@ -32,14 +32,9 @@
 
 <script>
     $('body').on('change','.published-checkbox, .gram-filter', (e) => {
-        console.log('fitering')
         let form = $(e.target).closest('form').get(0);
         $(form).trigger('submit.rails'); 
     });
 
-    // $('.gram-filter').on('change', (e) => {
-    //     let form = $(e.target).parent('form').get(0)
-    //     $
-    // })
 </script>
 

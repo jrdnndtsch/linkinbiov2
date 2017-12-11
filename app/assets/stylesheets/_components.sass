@@ -54,13 +54,53 @@ a.button
 .nav-main
 	:background $fiord
 	:color $concrete
-	:padding 26px 0
+	:padding 10px 0
 	@extend .type-ui-sm
 	a 
 		:color $concrete
 		:text-decoration none
 	&--title 
 		:font-size 2.1rem
+	&--links 
+		ul 
+			:margin 0
+			:padding 0
+			:list-style none
+		a:hover 
+			:color white	
+		.nav-parent:hover .sub-nav 
+			:display block									
+		>ul
+			:display flex
+			:align-items center
+			>li  
+				:position relative
+				>a 
+					:padding 10px 
+					:display flex 
+					:align-items center
+					span 
+						:display inline-block
+						:margin-right 8px
+			.sub-nav 
+				:position absolute
+				:background $fiord	
+				:padding 0 24px 	
+				:top 100%
+				:width 100%
+				:left 0
+				:z-index 10
+				:min-width 180px
+				:display none
+				a  
+					:padding 16px 0
+					:display block 
+					:border-bottom 1px solid $concrete
+				li:last-of-type
+					a
+						:border-bottom none
+		a 
+			@extend .type-ui-sm	
 	.wrapper 
 		:display flex
 		:align-items center 
