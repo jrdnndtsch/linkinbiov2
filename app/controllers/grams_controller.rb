@@ -53,13 +53,15 @@ class GramsController < ApplicationController
   end
 
   def filter
-    puts params['filter_grams']
     filter = params['filter_grams'].to_sym
-    @grams = Gram.send(filter)
+    order = params['order_grams'].to_sym
+    @grams = Gram.send(filter).send(order)
     respond_to do |format|
       format.js
     end 
   end
+
+ 
 
   # PATCH/PUT /grams/1
   # PATCH/PUT /grams/1.json

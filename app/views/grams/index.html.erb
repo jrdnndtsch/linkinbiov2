@@ -4,7 +4,8 @@
         <div class="dashboard--gram-list-actions">
             <%= link_to new_gram_path, class: 'button button--with-icon' do %><%= image_tag 'add_icon.svg'%> <span><%= t('new_post')%></span><% end %>
             <%= form_tag('filter_grams', method: 'post', remote: true) do %>
-                <%= select_tag("filter_grams", options_for_select([["All","all_selected"],["Published","published"],["Draft","draft"]],params[:filter].to_i),{:name => "filter_grams"} ) %>
+                <%= select_tag("filter_grams", options_for_select([["All","all_selected"],["Published","published"],["Draft","draft"]],params[:filter].to_i),{:name => "filter_grams", :class => 'gram-filter'} ) %>
+                <%= select_tag("order_grams", options_for_select([["Most Recent","most_recent"],["Least Recent","least_recent"]],params[:order].to_i),{:name => "order_grams", :class => 'gram-filter'} ) %>
                 <input type="submit">
             <% end %>
         </div>
@@ -25,6 +26,6 @@
         let form = $(e.target).parent('form').get(0);
         $(form).trigger('submit.rails');
         
-    })
+    });
 </script>
 
