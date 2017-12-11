@@ -23,6 +23,8 @@
                 <%= gram.published ? 'Published' : 'Draft'%>
             </span>
             <%= form_for(gram, remote: true) do |f| %>
+                <%= hidden_field_tag 'filter_grams', params[:filter_grams]%>
+                <%= hidden_field_tag 'order_grams', params[:order_grams]%>
                 <%= f.check_box :published,
                 id: "published-#{gram.id}", class: 'published-checkbox'
                 %>

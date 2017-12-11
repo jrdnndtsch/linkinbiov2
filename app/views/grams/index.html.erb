@@ -1,17 +1,20 @@
 <p id="notice"><%= notice %></p>
 <div class="wrapper">
-    <% if @grams.present? %>
+    <% if @current_user_grams.present? %>
         <div class="dashboard--gram-list-actions">
             <%= link_to new_gram_path, class: 'button button--with-icon' do %><%= image_tag 'add_icon.svg'%> <span><%= t('new_post')%></span><% end %>
-            <%= form_tag('filter_grams', method: 'post', remote: true) do %>
-                <%= select_tag("filter_grams", options_for_select([["All","all_selected"],["Published","published"],["Draft","draft"]],params[:filter].to_i),{:name => "filter_grams", :class => 'gram-filter'} ) %>
-                <%= select_tag("order_grams", options_for_select([["Most Recent","most_recent"],["Least Recent","least_recent"]],params[:order].to_i),{:name => "order_grams", :class => 'gram-filter'} ) %>
-                <input type="submit">
+            <%= form_tag('/grams', method: 'get') do %>
+                <%= select_tag("filter_grams", options_for_select([["All","all_selected"],["Published","published"],["Draft","draft"]],params[:filter_grams]),{:name => "filter_grams", :class => 'gram-filter'} ) %>
+                <%= select_tag("order_grams", options_for_select([["Most Recent","most_recent"],["Least Recent","least_recent"]],params[:order_grams]),{:name => "order_grams", :class => 'gram-filter'} ) %>
             <% end %>
         </div>
-        <ul class="dashboard--gram-list" id="dashboard-gram-list">
-           <%= render 'gram_list'%>
-        </ul>
+        <% if @grams.present? %>
+            <ul class="dashboard--gram-list" id="dashboard-gram-list">
+            <%= render 'gram_list'%>
+            </ul>
+        <% else %>    
+            <p>sorry no instagrams match that filter</p>
+        <% end %>
     <% else %>
         <section class="dashboard--empty">
             <h2><%= t('welcome') %></h2>
@@ -22,10 +25,14 @@
 </div>
 
 <script>
-    $('body').on('change','.published-checkbox', (e) =>{
+    $('body').on('change','.published-checkbox, .gram-filter', (e) => {
         let form = $(e.target).parent('form').get(0);
-        $(form).trigger('submit.rails');
-        
+        $(form).trigger('submit.rails'); 
     });
+
+    // $('.gram-filter').on('change', (e) => {
+    //     let form = $(e.target).parent('form').get(0)
+    //     $
+    // })
 </script>
 
