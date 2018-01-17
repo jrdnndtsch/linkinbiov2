@@ -3,5 +3,11 @@ Paloma.controller('Grams', {
         $('.button--radio').on('click', function(){
             $('form')[0].submit()
         })
+    }, 
+    index: function(){
+        $('body').on('change','.published-checkbox, .gram-filter', (e) => {
+            let form = $(e.target).closest('form').get(0);
+            $(form).trigger('submit.rails'); 
+        });
     }
 })

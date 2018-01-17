@@ -4,8 +4,8 @@ class GramsController < ApplicationController
   # GET /grams
   # GET /grams.json
   def index
-    filter = params['filter_grams'] || 'all_selected'
-    order = params['order_grams'] || 'most_recent'
+    filter = params['filter_grams'].present? ? params['filter_grams'] : 'all_selected'
+    order = params['order_grams'].present? ? params['order_grams'] : 'most_recent'
     @current_user_grams =  Gram.where(user_id: current_user.id)
     @grams = Gram.where(user_id: current_user.id).send(filter).send(order)
    
@@ -75,8 +75,9 @@ class GramsController < ApplicationController
   # PATCH/PUT /grams/1
   # PATCH/PUT /grams/1.json
   def update
-    filter = params['filter_grams'] || 'all_selected'
-    order = params['order_grams'] || 'most_recent'
+    filter = params['filter_grams'].present? ? params['filter_grams'] : 'all_selected'
+    order = params['order_grams'].present? ? params['order_grams'] : 'most_recent'
+ 
     @current_user_grams =  Gram.where(user_id: current_user.id)
     @grams = Gram.where(user_id: current_user.id).send(filter).send(order)
     respond_to do |format|
