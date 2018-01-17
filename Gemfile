@@ -10,7 +10,7 @@ end
 gem 'rails', '~> 5.0.6'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
-gem 'pg'
+gem 'pg', "0.21.0"
 #to encrypt values
 gem "attr_encrypted", "~> 3.0.0"
 # Use Puma as the app server
@@ -27,9 +27,11 @@ gem 'coffee-rails', '~> 4.2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+# gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+#oage specific js
+gem 'paloma', '~> 5.1.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

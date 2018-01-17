@@ -18,6 +18,10 @@ class GramsController < ApplicationController
   def show
   end
 
+  def blog_index
+    @user = User.find(params[:id])
+    @grams = Gram.where(user_id: params[:id]).send('published')
+  end
   # GET /grams/new
   def new
     @gram = Gram.new

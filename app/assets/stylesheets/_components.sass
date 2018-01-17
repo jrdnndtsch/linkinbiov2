@@ -243,23 +243,27 @@ a.button
 	:justify-content space-between
 	>div 
 		:width calc((100% - (24px * 4))/ 5) 
-		:height calc((100% - (24px * 4))/ 5) 
 		:flex-basis 180px
 		:background white 
 		:display flex 
 		:align-items center 
 		:justify-content center
-		// :margin-right 24px
 		:margin-bottom 24px
-		:border 1px solid $concrete
 		:position relative
-		:padding-top calc((100% - (24px * 4))/ 5)
+		:overflow hidden
+		&:after
+			:content ''
+			:display block
+			:padding-bottom 100%
+		// :padding-top calc((100% - (24px * 4))/ 5)
 		img 
-			:max-height 100%
-			:object-fit cover
+			// :max-height 100%
+			// :object-fit cover
 			:position absolute
-			:top 0
-			:width 100%
+			:top 50%
+			:left 50%
+			:transform translate(-50%, -50%)
+			// :width 100%
 .create-campaign
 	>.wrapper--flex 
 		>div:first-of-type 

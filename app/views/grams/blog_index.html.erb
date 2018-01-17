@@ -1,0 +1,8 @@
+<%= @user.email%>
+<div class="gram-grid wrapper">
+    <% @grams.each do |gram|%>
+        <div>
+            <img src="<%= gram.image_url%>" alt="">
+        </div>
+    <% end %>
+</div>
