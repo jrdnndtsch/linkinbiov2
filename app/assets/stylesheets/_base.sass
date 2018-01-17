@@ -52,6 +52,8 @@ img
 	:width 90%
 	:margin 0 auto
 	:max-width 1200px
+.wrapper--flex 
+	:display flex	
 
 .bg-dark 
 	:background	$solitude
@@ -72,11 +74,14 @@ form
 	input[type="password"]
 		:border 2px solid $concrete
 		:border-radius 3px
-		:padding 16px 24px
+		:padding 14px 24px
 		:width 100%
 		:color $concrete
 		@extend .type-ui-md
 		:line-height 24px
+		&::placeholder
+			:color $concrete
+			@extend .type-ui-md
 
 	label
 		@extend	.type-ui-sm

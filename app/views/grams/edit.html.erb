@@ -1,6 +1,45 @@
+<div class="bg-dark full-page--center-content">
+    <%= form_for(@gram) do |f| %>
+    <div class="modal-large create-campaign">
+        <h2>Create Your Campaign</h2>
+        <div class="wrapper--flex">
+            <div>
+                <% if @gram.image_url.present? %>
+                    <%= image_tag(@gram.image_url)%>
+                <% end %>
+            </div>
+            <div>
+                <div class="form-element">
+                    <%= f.label :campaign_name, 'Campaign Name' %>
+                    <p>This is for internal use only. Anything goes.</p>
+                    <%= f.text_field :campaign_name, placeholder: 'ex: leash spring promo' %>
+                </div>
+                <%= f.hidden_field :selected, value: true %>
+                <%= f.label :post_type, 'What kind of campaign do you want to create?', class: 'label--small' %>
+                <div class="wrapper--flex">
+                    <div class="button--radio">
+                        <%= f.label :post_type, value: 'link', class: 'button-label' do %>
+                        <%= image_tag('link_icon.svg')%> <span>Create a link</span>
+                        <% end %>
+                        <%= f.radio_button :post_type, 'link'%>
+                    </div>
+                    <div class="button--radio">
+                        <%= f.label :post_type, value: 'post', class: 'button-label' do %>
+                            <%= image_tag('link_icon.svg')%> <span>Create a post</span>
+                        <% end %>
+                        <%= f.radio_button :post_type, 'post'%>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%= f.submit %>
+    <% end %>
+</div>
+
 <h1>Editing Gram</h1>
 
-<%= render 'form', gram: @gram %>
+
 
 <%= link_to 'Show', @gram %> |
 <%= link_to 'Back', grams_path %>
