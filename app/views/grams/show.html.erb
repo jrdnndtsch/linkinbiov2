@@ -1,3 +1,31 @@
+
+<div class="wrapper edit--single edit--post">
+  <%= form_for(@gram) do |f|%>
+    <div class="title">
+        <%= f.text_field :campaign_name %>
+        <%= link_to grams_path do%>
+          Back to dashboard 
+        <% end %>
+    </div>
+    <div class="wrapper--flex">
+      <div>
+        <img src="<%= @gram.image_url %>" alt="">
+      </div>
+      <div>
+        <div class="form-element">
+          <%= f.label :post_title, 'Post Title'%>
+          <p>Tell your audience what this is about!</p>
+          <%= f.text_field :post_title%>
+        </div>
+        <%= f.cktext_area :blog_text %> 
+      </div>
+    </div>
+    <%= f.submit 'Save Draft', class: 'button--light' %>
+  <% end %>
+  <%= link_to 'Cancel', new_gram_path%>
+</div>
+
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -12,7 +40,9 @@
 
 <p>
   <strong>Blog text:</strong>
-  <%= @gram.blog_text %>
+  <% if @gram.blog_text %>
+    <%= @gram.blog_text.html_safe %>
+  <% end %>  
 </p>
 
 <p>

@@ -110,6 +110,6 @@ class GramsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def gram_params
-      params.require(:gram).permit(:image_url, :link, :blog_text, :post_type, :published, :insta_posted_date, :user_id, :campaign_name, :selected)
+      params.require(:gram).permit(:image_url, :link, :blog_text, :post_type, :published, :insta_posted_date, :user_id, :campaign_name, :selected, :post_title)
     end
 end

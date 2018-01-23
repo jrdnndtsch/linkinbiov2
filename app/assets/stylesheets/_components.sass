@@ -32,7 +32,8 @@
 .button--radio + .button--radio
 	:margin-left 56px
 
-		
+.button--light
+	+button($solitude, $fiord, 18px, 24px)		
 						
 a.button 
 	:text-decoration none
@@ -271,5 +272,40 @@ a.button
 		>div:last-of-type
 			:flex-grow 1
 			:padding 20px 0 20px 80px	
+
+.edit--single 
+	.title
+		:display flex 
+		:justify-content space-between
+		:align-items flex-end
+		a 
+			:display block
+		input
+			:border none
+			:color $fiord
+			:width 40%	
+			:padding 0		
+	.wrapper--flex 
+		>div:first-of-type
+			:flex-basis 300px
+			:flex-shrink 1
+		>div:last-of-type
+			:flex-grow 1	
+
+
+// CKEditor
+
+.cke_editor_gram_blog_text
+	:border-radius 3px !important
+	:border-color $concrete !important
+
+.cke_top
+	:border-color $concrete !important	
+
+.cke_bottom
+	:background white !important
+	:border-top none !important
+			
+			
 			
 			
