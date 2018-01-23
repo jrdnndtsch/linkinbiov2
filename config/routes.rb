@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get '/import', to: 'grams#import'
   post '/grams/filter_grams', to: 'grams#filter'
 
-  get '/blogs/:id', to: 'grams#blog_index', as: 'blogs'
+  get '/blogs/:id', to: 'blogs#index', as: 'blogs'
+  get 'blogs/:id/post/:post_id', to: 'blogs#show', as: 'post'
 end

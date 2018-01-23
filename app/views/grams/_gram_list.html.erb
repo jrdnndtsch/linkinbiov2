@@ -12,7 +12,7 @@
                 <%= link_to edit_gram_path(gram) do %><i class="fa fa-pencil" aria-hidden="true"></i> Edit<% end %>
             </span>
             <span>
-                <%= link_to gram_path(gram) do %><i class="fa fa-eye" aria-hidden="true"></i> Show<% end %>
+                <%= link_to post_path(current_user.id, gram.id) do %><i class="fa fa-eye" aria-hidden="true"></i> Show<% end %>
             </span>
             <span>
                 <%= link_to gram_path(gram), method: 'delete' do %><i class="fa fa-trash" aria-hidden="true"></i> Delete<% end %>

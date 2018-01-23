@@ -23,6 +23,7 @@
     <%= f.submit 'Save Draft', class: 'button--light' %>
   <% end %>
   <%= link_to 'Cancel', new_gram_path%>
+  <%= link_to 'Preview', post_path(current_user.id, @gram.id)%>
 </div>
 
 
