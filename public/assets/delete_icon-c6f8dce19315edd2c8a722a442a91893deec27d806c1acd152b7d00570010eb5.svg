@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="15px" viewBox="0 0 12 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="_symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="components-/-action" transform="translate(-4.000000, -3.000000)" fill="#D5D5DE">
+            <g id="icons-/-delete">
+                <path d="M15.9970374,4 L15.9845864,6 L4,6 L4,4 L6.99703745,4 L7.99703745,3 L11.9970374,3 L12.9970374,4 L15.9970374,4 Z M4.99703745,15.325619 L4.99703745,7 L14.9970374,7 L14.9970374,15.325619 C14.9970374,15.7789546 14.8303724,16.172284 14.4970374,16.505619 C14.1637024,16.838954 13.7703727,17.0228311 13.3170371,17.0228311 L6.67703745,17.0228311 C6.22370185,17.0228311 5.83037245,16.838954 5.49703745,16.505619 C5.16370245,16.172284 4.99703745,15.7789546 4.99703745,15.325619 Z" id="delete---material"></path>
+            </g>
+        </g>
+    </g>
+</svg>
