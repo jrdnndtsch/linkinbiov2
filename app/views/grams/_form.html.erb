@@ -1,52 +1,46 @@
-<%= form_for(gram) do |f| %>
-  <% if gram.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(gram.errors.count, "error") %> prohibited this gram from being saved:</h2>
-
-      <ul>
-      <% gram.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
+<div class="title">
+  <%= form_for(@gram) do |f|%>
+    <%= f.text_field :campaign_name %>
   <% end %>
-
-  <div class="field">
-    <%= f.label :image_url %>
-    <%= f.text_field :image_url %>
+  <%= link_to grams_path do%>
+  Back to dashboard 
+  <% end %>
+</div>
+<div class="wrapper--flex">
+  <div>
+    <img src="<%= @gram.image_url %>" alt="">
+    <span class="date">Instagram post date: <%= @gram.insta_posted_date.strftime('%-d/%m/%y') if @gram.insta_posted_date.present? %></span>
+    <%= form_for(@gram, remote: true) do |f|%>
+      <%= f.hidden_field :updating_single_post, value: true %>
+      <% if @gram.is_blog_post? %>
+        <%= f.hidden_field :post_type, value: 'link' %>
+        <%= f.submit 'Change to link', class: 'button--light' %>
+      <% else %>
+        <%= f.hidden_field :post_type, value: 'post' %>
+        <%= f.submit 'Change to post', class: 'button--light' %>
+      <% end %>
+    <% end %>
   </div>
-
-  <div class="field">
-    <%= f.label :link %>
-    <%= f.text_field :link %>
+  <div>
+    <%= form_for(@gram) do |f|%>
+      <div class="form-element">
+        <%= f.label :post_title, 'Post Title'%>
+        <p>Tell your audience what this is about!</p>
+        <%= f.text_field :post_title%>
+      </div>
+      <%= @gram.post_type %>
+      <% if @gram.is_blog_post? %>
+        <%= f.cktext_area :blog_text %> 
+      <% else %>  
+        <%= f.text_field :link %>
+      <% end %>
+      <div class="quick-actions">
+        <%= link_to 'Cancel', new_gram_path%>
+        <%= link_to 'Preview', post_path(current_user.id, @gram.id)%>
+      </div>
+      <%= f.hidden_field :selected, value: true %>
+      <%= f.hidden_field :updating_the_post, value: true %>
+      <%= f.submit 'Save Draft', class: 'button--light' %>
+    <% end %>
   </div>
-
-  <div class="field">
-    <%= f.label :blog_text %>
-    <%= f.text_area :blog_text %>
-  </div>
-
-  <div class="field">
-    <%= f.label :post_type %>
-    <%= f.text_field :post_type %>
-  </div>
-
-  <div class="field">
-    <%= f.label :published %>
-    <%= f.check_box :published %>
-  </div>
-
-  <div class="field">
-    <%= f.label :insta_posted_date %>
-    <%= f.datetime_select :insta_posted_date %>
-  </div>
-
-  <div class="field">
-    <%= f.label :user_id %>
-    <%= f.text_field :user_id %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>

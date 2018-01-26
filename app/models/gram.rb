@@ -7,5 +7,9 @@ class Gram < ApplicationRecord
   scope :least_recent, -> { order('insta_posted_date ASC') }
 
   self.per_page = 10
+
+  def is_blog_post?
+    self.post_type === 'post'
+  end
  
 end

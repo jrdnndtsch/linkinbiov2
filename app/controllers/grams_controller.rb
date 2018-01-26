@@ -81,9 +81,19 @@ class GramsController < ApplicationController
     @grams = Gram.where(user_id: current_user.id).send(filter).send(order)
     respond_to do |format|
       if @gram.update(gram_params)
-        format.html { redirect_to @gram, notice: 'Gram was successfully updated.' }
+        # if the user is updating the content of the post and has saved redirect them to the dashboard - otherwise the the post show
+        if params[:gram][:updating_the_post]
+          format.html { redirect_to grams_path, notice: 'Gram was successfully updated.' }
+        else
+          format.html { redirect_to @gram, notice: 'Gram was successfully updated.' } 
+        end
+        
         format.json { render :show, status: :ok, location: @gram }
-        format.js
+        if params[:gram][:updating_single_post]
+          format.js {render 'update_single_post'}
+        else 
+          format.js
+        end  
       else
         format.html { render :edit }
         format.json { render json: @gram.errors, status: :unprocessable_entity }
