@@ -28,14 +28,16 @@
 			:position absolute
 			:height 1px 
 			:width 1px
-			:visibility hidden	
+			:visibility hidden			
 .button--radio + .button--radio
 	:margin-left 56px
 
 .button--light
-	+button($solitude, $fiord, 18px, 24px)		
+	+button($solitude, $fiord, 18px, 24px)
+	&-small 
+		+button($solitude, $fiord, 10px, 20px)		
 						
-a.button 
+a.button, a.button--light, a.button--light-small 
 	:text-decoration none
 
 .link
@@ -58,6 +60,7 @@ a.button
 	:box-shadow 0 0 44px rgba(65,76,102,0.14)
 	:background $white
 	:padding 40px 80px 56px
+	:position relative
 	h2 
 		@extend .type-site-md
 		:text-align center
@@ -69,6 +72,10 @@ a.button
 	h2 
 		@extend .type-site-xs
 		:margin-bottom 40px
+.modal--close
+	:position absolute 
+	:top 16px
+	:right 16px
 
 
 

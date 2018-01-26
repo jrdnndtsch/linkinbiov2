@@ -1,17 +1,18 @@
 <div class="bg-dark full-page--center-content">
-    <div class="modal-large">
+    <div class="modal-large center-content">
+        <%= link_to grams_path, class: 'modal--close' do %><%= image_tag 'icons/close.svg'%><% end %>
         <h2><%= t('choose_gram')%></h2>
-        <%= link_to import_path, remote: true do %>
+        <%= link_to import_path, class: 'button button--with-icon', remote: true do %>
             Load new grams
         <% end %>
         <div class="gram-grid" id="gram-grid-new">
             <%= render @user_grams %>
         </div>
-        <a href="#" id="view-old-grams">View old grams</a>
+        <a href="#" id="view-old-grams" class="button--light-small button--with-icon">View old grams</a>
         <div id="paginated" class="hidden">
             <%= will_paginate @user_grams %>
         </div>
     </div>
 </div>
 
-<%= link_to 'Back', grams_path %>
+
