@@ -55,6 +55,7 @@ class GramsController < ApplicationController
   def import
     if current_user.present?
       current_user.authenticate_and_import_gram
+      @user_grams = Gram.all.where(user_id: current_user.id, selected: false).order('insta_posted_date DESC')
     end
   end
 
