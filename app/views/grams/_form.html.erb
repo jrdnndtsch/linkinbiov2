@@ -19,10 +19,15 @@
       <%= f.hidden_field :updating_single_post, value: true %>
       <% if @gram.is_blog_post? %>
         <%= f.hidden_field :post_type, value: 'link' %>
-        <%= f.submit 'Change to link', class: 'button--secondary' %>
+        
+        <%= button_tag(type: 'submit', class: 'button--secondary button--with-icon') do %>
+          <%= image_tag 'icons/link-icon.svg'%><span>Change to link</span>
+        <% end %>
       <% else %>
         <%= f.hidden_field :post_type, value: 'post' %>
-        <%= f.submit 'Change to post', class: 'button--secondary' %>
+        <%= button_tag(type: 'submit', class: 'button--secondary button--with-icon') do %>
+          <%= image_tag 'icons/post-icon.svg'%><span>Change to post</span>
+        <% end %>
       <% end %>
     <% end %>
   </div>
@@ -53,10 +58,15 @@
           <div>
             <%= f.hidden_field :selected, value: true %>
             <%= f.hidden_field :updating_the_post, value: true %>
-            <%= f.submit 'Save Draft', class: 'button--light' %>
+            <%= button_tag(type: 'submit', class: 'button--secondary button--with-icon') do %>
+              <%= image_tag 'icons/save-draft-icon.svg'%><span>Save Draft</span>
+            <% end %>
           </div>
           <div>
-            <a href="" class="button">Publish</a>
+            <a href="" class="button button--with-icon">
+              <%= image_tag 'icons/publish-icon.svg'%><span>Publish</span>
+              
+            </a>
           </div>
         </div>
       </div>

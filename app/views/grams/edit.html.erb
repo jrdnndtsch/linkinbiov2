@@ -1,4 +1,4 @@
-<div class="bg-dark full-page--center-content">
+<div class="bg-dark full-page--top-align">
     <%= form_for(@gram) do |f| %>
     <div class="modal-large create-campaign">
         <%= link_to new_gram_path, class: 'modal--action' do %><%= image_tag 'icons/arrow-back.svg'%><span>back</span><% end %>
@@ -22,13 +22,13 @@
                 <div class="wrapper--flex">
                     <div class="button--radio">
                         <%= f.label :post_type, value: 'link', class: 'button-label' do %>
-                        <%= image_tag('link_icon.svg')%> <span>Create a link</span>
+                        <%= image_tag('icons/create-link-icon.svg')%> <span>Create a link</span>
                         <% end %>
                         <%= f.radio_button :post_type, 'link'%>
                     </div>
                     <div class="button--radio">
                         <%= f.label :post_type, value: 'post', class: 'button-label' do %>
-                            <%= image_tag('link_icon.svg')%> <span>Create a post</span>
+                            <%= image_tag('icons/create-post-icon.svg')%> <span>Create a post</span>
                         <% end %>
                         <%= f.radio_button :post_type, 'post'%>
                     </div>

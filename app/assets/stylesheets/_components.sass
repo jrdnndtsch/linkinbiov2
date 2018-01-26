@@ -8,7 +8,8 @@
 	:color $color
 	@extend .type-ui-sm
 	:padding $p-top $p-sides
-	:text-decoration none	
+	:text-decoration none
+	:cursor pointer	
 
 .button
 	+button($fiord, $concrete,8px, 24px)
@@ -16,14 +17,17 @@
 		+button($solitude, $fiord, 8px, 24px)
 	&--with-icon
 		:display inline-flex
+		:align-items center
 		img 
 			:margin-right 8px
 
 	&--radio 
 		label 
-			+button($solitude, $fiord, 18px, 24px)	
+			+button($solitude, $fiord, 16px, 24px)	
 			:display flex 
 			:align-items center
+			@extend .type-site-xs
+			
 			span 
 				:margin-left 16px
 			img 
@@ -97,7 +101,7 @@
 .modal-large
 	@extend .modal
 	:max-width 1175px
-	:margin 48px 0
+	:margin 48px 2%
 	h2 
 		@extend .type-site-xs
 		:margin-bottom 40px
@@ -282,6 +286,7 @@
 	:display flex
 	:flex-wrap wrap 
 	:justify-content space-between
+	:margin 40px 0
 	>div 
 		:width calc((100% - (24px * 4))/ 5) 
 		:flex-basis 180px
@@ -307,11 +312,16 @@
 			// :width 100%
 .create-campaign
 	>.wrapper--flex 
+		:margin-top 120px
 		>div:first-of-type 
 			:flex-basis 336px
 		>div:last-of-type
 			:flex-grow 1
 			:padding 20px 0 20px 80px	
+	.form-element
+		:margin-bottom 56px		
+.modal-large.create-campaign
+	:padding-top 48px			
 
 .edit--single 
 	.title

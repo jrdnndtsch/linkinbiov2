@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2,30 L34,30 L34,34 L2,34 L2,30 Z M29.616,7.376 L26.992,10 L22,5.008 L24.624,2.384 C24.8800013,2.12799872 25.1946648,2 25.568,2 C25.9413352,2 26.2559987,2.12799872 26.512,2.384 L29.616,5.488 C29.8720013,5.74400128 30,6.0586648 30,6.432 C30,6.8053352 29.8720013,7.11999872 29.616,7.376 Z M25.68,11.312 L12.2925949,25.027361 L6.98220816,25.027361 L6.98220816,19.8376648 L20.688,6.32 L25.68,11.312 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-2.000000, -2.000000)">
+            <rect id="Rectangle" stroke-opacity="0" stroke="#979797" x="0.5" y="0.5" width="35" height="35"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="border_color---material" fill="#414C66" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
