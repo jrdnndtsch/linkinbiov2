@@ -21,5 +21,23 @@ Paloma.controller('Grams', {
                 }
             })
         }
+    }, 
+    show: function(){
+        
+        $('#gram_campaign_name').on('blur', function(){
+            var gram_id = $(this).data('gram-id')
+            var form = $(this).closest('form')[0]
+            var form_data = $(form).serialize()
+            console.log(form_data)
+            $.ajax({
+                type: "POST", 
+                url: "/grams/" + gram_id, 
+                data: form_data, 
+                dataType: 'json',
+                success: function(resp){
+                    console.log(resp)
+                }
+            })
+        })
     }
 })

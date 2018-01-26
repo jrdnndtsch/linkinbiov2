@@ -1,7 +1,8 @@
 <div class="title">
   <div>
     <%= form_for(@gram) do |f|%>
-      <%= f.text_field :campaign_name %>
+      <%= f.hidden_field :updating_single_post, value: true %>
+      <%= f.text_field :campaign_name, :data => {:gram_id => @gram.id} %>
     <% end %>
   </div>
   <%= link_to grams_path, class: 'link-action' do%>
