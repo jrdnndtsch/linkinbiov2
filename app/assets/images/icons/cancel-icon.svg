@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>close - material</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="16 5.21649485 11.2164948 10 16 14.7835052 14.7835052 16 10 11.2164948 5.21649485 16 4 14.7835052 8.78350515 10 4 5.21649485 5.21649485 4 10 8.78350515 14.7835052 4"></polygon>
+    </defs>
+    <g id="icons-/-close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-4.000000, -4.000000)">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="close---material" fill="#D5D5DE" xlink:href="#path-1"></use>
+    </g>
+</svg>

@@ -26,26 +26,35 @@
       <% end %>
     <% end %>
   </div>
-  <div>
+  <div class="edit--single-content">
     <%= form_for(@gram) do |f|%>
       <div class="form-element">
         <%= f.label :post_title, 'Post Title'%>
         <p>Tell your audience what this is about!</p>
         <%= f.text_field :post_title%>
       </div>
-      <%= @gram.post_type %>
       <% if @gram.is_blog_post? %>
         <%= f.cktext_area :blog_text %> 
       <% else %>  
         <%= f.text_field :link %>
       <% end %>
-      <div class="quick-actions">
-        <%= link_to 'Cancel', new_gram_path%>
-        <%= link_to 'Preview', post_path(current_user.id, @gram.id)%>
+      <div class="edit--single-actions">
+        <div class="actions-menu">
+          <%= link_to new_gram_path, class: 'link-action' do %>
+            <%= image_tag 'icons/cancel-icon.svg'%>
+            <span>Cancel</span>
+          <% end %>
+          <%= link_to post_path(current_user.id, @gram.id), class: 'link-action' do %>
+            <%= image_tag 'icons/preview-icon.svg'%>
+            <span>Preview</span>
+          <% end %>
+        </div>
+        <div>
+          <%= f.hidden_field :selected, value: true %>
+          <%= f.hidden_field :updating_the_post, value: true %>
+          <%= f.submit 'Save Draft', class: 'button--light' %>
+        </div>
       </div>
-      <%= f.hidden_field :selected, value: true %>
-      <%= f.hidden_field :updating_the_post, value: true %>
-      <%= f.submit 'Save Draft', class: 'button--light' %>
     <% end %>
   </div>
 </div>
