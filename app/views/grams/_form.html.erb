@@ -19,10 +19,10 @@
       <%= f.hidden_field :updating_single_post, value: true %>
       <% if @gram.is_blog_post? %>
         <%= f.hidden_field :post_type, value: 'link' %>
-        <%= f.submit 'Change to link', class: 'button--light' %>
+        <%= f.submit 'Change to link', class: 'button--secondary' %>
       <% else %>
         <%= f.hidden_field :post_type, value: 'post' %>
-        <%= f.submit 'Change to post', class: 'button--light' %>
+        <%= f.submit 'Change to post', class: 'button--secondary' %>
       <% end %>
     <% end %>
   </div>
@@ -49,10 +49,15 @@
             <span>Preview</span>
           <% end %>
         </div>
-        <div>
-          <%= f.hidden_field :selected, value: true %>
-          <%= f.hidden_field :updating_the_post, value: true %>
-          <%= f.submit 'Save Draft', class: 'button--light' %>
+        <div class="button-group">
+          <div>
+            <%= f.hidden_field :selected, value: true %>
+            <%= f.hidden_field :updating_the_post, value: true %>
+            <%= f.submit 'Save Draft', class: 'button--light' %>
+          </div>
+          <div>
+            <a href="" class="button">Publish</a>
+          </div>
         </div>
       </div>
     <% end %>

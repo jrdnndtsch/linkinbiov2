@@ -7,14 +7,18 @@
 	:background $bg
 	:color $color
 	@extend .type-ui-sm
-	:padding $p-top $p-sides	
+	:padding $p-top $p-sides
+	:text-decoration none	
 
 .button
-	+button($fiord, $concrete,10px, 20px)
+	+button($fiord, $concrete,8px, 24px)
+	&--secondary
+		+button($solitude, $fiord, 8px, 24px)
 	&--with-icon
 		:display inline-flex
 		img 
-			:margin-right 10px		
+			:margin-right 8px
+
 	&--radio 
 		label 
 			+button($solitude, $fiord, 18px, 24px)	
@@ -37,8 +41,16 @@
 	&-small 
 		+button($solitude, $fiord, 10px, 20px)		
 						
-a.button, a.button--light, a.button--light-small 
-	:text-decoration none
+
+
+.button-group
+	:display flex 
+	:align-items center
+	>div 
+		:margin-right 24px
+		&:last-of-type 
+			:margin-right 0
+
 
 .link
 	:color $fiord
