@@ -48,6 +48,16 @@ a.button, a.button--light, a.button--light-small
 .link + .button
 	:margin-left 24px
 
+.link-action
+	:text-decoration none
+	:color $regent
+	@extend .type-ui-xs	
+	:display flex 
+	:align-items flex-center
+	img + span 
+		:margin-left 8px
+	span + img 
+		:margin-left 8px		
 .button--group
 	:display flex
 	:align-items center
@@ -75,19 +85,12 @@ a.button, a.button--light, a.button--light-small
 .modal--close
 	:position absolute 
 	:top 16px
-	:right 16px
+	:right 16px	
 .modal--action
 	:position absolute
 	:top 16px
 	:left 30px
-	:text-decoration none
-	:color $regent
-	@extend .type-ui-sm
-	:display flex 
-	:align-items flex-center
-	img + span 
-		:margin-left 8px	
-
+	@extend .link-action	
 
 
 // FORMS 
@@ -295,20 +298,28 @@ a.button, a.button--light, a.button--light-small
 	.title
 		:display flex 
 		:justify-content space-between
-		:align-items flex-end
-		a 
-			:display block
+		:align-items center
+		:border-bottom 1px solid #B3B8C3
+		:padding 48px 0 8px
+		:margin-bottom 64px
+		>div:first-of-type
+			:flex-basis 300px
 		input
 			:border none
-			:color $fiord
-			:width 40%	
+			:color $fiord	
 			:padding 0		
 	.wrapper--flex 
 		>div:first-of-type
-			:flex-basis 300px
+			:flex-basis 276px
 			:flex-shrink 1
+			:margin-right 176px	
 		>div:last-of-type
-			:flex-grow 1	
+			:flex-grow 1
+	.edit--single-img 
+		>img 
+			:margin-bottom 24px
+		.link-action
+			:margin-bottom 24px				
 
 
 // CKEditor

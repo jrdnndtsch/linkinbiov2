@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="9.68 16.36 3 9.68 9.68 3 10.86 4.22 6.2 8.86 16.36 8.86 16.36 10.5 6.2 10.5 10.86 15.18"></polygon>
+    </defs>
+    <g id="5.0_create_post" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1288.000000, -128.000000)">
+        <g id="admin-post-header" transform="translate(136.000000, 124.000000)">
+            <g id="back-to-dashboard" transform="translate(1029.000000, 1.000000)">
+                <g id="icons-/-arrow-left" transform="translate(130.000000, 10.000000) scale(-1, 1) translate(-130.000000, -10.000000) translate(120.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="left" fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <g id="palette/col/regent" mask="url(#mask-2)" fill="#878FA1" fill-rule="evenodd">
+                        <rect id="color" x="0" y="0" width="20" height="20"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

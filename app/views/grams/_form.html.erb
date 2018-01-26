@@ -1,15 +1,20 @@
 <div class="title">
-  <%= form_for(@gram) do |f|%>
-    <%= f.text_field :campaign_name %>
-  <% end %>
-  <%= link_to grams_path do%>
-  Back to dashboard 
+  <div>
+    <%= form_for(@gram) do |f|%>
+      <%= f.text_field :campaign_name %>
+    <% end %>
+  </div>
+  <%= link_to grams_path, class: 'link-action' do%>
+    <span>Back to dashboard </span><%= image_tag 'icons/arrow-back-2.svg'%>
   <% end %>
 </div>
 <div class="wrapper--flex">
-  <div>
+  <div class="edit--single-img">
     <img src="<%= @gram.image_url %>" alt="">
-    <span class="date">Instagram post date: <%= @gram.insta_posted_date.strftime('%-d/%m/%y') if @gram.insta_posted_date.present? %></span>
+    <span class="link-action">
+      <%= image_tag 'icons/calendar-icon.svg'%> 
+      <span>Instagram post date: <%= @gram.insta_posted_date.strftime('%-d/%m/%y') if @gram.insta_posted_date.present? %></span>
+    </span>
     <%= form_for(@gram, remote: true) do |f|%>
       <%= f.hidden_field :updating_single_post, value: true %>
       <% if @gram.is_blog_post? %>
