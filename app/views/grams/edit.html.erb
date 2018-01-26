@@ -1,6 +1,8 @@
 <div class="bg-dark full-page--center-content">
     <%= form_for(@gram) do |f| %>
     <div class="modal-large create-campaign">
+        <%= link_to new_gram_path, class: 'modal--action' do %><%= image_tag 'icons/arrow-back.svg'%><span>back</span><% end %>
+        <%= link_to grams_path, class: 'modal--close' do %><%= image_tag 'icons/close.svg'%><% end %>
         <h2>Create Your Campaign</h2>
         <div class="wrapper--flex">
             <div>
@@ -15,7 +17,7 @@
                     <p>This is for internal use only. Anything goes.</p>
                     <%= f.text_field :campaign_name, placeholder: 'ex: leash spring promo' %>
                 </div>
-                <%= f.hidden_field :selected, value: true %>
+                
                 <%= f.label :post_type, 'What kind of campaign do you want to create?', class: 'label--small' %>
                 <div class="wrapper--flex">
                     <div class="button--radio">
@@ -37,7 +39,3 @@
     <% end %>
 </div>
 
-
-
-<%= link_to 'Show', @gram %> |
-<%= link_to 'Back', grams_path %>

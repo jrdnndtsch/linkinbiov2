@@ -6,11 +6,8 @@ class GramsController < ApplicationController
   def index
     filter = params['filter_grams'].present? ? params['filter_grams'] : 'all_selected'
     order = params['order_grams'].present? ? params['order_grams'] : 'most_recent'
-    @current_user_grams =  Gram.where(user_id: current_user.id)
+    @current_user_grams =  Gram.where(user_id: current_user.id, selected: true)
     @grams = Gram.where(user_id: current_user.id).send(filter).send(order)
-   
-    # @grams = Gram.all.where(user_id: current_user.id, selected: true).order('insta_posted_date DESC')
-
   end
 
   # GET /grams/1

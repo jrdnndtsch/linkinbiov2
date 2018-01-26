@@ -20,6 +20,7 @@
         <%= f.cktext_area :blog_text %> 
       </div>
     </div>
+    <%= f.hidden_field :selected, value: true %>
     <%= f.submit 'Save Draft', class: 'button--light' %>
   <% end %>
   <%= link_to 'Cancel', new_gram_path%>
@@ -29,42 +30,4 @@
 
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @gram.image_url %>
-</p>
 
-<p>
-  <strong>Link:</strong>
-  <%= @gram.link %>
-</p>
-
-<p>
-  <strong>Blog text:</strong>
-  <% if @gram.blog_text %>
-    <%= @gram.blog_text.html_safe %>
-  <% end %>  
-</p>
-
-<p>
-  <strong>Post type:</strong>
-  <%= @gram.post_type %>
-</p>
-
-<p>
-  <strong>Published:</strong>
-  <%= @gram.published %>
-</p>
-
-<p>
-  <strong>Insta posted date:</strong>
-  <%= @gram.insta_posted_date %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @gram.user %>
-</p>
-
-<%= link_to 'Edit', edit_gram_path(@gram) %> |
-<%= link_to 'Back', grams_path %>
