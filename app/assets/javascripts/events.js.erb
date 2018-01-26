@@ -9,5 +9,17 @@ Paloma.controller('Grams', {
             let form = $(e.target).closest('form').get(0);
             $(form).trigger('submit.rails'); 
         });
+    }, 
+    new: function(){
+        if($('#paginated').size() > 0){
+            $('#view-old-grams').on('click', function(e){
+                console.log('click view old grams')
+                e.preventDefault();
+                var more_grams_url = $('.pagination a.next_page').attr('href')
+                if(more_grams_url){
+                    $.getScript(more_grams_url) 
+                }
+            })
+        }
     }
 })

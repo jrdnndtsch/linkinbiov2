@@ -5,7 +5,11 @@
             Load new grams
         <% end %>
         <div class="gram-grid" id="gram-grid-new">
-           <%= render 'gram_list_new'%>
+            <%= render @user_grams %>
+        </div>
+        <a href="#" id="view-old-grams">View old grams</a>
+        <div id="paginated" class="hidden">
+            <%= will_paginate @user_grams %>
         </div>
     </div>
 </div>

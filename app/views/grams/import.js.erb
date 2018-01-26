@@ -1,1 +1,6 @@
-$("#gram-grid-new").html("<%= escape_javascript render('gram_list_new') %>");
+$("#gram-grid-new").html("<%= j render @user_grams %>");
+<% if @user_grams.next_page %>
+  $('#view-old-grams').show();
+<% else %>
+  $('#view-old-grams').hide();
+<% end %>

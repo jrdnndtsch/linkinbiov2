@@ -1,0 +1,6 @@
+$('#gram-grid-new').append('<%= j render @user_grams %>');
+<% if @user_grams.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate @user_grams %>');
+<% else %>
+  $('#view-old-grams').hide();
+<% end %>

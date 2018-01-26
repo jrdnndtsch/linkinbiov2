@@ -25,11 +25,15 @@ class GramsController < ApplicationController
     if current_user.present?
         @user_grams_existing = Gram.all.where(user_id: current_user.id, selected: false)
         if @user_grams_existing.present?
-          @user_grams = @user_grams_existing.order('insta_posted_date DESC')
+          @user_grams = @user_grams_existing.paginate(page: params[:page]).order('insta_posted_date DESC')
         else 
           current_user.authenticate_and_import_gram
-          @user_grams = Gram.all.where(user_id: current_user.id, selected: false).order('insta_posted_date DESC')
+          @user_grams = Gram.all.where(user_id: current_user.id, selected: false).paginate(page: params[:page]).order('insta_posted_date DESC')
         end
+    end
+    respond_to do |format|
+      format.html 
+      format.js
     end
   end
 
@@ -55,7 +59,7 @@ class GramsController < ApplicationController
   def import
     if current_user.present?
       current_user.authenticate_and_import_gram
-      @user_grams = Gram.all.where(user_id: current_user.id, selected: false).order('insta_posted_date DESC')
+      @user_grams = Gram.all.where(user_id: current_user.id, selected: false).paginate(page: params[:page]).order('insta_posted_date DESC')
     end
   end
 
