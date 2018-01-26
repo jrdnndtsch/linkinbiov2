@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>down</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="16.36 9.68 9.68 16.36 3 9.68 4.22 8.5 8.86 13.16 8.86 3 10.5 3 10.5 13.16 15.18 8.5"></polygon>
+    </defs>
+    <g id="icons-/-arrow-down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-3.000000, -3.000000)">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="down" fill="#414C66" xlink:href="#path-1"></use>
+    </g>
+</svg>

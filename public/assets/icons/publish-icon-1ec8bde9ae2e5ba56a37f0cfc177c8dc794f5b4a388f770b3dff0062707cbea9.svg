@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>check - material</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="7.43715847 12.781839 15.8715847 4 17 5.11855984 7.43715847 15 3 10.1994757 4.10928962 9.0809159"></polygon>
+    </defs>
+    <g id="icons-/-ckeck" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-3.000000, -4.000000)">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="check---material" fill="#D5D5DE" xlink:href="#path-1"></use>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>border_color - material</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2,16 L18,16 L18,18 L2,18 L2,16 Z M15.808,4.688 L14.496,6 L12,3.504 L13.312,2.192 C13.4400006,2.06399936 13.5973324,2 13.784,2 C13.9706676,2 14.1279994,2.06399936 14.256,2.192 L15.808,3.744 C15.9360006,3.87200064 16,4.0293324 16,4.216 C16,4.4026676 15.9360006,4.55999936 15.808,4.688 Z M13.84,6.656 L7.152,13.344 L4.656,13.344 L4.656,10.848 L11.344,4.16 L13.84,6.656 Z" id="path-1"></path>
+    </defs>
+    <g id="icons-/-write" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-2.000000, -2.000000)">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="border_color---material" fill="#414C66" xlink:href="#path-1"></use>
+    </g>
+</svg>

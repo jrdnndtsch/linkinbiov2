@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>description - material</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11,8 L16,8 L11,3 L11,8 Z M14,13 L14,11 L6,11 L6,13 L14,13 Z M14,16 L14,14 L6,14 L6,16 L14,16 Z M11.760479,2 L17,7.10817308 L17,16.3245192 C17,16.7876626 16.825351,17.1826907 16.4760479,17.5096154 C16.1267448,17.8365401 15.7145732,18 15.239521,18 L4.76047904,18 C4.28542677,18 3.87325524,17.8365401 3.5239521,17.5096154 C3.17464895,17.1826907 3,16.7876626 3,16.3245192 L3.04191617,3.67548077 C3.04191617,3.21233743 3.20957916,2.81730933 3.54491018,2.49038462 C3.8802412,2.1634599 4.28542677,2 4.76047904,2 L11.760479,2 Z" id="path-1"></path>
+    </defs>
+    <g id="icons-/-document" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-3.000000, -2.000000)">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="description---material" fill="#414C66" xlink:href="#path-1"></use>
+    </g>
+</svg>
