@@ -14,9 +14,10 @@ class User < ApplicationRecord
     end
     grams = Instagram.user_recent_media(@jrdnndtsch, {:count => 20})
     grams.each do |g|
-      if !Gram.where(image_url: g.images.standard_resolution.url).present?
+      puts g
+      if !Gram.where(original_gram_id: g.id).present?
         created_time = Time.at(g.created_time.to_i)
-        self.grams.create(image_url: g.images.standard_resolution.url, insta_posted_date: created_time)
+        self.grams.create(image_url: g.images.standard_resolution.url, insta_posted_date: created_time, original_gram_id: g.id)
       end   
     end
   end
