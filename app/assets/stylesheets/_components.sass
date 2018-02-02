@@ -132,7 +132,7 @@
 .nav-main
 	:background $fiord
 	:color $concrete
-	:padding 10px 0
+	:padding 6px 0
 	@extend .type-ui-sm
 	a 
 		:color $concrete
@@ -144,8 +144,12 @@
 			:margin 0
 			:padding 0
 			:list-style none
+		svg g 
+			:fill $concrete	
 		a:hover 
-			:color white	
+			:color white
+			svg g
+				:fill white !important		
 		.nav-parent:hover .sub-nav 
 			:display block									
 		>ul
@@ -154,12 +158,18 @@
 			>li  
 				:position relative
 				>a 
-					:padding 10px 
+					:padding 10px 24px
 					:display flex 
 					:align-items center
+					@extend .type-ui-xs	
 					span 
 						:display inline-block
-						:margin-right 8px
+						:line-height 14px
+					span.icon + span
+						:margin-left 8px
+					span + span.icon
+						:margin-left 16px
+						:width 32px
 			.sub-nav 
 				:position absolute
 				:background $fiord	
@@ -174,6 +184,7 @@
 					:padding 16px 0
 					:display block 
 					:border-bottom 1px solid $concrete
+					@extend .type-ui-xs	
 				li:last-of-type
 					a
 						:border-bottom none
