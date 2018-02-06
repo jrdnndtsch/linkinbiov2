@@ -2,12 +2,23 @@
 <div class="gram-grid gram-grid-blog wrapper">
     <% @grams.each do |gram|%>
         <div>
-            <a href="">
-                <img src="<%= gram.image_url%>" alt="">
-                <div class="title">
-                    <span><%= gram.post_title %></span>
-                </div>
-            </a>
+            <%= gram.post_type%>
+            <% if gram.post_type === 'post'%>
+                <%= link_to post_path(@user.id, gram.id) do %>
+                    <img src="<%= gram.image_url%>" alt="">
+                     <div class="title">
+                         <span><%= gram.post_title %></span>
+                     </div>
+                <% end %>
+            <% else %>
+                <%= link_to gram.link, target: '_blank' do %>
+                    <img src="<%= gram.image_url%>" alt="">
+                     <div class="title">
+                         <span><%= gram.post_title %></span>
+                     </div>
+                <% end %>
+            <% end %>
+            
         </div>
     <% end %>
 </div>
