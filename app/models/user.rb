@@ -21,4 +21,13 @@ class User < ApplicationRecord
       end   
     end
   end
+
+  def authenticate_and_get_user_gram_info
+    Instagram.configure do |config|
+        config.client_id = self.insta_client_id
+        config.access_token = self.insta_client_token
+    end
+
+    self.update(insta_username: Instagram.user.username, insta_full_name: Instagram.user.full_name, insta_profile_picture: Instagram.user.profile_picture, insta_bio: Instagram.user.bio, insta_website: Instagram.user.website )
+  end
 end

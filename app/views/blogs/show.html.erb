@@ -1,4 +1,4 @@
 <img src="<%= @gram.image_url%>" alt="">
 <div>
-    <%= @gram.blog_text.html_safe%>
+    <%= @gram.blog_text.html_safe if @gram.blog_text.present? %>
 </div>

@@ -49,9 +49,16 @@
       <% end %>
       <div class="edit--single-actions">
         <div class="actions-menu">
-          <%= link_to new_gram_path, class: 'link-action' do %>
-            <%= image_tag 'icons/cancel-icon.svg'%>
-            <span>Cancel</span>
+          <%if params[:from_dashboard]%>
+            <%= link_to grams_path, class: 'link-action' do %>
+              <%= image_tag 'icons/cancel-icon.svg'%>
+              <span>Cancel</span>
+            <% end %>
+          <% else %>
+            <%= link_to new_gram_path, class: 'link-action' do %>
+              <%= image_tag 'icons/cancel-icon.svg'%>
+              <span>Cancel</span>
+            <% end %>
           <% end %>
           <%= link_to post_path(current_user.id, @gram.id), class: 'link-action' do %>
             <%= image_tag 'icons/preview-icon.svg'%>

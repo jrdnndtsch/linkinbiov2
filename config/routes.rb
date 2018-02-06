@@ -9,4 +9,6 @@ Rails.application.routes.draw do
 
   get '/blogs/:id', to: 'blogs#index', as: 'blogs'
   get 'blogs/:id/post/:post_id', to: 'blogs#show', as: 'post'
+
+  get '/actions/users/:id', to: 'actions#get_user_gram_info', as: 'get_user_gram_info'
 end

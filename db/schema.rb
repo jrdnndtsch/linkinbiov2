@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180202174251) do
+ActiveRecord::Schema.define(version: 20180206153156) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,6 +47,11 @@ ActiveRecord::Schema.define(version: 20180202174251) do
     t.datetime "updated_at",                          null: false
     t.string   "insta_client_id"
     t.string   "insta_client_token"
+    t.string   "insta_username"
+    t.string   "insta_full_name"
+    t.string   "insta_profile_picture"
+    t.string   "insta_bio"
+    t.string   "insta_website"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end

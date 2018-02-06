@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Linkinbio</title>
+    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,500,700" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <script src="https://use.fontawesome.com/b1b2b00123.js"></script>
+    <script type="text/javascript" src="//fast.fonts.net/jsapi/09f75a11-819f-49b2-84f3-8dfdad22c4ec.js"></script>
+    <!-- <script type="text/javascript" src="//fast.fonts.net/jsapi/09f75a11-819f-49b2-84f3-8dfdad22c4ec.js"></script>` -->
+    <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/09f75a11-819f-49b2-84f3-8dfdad22c4ec.css" />
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag Ckeditor.cdn_url %>
+  </head>
+
+  <body>
+  
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+   
+    <%= yield %>
+    <%= insert_paloma_hook %>
+  </body>
+</html>
