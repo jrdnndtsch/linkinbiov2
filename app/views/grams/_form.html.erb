@@ -2,7 +2,10 @@
   <div>
     <%= form_for(@gram) do |f|%>
       <%= f.hidden_field :updating_single_post, value: true %>
-      <%= f.text_field :campaign_name, :data => {:gram_id => @gram.id} %>
+      <div class="flex">
+        <%= f.text_field :campaign_name, :data => {:gram_id => @gram.id} %>
+        <%= image_tag 'icons/edit-campaign-title-icon.svg'%>
+      </div>
     <% end %>
   </div>
   <%= link_to grams_path, class: 'link-action' do%>
