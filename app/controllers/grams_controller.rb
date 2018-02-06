@@ -1,5 +1,5 @@
 class GramsController < ApplicationController
-  before_action :set_gram, only: [:show, :edit, :update, :destroy]
+  before_action :set_gram, only: [:show, :edit, :update, :destroy, :remove]
   before_action :authenticate_user!
   # GET /grams
   # GET /grams.json
@@ -67,6 +67,18 @@ class GramsController < ApplicationController
     respond_to do |format|
       format.js
     end 
+  end
+
+  def remove
+    filter = params['filter_grams'].present? ? params['filter_grams'] : 'all_selected'
+    order = params['order_grams'].present? ? params['order_grams'] : 'most_recent'
+    @gram.update(link: '', blog_text: '', post_type: '', published: false, selected: false, campaign_name: '', post_title: '')
+    @current_user_grams =  Gram.where(user_id: current_user.id)
+    @grams = Gram.where(user_id: current_user.id).send(filter).send(order)
+    respond_to do |format|
+      format.json { render :show, status: :ok, location: @gram }
+      format.js 
+    end
   end
 
  

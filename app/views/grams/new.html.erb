@@ -5,7 +5,7 @@
         <%= link_to import_path, class: 'button button--with-icon', remote: true do %>
            <%= image_tag 'icons/load-new-icon.svg'%><span>Load new grams</span> 
         <% end %>
-        <div class="gram-grid" id="gram-grid-new">
+        <div class="gram-grid gram-grid-new" id="gram-grid-new">
             <%= render @user_grams %>
         </div>
         <a href="#" id="view-old-grams" class="button--light-small button--with-icon">

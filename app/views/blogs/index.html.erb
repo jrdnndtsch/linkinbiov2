@@ -1,9 +1,13 @@
 <%= @user.email%>
-<div class="gram-grid wrapper">
+<div class="gram-grid gram-grid-blog wrapper">
     <% @grams.each do |gram|%>
-        <%= gram.id%>
         <div>
-            <img src="<%= gram.image_url%>" alt="">
+            <a href="">
+                <img src="<%= gram.image_url%>" alt="">
+                <div class="title">
+                    <span><%= gram.post_title %></span>
+                </div>
+            </a>
         </div>
     <% end %>
 </div>

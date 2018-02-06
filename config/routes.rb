@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html 
   get '/import', to: 'grams#import'
   post '/grams/filter_grams', to: 'grams#filter'
+  put '/grams/:id/remove', to: 'grams#remove', as: 'remove_gram'
 
   get '/blogs/:id', to: 'blogs#index', as: 'blogs'
   get 'blogs/:id/post/:post_id', to: 'blogs#show', as: 'post'
