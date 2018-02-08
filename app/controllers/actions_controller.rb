@@ -6,6 +6,5 @@ class ActionsController < ApplicationController
         respond_to do |format|
             format.html { redirect_to edit_user_registration_path, notice: 'User was successfully updated.' } 
         end 
-    
     end
 end
