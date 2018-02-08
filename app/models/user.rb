@@ -27,7 +27,9 @@ class User < ApplicationRecord
         config.client_id = self.insta_client_id
         config.access_token = self.insta_client_token
     end
-
+    puts '<<<<<<<<<<<<<<<<'
+    puts Instagram.user.bio
+    puts '<<<<<<<<<<<<<<<<'
     self.update(insta_username: Instagram.user.username, insta_full_name: Instagram.user.full_name, insta_profile_picture: Instagram.user.profile_picture, insta_bio: Instagram.user.bio, insta_website: Instagram.user.website )
   end
 end
