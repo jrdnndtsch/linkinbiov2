@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Linkinbio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
@@ -22,8 +23,8 @@
     <% if alert %>
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
-   <div class="blog-header">
-       <%= link_to 'LinkInBio', root_path%>
+    <%= link_to 'LinkInBio', root_path, class:'site-main-link'%>
+   <div class="blog-header wrapper">
        <img src="<%= @user.insta_profile_picture %>" alt="">
        <h2><%= @user.insta_full_name%></h2>
    </div>
