@@ -95,14 +95,17 @@ class GramsController < ApplicationController
     
     if params['button'] === 'publish'
       @gram.update(published: true)
+      update_message = 'Your post was successfully published'
+    else  
+      update_message = 'Your post was successfully updated'
     end
     respond_to do |format|
       if @gram.update(gram_params)
         # if the user is updating the content of the post and has saved redirect them to the dashboard - otherwise the the post show
         if params[:gram][:updating_the_post]
-          format.html { redirect_to grams_path, notice: 'Gram was successfully updated.' }
+          format.html { redirect_to grams_path, notice: update_message }
         else
-          format.html { redirect_to @gram, notice: 'Gram was successfully updated.' } 
+          format.html { redirect_to @gram, notice: update_message } 
         end
         
         format.json { render :show, status: :ok, location: @gram }
