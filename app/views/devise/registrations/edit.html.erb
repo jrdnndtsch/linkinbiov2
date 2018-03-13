@@ -1,13 +1,16 @@
 
 <div class="wrapper">
   <h2>Edit <%= resource_name.to_s.humanize %></h2>
-  <%= link_to 'Update User', get_user_gram_info_path(current_user.id) %>
+  <img src="<%= @user.insta_profile_picture %>" alt="">
+  <h2><%= @user.insta_full_name%></h2>
+  <%= link_to 'Update User Info From Instagram', get_user_gram_info_path(current_user.id) %>
+  <p>Name and photo pulled from instagram cannot be edited</p>
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
     <%= devise_error_messages! %>
   
     <div class="field">
       <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true %>
+      <%= f.email_field :email, disabled: true %>
     </div>
   
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
