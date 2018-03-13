@@ -24,10 +24,12 @@
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
     <%= link_to 'LinkInBio', root_path, class:'site-main-link'%>
-   <div class="blog-header wrapper">
-       <img src="<%= @user.insta_profile_picture %>" alt="">
-       <h2><%= @user.insta_full_name%></h2>
-   </div>
+   <!-- <div class="blog-header wrapper"> -->
+      <%= link_to blogs_path(@user.id), class: 'blog-header wrapper' do %>
+        <img src="<%= @user.insta_profile_picture %>" alt="">
+        <h2><%= @user.insta_full_name%></h2>
+      <% end %>
+   <!-- </div> -->
     <%= yield %>
     <%= insert_paloma_hook %>
   </body>
