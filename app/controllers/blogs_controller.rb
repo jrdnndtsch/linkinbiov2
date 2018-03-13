@@ -6,6 +6,8 @@ class BlogsController < ApplicationController
     end
 
     def show
+        @user = User.find(params[:id])
         @gram = Gram.find(params[:post_id])
+        render layout: 'public'
     end
 end
