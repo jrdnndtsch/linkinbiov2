@@ -11,7 +11,11 @@
                 <%= link_to gram_path(gram, from_dashboard: true) do %><i class="fa fa-pencil" aria-hidden="true"></i> Edit<% end %>
             </span>
             <span>
-                <%= link_to post_path(current_user.id, gram.id) do %><i class="fa fa-eye" aria-hidden="true"></i> Show<% end %>
+                <% if gram.post_type == 'link'%>
+                    <a href="<%= gram.link%>" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i> Show</a>
+                <% else %>
+                    <%= link_to post_path(current_user.id, gram.id) do %><i class="fa fa-eye" aria-hidden="true"></i> Show<% end %>
+                <% end %>
             </span>
             <span>
                 <%= link_to remove_gram_path(gram), method: 'put', remote: true, data: {confirm: 'Are you sure you want to delete this post?'} do %><i class="fa fa-trash" aria-hidden="true"></i> Delete<% end %>

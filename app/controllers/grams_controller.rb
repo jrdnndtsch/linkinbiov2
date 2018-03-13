@@ -86,11 +86,16 @@ class GramsController < ApplicationController
   # PATCH/PUT /grams/1
   # PATCH/PUT /grams/1.json
   def update
+    
     filter = params['filter_grams'].present? ? params['filter_grams'] : 'all_selected'
     order = params['order_grams'].present? ? params['order_grams'] : 'most_recent'
  
     @current_user_grams =  Gram.where(user_id: current_user.id)
     @grams = Gram.where(user_id: current_user.id).send(filter).send(order)
+    
+    if params['button'] === 'publish'
+      @gram.update(published: true)
+    end
     respond_to do |format|
       if @gram.update(gram_params)
         # if the user is updating the content of the post and has saved redirect them to the dashboard - otherwise the the post show

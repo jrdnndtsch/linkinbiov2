@@ -3,7 +3,7 @@
     <%= form_for(@gram) do |f|%>
       <%= f.hidden_field :updating_single_post, value: true %>
       <div class="flex">
-        <%= f.text_field :campaign_name, :data => {:gram_id => @gram.id} %>
+        <%= f.text_field :campaign_name, :data => {:gram_id => @gram.id}, placeholder: 'create a campaign name' %>
         <%= image_tag 'icons/edit-campaign-title-icon.svg'%>
       </div>
     <% end %>
@@ -74,10 +74,9 @@
             <% end %>
           </div>
           <div>
-            <a href="" class="button button--with-icon">
-              <%= image_tag 'icons/publish-icon.svg'%><span>Publish</span>
-              
-            </a>
+            <%= button_tag(type: 'submit', class: 'button button--with-icon', value: 'publish') do %>
+              <%= image_tag 'icons/publish-icon.svg'%><span>Publish</span>              
+            <% end %>
           </div>
         </div>
       </div>
