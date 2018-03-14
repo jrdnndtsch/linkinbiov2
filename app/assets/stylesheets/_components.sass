@@ -533,6 +533,11 @@ a.site-main-link
 		:padding 48px 64px
 	img 
 		:width 124px
+	p 
+		@extend .type-ui-sm
+		:margin 0	
+	p + .button
+		:margin-top 24px		
 	.username 
 		@extend .type-ui-md
 		:font-weight 500										
@@ -540,8 +545,22 @@ a.site-main-link
 	.action-note
 		:margin 16px 0 0
 		@extend .type-ui-xs
-		:color $regent			
+		:color $regent
+.profile-password 
+	.field 
+		:margin-bottom 48px
+	a 
+		:color $regent
+		:text-decoration none
+		@extend .type-ui-xs
+		:margin-left 24px
+		:flex-grow 1
+	.actions 
+		:display flex
+		:align-items center		
+
 .profile-sidebar
+	:min-height calc(100vh - 66px)
 	:background $regent
 	:width 336px	
 	:color $solitude
@@ -564,6 +583,7 @@ a.site-main-link
 				:width 18px								
 		li.active 
 			:background $november
+
 
 				
 			
