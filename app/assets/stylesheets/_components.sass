@@ -12,6 +12,7 @@
 	:cursor pointer	
 
 .button
+	:display inline-block
 	+button($fiord, $concrete,8px, 24px)
 	&--secondary
 		+button($solitude, $fiord, 8px, 24px)
@@ -517,6 +518,52 @@ a.site-main-link
 			:margin 32px 0
 			p 
 				:margin 0
+.profile-container
+	section + section 
+		:margin-top 56px
+	.title
+		:color $regent
+		@extend .type-ui-sm
+		:border-bottom 1px solid $concrete
+		:margin 0 0 24px
+		:padding-bottom 8px 
+	form 
+		:width calc(100% - 336px)
+		:max-width 896px
+		:padding 48px 64px
+	img 
+		:width 124px
+	.username 
+		@extend .type-ui-md
+		:font-weight 500										
+		:margin 24px 0
+	.action-note
+		:margin 16px 0 0
+		@extend .type-ui-xs
+		:color $regent			
+.profile-sidebar
+	:background $regent
+	:width 336px	
+	:color $solitude
+	h2 
+		:padding 48px 36px 24px
+		:margin 0
+		@extend .type-site-xs
+	ul 
+		:margin 0
+		:padding 0
+		:list-style none
+		@extend .type-ui-sm	
+		li 
+			:padding 12px 36px
+			:display flex 
+			:align-items center
+			:cursor pointer	
+			img 
+				:margin-right 8px	
+				:width 18px								
+		li.active 
+			:background $november
 
 				
 			
