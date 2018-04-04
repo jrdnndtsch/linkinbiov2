@@ -3,7 +3,7 @@
         <div>
             <%= gram.post_type%>
             <% if gram.post_type === 'post'%>
-                <%= link_to post_path(@user.id, gram.id) do %>
+                <%= link_to post_path(@user, gram) do %>
                     <img src="<%= gram.image_url%>" alt="">
                      <div class="title">
                          <span><%= gram.post_title %></span>

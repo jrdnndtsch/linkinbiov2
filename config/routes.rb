@@ -7,10 +7,8 @@ Rails.application.routes.draw do
   post '/grams/filter_grams', to: 'grams#filter'
   put '/grams/:id/remove', to: 'grams#remove', as: 'remove_gram'
 
-  get '/blogs/:id', to: 'blogs#index', as: 'blogs'
-  get 'blogs/:id/post/:post_id', to: 'blogs#show', as: 'post'
+  get '/:id', to: 'blogs#index', as: 'blogs'
+  get '/:id/:post_id', to: 'blogs#show', as: 'post'
 
   get '/actions/users/:id', to: 'actions#get_user_gram_info', as: 'get_user_gram_info'
-
-  
 end

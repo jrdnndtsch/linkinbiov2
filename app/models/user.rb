@@ -1,12 +1,17 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
+  require "instagram"
+  extend FriendlyId
+  friendly_id :insta_username, use: :slugged
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_many :grams   
 
-  
-  require "instagram"
+  def to_param
+    [insta_username.parameterize].join("-")
+  end
+
   def authenticate_and_import_gram
     Instagram.configure do |config|
         config.client_id = self.insta_client_id

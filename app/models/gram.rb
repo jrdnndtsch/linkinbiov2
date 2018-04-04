@@ -6,6 +6,13 @@ class Gram < ApplicationRecord
   scope :most_recent, -> { order('insta_posted_date DESC') }
   scope :least_recent, -> { order('insta_posted_date ASC') }
 
+  extend FriendlyId
+  friendly_id :post_title, use: :slugged
+
+  def to_param
+    [post_title.parameterize].join("-")
+  end
+
   self.per_page = 10
 
   def is_blog_post?
