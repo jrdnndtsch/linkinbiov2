@@ -14,7 +14,7 @@
                 <% if gram.post_type == 'link'%>
                     <a href="<%= gram.link%>" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i> Show</a>
                 <% else %>
-                    <%= link_to post_path(current_user.id, gram.id) do %><i class="fa fa-eye" aria-hidden="true"></i> Show<% end %>
+                    <%= link_to post_path(current_user, gram), target: '_blank' do %><i class="fa fa-eye" aria-hidden="true"></i> Show<% end %>
                 <% end %>
             </span>
             <span>

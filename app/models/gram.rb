@@ -5,7 +5,7 @@ class Gram < ApplicationRecord
   scope :all_selected, -> { where( selected: true ) }
   scope :most_recent, -> { order('insta_posted_date DESC') }
   scope :least_recent, -> { order('insta_posted_date ASC') }
-  validates :slug, presence: true
+  # validates :slug, presence: true 
 
   
   
@@ -15,18 +15,16 @@ class Gram < ApplicationRecord
 
   def to_param
     if post_title.present?
-      [post_title.parameterize].join("-")
+      [id, post_title.parameterize].join("-")
     else
       slug
     end
   end
 
   def create_slug
-    puts 'THING<<<<<<<<<<<<<<<'
     if !self.slug.present?
-      puts 'SLUG<<<<<<<<<<<<<<<'
       if self.post_title.present?
-        self.update(slug: [post_title.parameterize].join("-"))
+        self.update(slug: [id, post_title.parameterize].join("-"))
       else
         slug = SecureRandom.hex(10)
         self.update(slug: slug)
