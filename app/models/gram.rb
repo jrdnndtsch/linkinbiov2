@@ -7,6 +7,7 @@ class Gram < ApplicationRecord
   scope :least_recent, -> { order('insta_posted_date ASC') }
 
   
+  
 
   extend FriendlyId
   friendly_id :post_title, use: :slugged
@@ -16,6 +17,19 @@ class Gram < ApplicationRecord
       [post_title.parameterize].join("-")
     else
       slug
+    end
+  end
+
+  def create_slug
+    puts 'THING<<<<<<<<<<<<<<<'
+    if !self.slug.present?
+      puts 'SLUG<<<<<<<<<<<<<<<'
+      if self.post_title.present?
+        self.update(slug: [post_title.parameterize].join("-"))
+      else
+        slug = SecureRandom.hex(10)
+        self.update(slug: slug)
+      end
     end
   end
 
