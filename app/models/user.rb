@@ -3,13 +3,25 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   require "instagram"
   extend FriendlyId
-  friendly_id :insta_username, use: :slugged
+  friendly_id :friendly_slug, use: :slugged
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_many :grams   
 
   def to_param
-    [insta_username.parameterize].join("-")
+    if insta_username.present?
+      [insta_username.parameterize].join("-")
+    else
+      [email.parameterize].join("-")
+    end
+  end
+
+  def friendly_slug
+    if insta_username.present?
+      [insta_username.parameterize].join("-")
+    else
+      [email.parameterize].join("-")
+    end
   end
 
   def authenticate_and_import_gram

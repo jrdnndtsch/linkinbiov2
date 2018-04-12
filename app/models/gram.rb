@@ -23,14 +23,12 @@ class Gram < ApplicationRecord
   end
 
   def create_slug
-    # if !self.slug.present?
-      if self.post_title.present?
-        self.update(slug: [id, post_title.parameterize].join("-"))
-      else
-        slug = SecureRandom.hex(10)
-        self.update(slug: slug)
-      end
-    # end
+    if self.post_title.present?
+      self.update(slug: [id, post_title.parameterize].join("-"))
+    else
+      slug = SecureRandom.hex(10)
+      self.update(slug: slug)
+    end
   end
 
   def friendly_slug

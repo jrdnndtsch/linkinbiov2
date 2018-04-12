@@ -64,9 +64,12 @@
               <span>Cancel</span>
             <% end %>
           <% end %>
-          <%= link_to post_path(current_user.id, @gram.id), class: 'link-action' do %>
-            <%= image_tag 'icons/preview-icon.svg'%>
-            <span>Preview</span>
+          <% if @gram.is_blog_post?%>
+          <!-- TODO - if post is not saved preview does not display new content -->
+            <%= link_to post_path(current_user, @gram), class: 'link-action' , target: '_blank' do %>
+              <%= image_tag 'icons/preview-icon.svg'%>
+              <span>Preview</span>
+            <% end %>
           <% end %>
         </div>
         <div class="button-group">
