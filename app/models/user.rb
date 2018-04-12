@@ -24,6 +24,9 @@ class User < ApplicationRecord
     end
   end
 
+  def should_generate_new_friendly_id?
+    insta_username_changed?
+  end
   def authenticate_and_import_gram
     Instagram.configure do |config|
         config.client_id = self.insta_client_id
