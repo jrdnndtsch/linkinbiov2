@@ -45,7 +45,11 @@
       <% if @gram.is_blog_post? %>
         <%= f.cktext_area :blog_text %> 
       <% else %>  
-        <%= f.text_field :link %>
+        <div class="form-element">
+          <%= f.label :link, 'Link'%>
+          <p>Url to the external site you want to link to</p>
+          <%= f.text_field :link, placeholder: 'ex: http://medium.com/' %>
+        </div>
       <% end %>
       <div class="edit--single-actions">
         <div class="actions-menu">
