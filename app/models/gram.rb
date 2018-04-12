@@ -5,6 +5,7 @@ class Gram < ApplicationRecord
   scope :all_selected, -> { where( selected: true ) }
   scope :most_recent, -> { order('insta_posted_date DESC') }
   scope :least_recent, -> { order('insta_posted_date ASC') }
+  validates :slug, presence: true
 
   
   
