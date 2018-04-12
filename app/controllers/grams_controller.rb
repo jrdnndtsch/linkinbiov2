@@ -86,7 +86,6 @@ class GramsController < ApplicationController
   # PATCH/PUT /grams/1
   # PATCH/PUT /grams/1.json
   def update
-    
     filter = params['filter_grams'].present? ? params['filter_grams'] : 'all_selected'
     order = params['order_grams'].present? ? params['order_grams'] : 'most_recent'
  
@@ -134,7 +133,7 @@ class GramsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_gram
-      @gram = Gram.find(params[:id])
+      @gram = Gram.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

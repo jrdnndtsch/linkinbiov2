@@ -6,11 +6,21 @@ class Gram < ApplicationRecord
   scope :most_recent, -> { order('insta_posted_date DESC') }
   scope :least_recent, -> { order('insta_posted_date ASC') }
 
+  
+
   extend FriendlyId
   friendly_id :post_title, use: :slugged
 
   def to_param
-    [post_title.parameterize].join("-")
+    if post_title.present?
+      [post_title.parameterize].join("-")
+    else
+      slug
+    end
+  end
+
+  def should_generate_new_friendly_id?
+    post_title_changed?
   end
 
   self.per_page = 10

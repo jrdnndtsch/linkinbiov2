@@ -22,7 +22,8 @@ class User < ApplicationRecord
       puts g
       if !Gram.where(original_gram_id: g.id).present?
         created_time = Time.at(g.created_time.to_i)
-        self.grams.create(image_url: g.images.standard_resolution.url, insta_posted_date: created_time, original_gram_id: g.id)
+        slug = SecureRandom.hex(10)
+        self.grams.create(image_url: g.images.standard_resolution.url, insta_posted_date: created_time, original_gram_id: g.id, slug: slug)
       end   
     end
   end
