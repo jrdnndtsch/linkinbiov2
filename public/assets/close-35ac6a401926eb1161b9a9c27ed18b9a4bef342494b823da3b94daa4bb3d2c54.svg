@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14.0192308,10.7884615 L14.0192308,9.21153846 L10.7884615,9.21153846 L10.7884615,5.98076923 L9.21153846,5.98076923 L9.21153846,9.21153846 L5.98076923,9.21153846 L5.98076923,10.7884615 L9.21153846,10.7884615 L9.21153846,14.0192308 L10.7884615,14.0192308 L10.7884615,10.7884615 L14.0192308,10.7884615 Z M10,2 C11.4615458,2 12.8140963,2.36538096 14.0576923,3.09615385 C15.2628265,3.788465 16.211535,4.73717346 16.9038462,5.94230769 C17.634619,7.18590365 18,8.53845423 18,10 C18,11.4615458 17.634619,12.8140963 16.9038462,14.0576923 C16.211535,15.2628265 15.2628265,16.211535 14.0576923,16.9038462 C12.8140963,17.634619 11.4615458,18 10,18 C8.53845423,18 7.18590365,17.634619 5.94230769,16.9038462 C4.73717346,16.1987144 3.788465,15.2435958 3.09615385,14.0384615 C2.36538096,12.7948656 2,11.4487252 2,10 C2,8.55127481 2.36538096,7.20513442 3.09615385,5.96153846 C3.80128558,4.75640423 4.75640423,3.80128558 5.96153846,3.09615385 C7.20513442,2.36538096 8.55127481,2 10,2 Z" id="path-1"></path>
+    </defs>
+    <g id="button/with-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-26.000000, -12.000000)">
+        <g id="Stacked-Group" transform="translate(24.000000, 8.000000)">
+            <g id="icons-/-add" transform="translate(0.000000, 2.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="icon" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <g id="palette/col/concrete" fill="#D5D5DE" fill-rule="evenodd">
+                    <rect id="color" x="0" y="0" width="20" height="20"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
