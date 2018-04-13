@@ -12,6 +12,16 @@
     <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/09f75a11-819f-49b2-84f3-8dfdad22c4ec.css" />
     <%= javascript_include_tag 'application' %>
     <%= javascript_include_tag Ckeditor.cdn_url %>
+
+     <meta property="og:title" content="Link in Bio" />
+  <meta property="og:image" content="<%= image_url('meta_image.png')%>" />
+
+
+  <!-- for Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Link in Bio" />
+  <meta name="twitter:description" content="The only link in bio you will ever need on Instagram." />
+  <meta name="twitter:image" content="<%= image_url('meta_image.png')%>" />
   </head>
 
   <body>
