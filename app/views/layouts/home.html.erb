@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Link in Bio</title>
+	 <%= stylesheet_link_tag    'application', media: 'all' %>
+	 <%= javascript_include_tag 'application' %>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script type="text/javascript" src="//fast.fonts.net/jsapi/09f75a11-819f-49b2-84f3-8dfdad22c4ec.js"></script>
+	<!-- <script type="text/javascript" src="//fast.fonts.net/jsapi/09f75a11-819f-49b2-84f3-8dfdad22c4ec.js"></script>` -->
+	<link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/09f75a11-819f-49b2-84f3-8dfdad22c4ec.css" />
+</head>
+
+<body>
+
+<div class="home-layout">
+	<%= yield %>
+</div>
+
+</body>
+</html>

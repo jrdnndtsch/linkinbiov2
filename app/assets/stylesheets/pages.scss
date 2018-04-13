@@ -1,3 +1,440 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// .flex-wrapper {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// }
+// .flip .text{
+// 	order: 2;
+// }
+
+// 	.nav-home ul {
+// 		display: flex;
+// 		justify-content: flex-end;
+// 		list-style: none;
+// 	}
+
+// 	.nav-home li {
+// 		margin-right: 30px;
+// 	}
+
+// 	.above-fold{
+// 		max-height: 950px;
+//     overflow: hidden;
+// 	}
+
+// 	.nav-home {
+// 		padding-top: 80px;
+// 		margin-right: 250px;
+// 		color: #414C66;
+// 	}
+// 	.nav-home ul {
+// 		margin: 0;
+// 	}
+// 	.nav-home a {
+// 		color: #414C66;
+// 		text-decoration: none;
+// 		font-size: 16px;
+// 	}
+// 	@media(max-width: 600px){
+// 		.nav-home {
+// 			padding-top: 30px;
+//     	margin-right: 0;
+// 		}
+// 	}
+// 	header {
+// 		display: flex;
+// 		flex-wrap: wrap;
+// 		align-items: center;
+// 		justify-content: center;
+// 		text-align: center;
+// 	}
+// 	.content {
+// 		margin: 72px 0;
+// 		z-index: 2;	 
+// 	}
+// 	.content a {
+// 		display: block;
+// 		color: #878FA1;
+// 		font-size: 20px;
+// 		margin: 38px auto;
+// 		text-decoration: none;
+// 	}
+// 	.content a img {
+// 		padding: 0 8px;
+// 	}
+// 	.content .subtitle {
+// 		font-size: 38px;
+// 		color: #414C66;
+// 		margin: 0 auto 48px auto;
+// 		font-weight: lighter;
+// 	}
+// 	@media (max-width: 600px) {
+// 		.above-fold{
+// 			max-height: 750px;
+// 		}
+// 		.content {
+// 			margin: 40px 0 68px 0;
+// 		}
+// 		.content .subtitle {
+// 			font-size: 28px;
+// 			color: #414C66;
+// 			margin: 0 auto 48px auto;
+// 			font-weight: lighter;
+// 		}
+// 	}
+
+	
+// 	.button.sign-up {
+// 		color: #D8D8D8;
+// 		background-color: #414C66;
+// 		border: 1px solid #414C66;
+// 		padding: 10px 42px;
+// 		font-size: 16px;
+// 		border-radius: 3px;
+// 		cursor: pointer;
+// 		transition: 0.3s;
+// 		-webkit-appearance: none;
+// 	}
+// 	.button.sign-up:hover {
+// 		color: #414C66;
+// 		background-color: #D8D8D8;
+// 		border-color: #d8d8d8
+// 	}
+
+// 	h1.home-title {
+// 		text-align: center;
+// 		width: 100%;
+// 		font-size: 64px;
+// 		font-weight: bold;
+// 		color: #414C66;
+// 		margin: 0;
+// 		margin-bottom: 72px;
+// 	}
+// 	h2 {
+// 		font-size: 38px;
+// 		font-weight: normal;
+// 		margin: 0 0 36px 0;
+// 	}
+// 	@media (max-width: 600px) {
+// 		h1 {
+// 			margin-bottom: 38px;
+// 		}
+// 		h2{
+// 			margin: 0 0 16px 0;
+// 		}
+// 	}
+	
+// 	/*PHOTO GRID*/
+// 	.grid-wrapper {
+// 		display: grid;
+// 		grid-gap: 16px;
+// 		grid-template-columns: repeat(5, 1fr);
+// 		grid-template-rows: 90px 90px 90px 90px 90px 90px;
+// 		width: 1050px;
+// 		transition: all 1s ease;
+// 		transition: all 0.5s;
+// 		margin: 0 auto;
+// 	}
+// 	/* make everything a little smaller on small screen */
+
+// 	@media (max-width: 600px) {
+// 		.grid-wrapper {
+// 			margin-top: 0;
+// 			grid-template-rows: 25px 114px 25px 114px 25px 114px;
+// 			overflow: hidden;
+// 			width: 100%;
+// 			justify-content: center;
+// 		}
+// 	}
+
+	
+
+// 	.hidden {
+// 		display: none;
+// 	}
+
+// 	.photo {
+// 		grid-row: 3;
+// 		grid-column: 3;
+// 		position: relative;
+// 		transition: 1s;
+// 		opacity: 0;
+// 	}
+
+// 	img {
+// 		max-width: 100%;
+// 		transition: all 2s;
+// 	}
+
+// 	@media (max-width: 600px) {
+// 		.photo {
+// 			width: 150px;
+// 		}
+// 	}
+
+
+// 	.photo-1 {
+// 		grid-row: 3;
+// 		grid-column: 5;
+// 		opacity: 1;
+// 	}
+
+// 	.photo-2 {
+// 		grid-row: 2;
+// 		grid-column: 2;
+// 		opacity: 1;
+// 	}
+
+// 	.photo-3 {
+// 		grid-row: 1;
+// 		grid-column: 3;
+// 		opacity: 1;
+// 	}
+
+// 	.photo-4 {
+// 		grid-row: 2;
+// 		grid-column: 4;
+// 		opacity: 1;
+// 	}
+
+// 	.photo-5 {
+// 		grid-row: 3;
+// 		grid-column: 1;
+// 		opacity: 1;
+// 	}
+
+// 	.photo-6 {
+// 		grid-row: 4;
+// 		grid-column: 2;
+// 		opacity: 1;
+// 	}
+
+// 	.photo-7 {
+// 		grid-row: 3;
+// 		grid-column: 3;
+// 		opacity: 1;
+// 	}
+
+// 	.photo-8 {
+// 		grid-row: 4;
+// 		grid-column: 4;
+// 		opacity: 1;
+// 	}
+
+// 	.photo-9 {
+// 		grid-row: 5;
+// 		grid-column: 1;
+// 		opacity: 1;
+// 	}
+
+// 	.photo-10 {
+// 		grid-row: 5;
+// 		grid-column: 3;
+// 		opacity: 1;
+// 	}
+
+// 	.photo-11 {
+// 		grid-row: 6;
+// 		grid-column: 4;
+// 		opacity: 1;
+// 	}
+
+// 	.photo-12 {
+// 		grid-row: 6;
+// 		grid-column: 2;
+// 		opacity: 1;
+// 	}
+
+// 	.photo-13 {
+// 		grid-row: 5;
+// 		grid-column: 5;
+// 		opacity: 1;
+// 	}
+
+
+
+//  /*FORM AND MODAL*/
+// 	.form-wrapper {
+// 		width: 100%;
+// 		margin: 0 auto;
+// 	}
+// 	form {
+// 		text-align: left;
+// 	}
+// 	fieldset {
+// 		border: none;
+// 	}
+
+// 	.form-wrapper #sign-up input {
+// 		width: 100%;
+// 		padding: 16px 24px 16px 24px;
+// 		margin: 16px 0 48px 0;
+// 		font-size: 16px;
+// 		border: 1px solid #ddd;
+// 	}
+// 	.form-wrapper #sign-up label {
+// 		margin-top: 0;
+// 	}
+// 	@media (max-width: 600px) {
+// 		input {
+// 			margin: 16px 0;
+// 		}
+// 	}
+
+// 	.home-modal {
+// 		position: fixed;
+// 		z-index: 100;
+// 		background: white;
+// 		padding: 40px 80px 56px 80px;
+// 		width: 586px;
+// 		max-width: 75%;
+// 		box-shadow: 0 2px 24px rgba(0,0,0,0.5);
+// 	}
+// 	@media (max-width: 600px) {
+// 		.home-modal {
+// 			padding: 40px 40px 56px 40px;
+// 		}
+// 	}
+
+// 	.home-modal p {
+// 		margin-bottom: 40px;
+// 	}
+
+
+// 	.modal-relative {
+// 		position: relative;
+// 	}
+
+// 	.home-modal .close {
+// 		position: absolute;
+// 		top: 10px;
+// 		right: 20px;
+// 		cursor: pointer;
+// 	}
+
+// 	.modal--overlay {
+// 		position: fixed;
+// 		top: 0;
+// 		bottom: 0;
+// 		left: 0;
+// 		right: 0;
+// 		z-index: 10;
+// 		background-color: rgba(0, 0, 0, 0.4);
+// 	}
+
+// 	section.display{
+// 		background: #F0F0F5;
+// 		padding: 225px 138px;
+// 		color: #414C66;
+// 		position: relative;
+// 	}
+// 	section.display .text{
+// 		width: 60%;
+// 		padding-right: 40px;
+// 	}
+// 	section.display .image{
+// 		width: 40%;
+// 	}
+// 	section.display .image img{
+// 		position: absolute;
+// 		right: 0;
+// 		top: 175px; 
+// 		display: block;
+// 		width: 42%;
+// 	}
+// 	section.display h2  {
+// 		font-weight: bold;
+// 	}
+// 	section.display p {
+// 		font-size: 21px;
+//     line-height: 32px;
+// 	}
+	
+
+// 	@media(max-width: 600px){
+// 		section.display{
+// 			padding: 60px 40px
+// 		}
+// 		section.display .text{
+// 			width: 100%;
+// 		}
+// 		section.display .image{
+// 			width: 100%;
+// 			margin-top: 30px;
+// 		}
+// 		section.display .image img{
+// 			position: initial;
+// 			display: block;
+// 			width: 100%;
+// 		}
+// 	}
+// 	section.how-it-works {
+// 		max-width: 1190px;
+// 		width: 80%;
+// 		margin: 0 auto;
+// 		padding-top: 245px;
+// 		color: #414C66;
+// 	}
+// 	.flip .text{
+// 		order: 2;
+// 	}
+// 	.flip .text img {
+// 		padding-left: 40px;
+// 	}
+// 	section.how-it-works h2 {
+// 		font-weight: bold;
+// 		text-align: center;
+// 		padding-bottom: 20px;
+// 	}
+// 	section.how-it-works p {
+// 		font-size: 21px;
+// 		line-height: 32px;
+// 	}
+// 	section.how-it-works .text{
+// 		width: 65%;
+// 	}
+// 	section.how-it-works .image{
+// 		width: 35%;
+// 	}
+// 	section.how-it-works .text {
+// 		display: flex;
+// 		align-items: center;
+// 	}
+// 	section.how-it-works .text img{
+// 		max-height: max-content;
+// 	}
+// 	section.how-it-works .text p{
+// 		margin: 0 60px 0 27px;
+// 	}
+// 	section.how-it-works .steps .flex-wrapper {
+// 		margin-top: 75px;
+// 	}
+
+// 	@media(max-width: 600px){
+// 		section.how-it-works {
+// 			padding-top: 115px;
+// 		}
+// 		section.how-it-works .text{
+// 			width: 100%;
+// 		}
+// 		section.how-it-works .text p{
+// 		margin: 0 0 0 16px;
+// 	}
+// 		section.how-it-works .image{
+// 			width: 100%;
+// 			margin-top: 30px;
+// 		}
+// 		.flip .text{
+// 			order: 1;
+// 		}
+// 		.flip .image{
+// 			order: 2;
+// 		}
+// 		.flip .text img {
+// 			padding-left: 0;
+// 		}
+// 	}

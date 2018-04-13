@@ -1,0 +1,343 @@
+@import 'variables'
+@import 'base'
+	
+.home-layout
+	font-family: $font-secondary
+.flex-wrapper
+	display: flex
+	flex-wrap: wrap
+
+.nav-home
+	ul
+		display: flex
+		justify-content: flex-end
+		list-style: none
+	li
+		margin-right: 30px
+
+.above-fold
+	max-height: 950px
+	overflow: hidden
+	+display-for(xs sm md)
+		max-height: 750px
+
+.nav-home
+	padding-top: 80px
+	margin-right: 250px
+	color: $fiord
+	+display-for(xs sm md)
+		padding-top: 30px
+		margin-right: 0
+	ul
+		margin: 0
+	a
+		color: $fiord
+		text-decoration: none
+		font-size: 16px
+		
+
+header
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	justify-content: center
+	text-align: center
+
+.content
+	margin: 72px 0
+	z-index: 2
+	a
+		display: block
+		color: $regent
+		font-size: 20px
+		margin: 38px auto
+		text-decoration: none
+		img
+			padding: 0 8px
+	.subtitle
+		font-size: 38px
+		color: $fiord
+		margin: 0 auto 48px auto
+		font-weight: lighter
+		+display-for(xs sm md)
+			font-size: 28px
+			color: $fiord
+			margin: 0 auto 48px auto
+			font-weight: lighter
+	+display-for(xs sm md)
+		margin: 40px 0 68px 0
+			
+.button.sign-up
+	color: $mid
+	background-color: $fiord
+	border: 1px solid $fiord
+	padding: 10px 42px
+	font-size: 16px
+	border-radius: 3px
+	cursor: pointer
+	transition: 0.3s
+	-webkit-appearance: none
+	&:hover
+		color: $fiord
+		background-color: $mid
+		border-color: $mid
+
+h1.home-title
+	text-align: center
+	width: 100%
+	font-size: 64px
+	font-weight: bold
+	color: $fiord
+	margin: 0
+	margin-bottom: 72px
+	+display-for(xs sm md)
+		:margin-bottom 38px
+
+h2
+	font-size: 38px
+	font-weight: normal
+	margin: 0 0 36px 0
+	+display-for(xs sm md)
+		margin: 0 0 16px 0
+		
+
+/*PHOTO GRID
+
+.grid-wrapper
+	display: grid
+	grid-gap: 16px
+	grid-template-columns: repeat(5, 1fr)
+	grid-template-rows: 90px 90px 90px 90px 90px 90px
+	width: 1050px
+	transition: all 1s ease
+	transition: all 0.5s
+	margin: 0 auto
+	+display-for(xs sm md)
+		margin-top: 0
+		grid-template-rows: 25px 114px 25px 114px 25px 114px
+		overflow: hidden
+		width: 100%
+		justify-content: center
+
+.hidden
+	display: none
+
+.photo
+	grid-row: 3
+	grid-column: 3
+	position: relative
+	transition: 1s
+	opacity: 0
+	+display-for(xs sm md)
+		width: 150px
+
+img
+	max-width: 100%
+	transition: all 2s
+
+.photo-1
+	grid-row: 3
+	grid-column: 5
+	opacity: 1
+
+.photo-2
+	grid-row: 2
+	grid-column: 2
+	opacity: 1
+
+.photo-3
+	grid-row: 1
+	grid-column: 3
+	opacity: 1
+
+.photo-4
+	grid-row: 2
+	grid-column: 4
+	opacity: 1
+
+.photo-5
+	grid-row: 3
+	grid-column: 1
+	opacity: 1
+
+.photo-6
+	grid-row: 4
+	grid-column: 2
+	opacity: 1
+
+.photo-7
+	grid-row: 3
+	grid-column: 3
+	opacity: 1
+
+.photo-8
+	grid-row: 4
+	grid-column: 4
+	opacity: 1
+
+.photo-9
+	grid-row: 5
+	grid-column: 1
+	opacity: 1
+
+.photo-10
+	grid-row: 5
+	grid-column: 3
+	opacity: 1
+
+.photo-11
+	grid-row: 6
+	grid-column: 4
+	opacity: 1
+
+.photo-12
+	grid-row: 6
+	grid-column: 2
+	opacity: 1
+
+.photo-13
+	grid-row: 5
+	grid-column: 5
+	opacity: 1
+
+/*FORM AND MODAL
+
+.form-wrapper
+	width: 100%
+	margin: 0 auto
+
+form
+	text-align: left
+
+fieldset
+	border: none
+
+.form-wrapper #sign-up
+	input
+		width: 100%
+		padding: 16px 24px 16px 24px
+		margin: 16px 0 48px 0
+		font-size: 16px
+		border: 1px solid #ddd
+		+display-for(xs sm md)
+			margin: 16px 0
+	label
+		margin-top: 0
+
+.home-modal
+	position: fixed
+	z-index: 100
+	background: white
+	padding: 40px 80px 56px 80px
+	width: 586px
+	max-width: 75%
+	box-shadow: 0 2px 24px rgba(0, 0, 0, 0.5)
+	+display-for(xs sm md)
+		padding: 40px 40px 56px 40px
+	p
+		margin-bottom: 40px
+
+.modal-relative
+	position: relative
+
+.home-modal .close
+	position: absolute
+	top: 10px
+	right: 20px
+	cursor: pointer
+
+.modal--overlay
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 10
+	background-color: rgba(0, 0, 0, 0.4)
+
+
+//  DISPLAY SECTION
+section
+	&.display
+		background: #F0F0F5
+		padding: 225px 138px
+		color: $fiord
+		position: relative
+		+display-for(xs sm md)
+			padding: 60px 40px
+		.text
+			width: 60%
+			padding-right: 40px
+			+display-for(xs sm md)
+				width: 100%
+		.image
+			width: 40%
+			+display-for(xs sm md)
+				width: 100%
+				margin-top: 30px
+			img
+				position: absolute
+				right: 0
+				top: 175px
+				display: block
+				width: 42%
+				+display-for(xs sm md)
+					position: initial
+					display: block
+					width: 100%
+		h2
+			font-weight: bold
+		p
+			font-size: 21px
+			line-height: 32px
+	&.how-it-works
+		max-width: 1190px
+		width: 80%
+		margin: 0 auto
+		padding-top: 245px
+		color: $fiord			
+
+
+//  HOW IT WORKS SECTION
+section.how-it-works
+	+display-for(xs sm md)
+		padding-top: 115px
+	h2
+		font-weight: bold
+		text-align: center
+		padding-bottom: 20px
+	p
+		font-size: 21px
+		line-height: 32px
+	.image
+		width: 35%
+		+display-for(xs sm md)
+			width: 100%
+			margin-top: 30px
+			text-align: center
+	.text
+		width: 65%
+		display: flex
+		align-items: center
+		+display-for(xs sm md)
+			width: 100%
+		p
+			margin: 0 60px 0 27px
+			+display-for(xs sm md)
+				margin: 0 0 0 16px
+	.steps .flex-wrapper
+		margin-top: 75px
+	.flip 
+		.text
+			order: 2
+			+display-for(xs sm md)
+				order: 1
+			img 
+				padding-left: 40px
+				+display-for(xs sm md)
+					padding-left: 0
+		.image
+			+display-for(xs sm md)
+				order: 2
+			img
+				width: 100%

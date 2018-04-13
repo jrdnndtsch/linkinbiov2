@@ -1,0 +1,265 @@
+<section class="above-fold">
+		<nav class="nav-home">
+			<ul>
+				<li>
+				<% if current_user.present? %>
+					<%= link_to  "My Account", grams_path %>
+				<% else %>
+					<%= link_to  "Login", new_user_session_path %>
+				<% end %>
+				
+				</li>
+			</ul>
+		</nav>
+		<header>
+			<div class="content">
+				<h1 class="home-title">Linkinbio</h1>
+				<p class="subtitle">The only link in bio you will ever need on Instagram.</p>
+				<button class="sign-up button">Sign up</button>
+				<a href="#display" id="learn-more">	<%= image_tag  "icons/arrow-down.svg" %> img or scroll down to learn more</a>
+			</div>
+	
+			<!-- Modal Sign up -->
+			<div class="home-modal hidden" id="">
+				<h2>Sign up</h2>
+				<p>Sign up to learn more.</p>
+				<div class="form-wrapper">
+					<form id="sign-up" enctype="application/json" action="https://script.google.com/macros/u/1/s/AKfycbwVIoJvPnRT3eLdkldOD5iHAnWt2ZtKdaT30hWXhc7ioXLu_v6A/exec"
+					 method="post">
+						<label for="email">Email</label>
+						<input id="email" name="Email" placeholder="example@gmail.com">
+						<label for="name">Name</label>
+						<input id="name" name="Name" placeholder="Abed Nadir">
+						<input class="log-in button" type="submit" value="Sign up">
+					</form>
+				</div>
+				<p class="close">
+					<%= image_tag  "icons/close.svg" %>
+				</p>
+			</div>
+			<div class="modal--overlay hidden"></div>
+		</header>
+		<!-- /modal sign up -->
+	
+		<!-- Photo Grid -->
+	
+		<div class="grid-wrapper">
+			<div class="photo">
+				<%= image_tag  "woman.png" %>
+			</div>
+			<div class="photo">
+				<%= image_tag  "doggie.png" %>
+			</div>
+			<div class="photo">
+				<%= image_tag  "girlbeach.png" %>
+			</div>
+			<div class="photo">
+				<%= image_tag  "ski.png" %>
+			</div>
+			<div class="photo">
+				<%= image_tag  "tokyo.png" %>
+			</div>
+			<div class="photo">
+				<%= image_tag  "coffee.png" %>
+			</div>
+			<div class="photo">
+				<%= image_tag  "food.png" %>
+			</div>
+			<div class="photo">
+				<%= image_tag  "pool.png" %>
+			</div>
+			<div class="photo">
+				<%= image_tag  "girlynyc.png" %>
+			</div>
+			<div class="photo">
+				<%= image_tag  "chicken.png" %>
+				<img src="./images/chicken.png" alt="Friend chicken sandwich">
+			</div>
+			<div class="photo">
+				<%= image_tag  "wedding.png" %>
+			</div>
+			<div class="photo">
+				<%= image_tag  "bikini.png" %>
+			</div>
+			<div class="photo">
+				<img src="https://picsum.photos/220?image=800" alt="random">
+			</div>
+		</div>
+	
+		<!-- /photo grid -->
+
+	</section>
+
+	<section id="display" class="display">
+		<div class="flex-wrapper">
+			<div class="text">
+				<h2>Never lose yesterday's promo because you add a new one today.</h2>
+				<p>You only get one link in instagram... how do you choose?! With linkinbio you don't have to. Seamlessly link content to your
+				instagram posts and bring them all together on one screen.</p>
+				<p>From there you can send your users to affiliate sites or use your very own linkinbio blog.</p>
+			</div>
+			<div class="image">
+				<%= image_tag  "display.png" %>
+			</div>
+		</div>
+	</section>
+
+	<section class="how-it-works">
+		<h2>How does it work?</h2>
+		<div class="steps">
+			<div class="flex-wrapper">
+				<div class="text">
+					<%= image_tag  "step1-num.png" %>
+					<p>Sign up for an account and receive your "link in bio"— this will be the only link you will need in your instagram account.</p>
+				</div>
+				<div class="image">
+					<%= image_tag  "step1.png" %>
+				</div>
+			</div>
+			<div class="flex-wrapper flip">
+				<div class="text">
+					<%= image_tag  "step2-num.png" %>
+					<p>Load your recent grams in your dashboard, choose an image, and create a campaign.</p>
+				</div>
+				<div class="image">
+					<%= image_tag  "step2.png" %>
+				</div>
+			</div>
+			<div class="flex-wrapper">
+				<div class="text">
+					<%= image_tag  "step3-num.png" %>
+					<p>Now you're ready to link to content and write blog posts!</p>
+				</div>
+				<div class="image">
+					<%= image_tag  "step3.png" %>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script>
+	!function (e, i) { if ("function" == typeof define && define.amd) define(["exports", "jquery"], function (e, r) { return i(e, r) }); else if ("undefined" != typeof exports) { var r = require("jquery"); i(exports, r) } else i(e, e.jQuery || e.Zepto || e.ender || e.$) }(this, function (e, i) { function r(e, r) { function n(e, i, r) { return e[i] = r, e } function a(e, i) { for (var r, a = e.match(t.key); void 0 !== (r = a.pop());)if (t.push.test(r)) { var u = s(e.replace(/\[\]$/, "")); i = n([], u, i) } else t.fixed.test(r) ? i = n([], r, i) : t.named.test(r) && (i = n({}, r, i)); return i } function s(e) { return void 0 === h[e] && (h[e] = 0), h[e]++ } function u(e) { switch (i('[name="' + e.name + '"]', r).attr("type")) { case "checkbox": return "on" === e.value ? !0 : e.value; default: return e.value } } function f(i) { if (!t.validate.test(i.name)) return this; var r = a(i.name, u(i)); return l = e.extend(!0, l, r), this } function d(i) { if (!e.isArray(i)) throw new Error("formSerializer.addPairs expects an Array"); for (var r = 0, t = i.length; t > r; r++)this.addPair(i[r]); return this } function o() { return l } function c() { return JSON.stringify(o()) } var l = {}, h = {}; this.addPair = f, this.addPairs = d, this.serialize = o, this.serializeJSON = c } var t = { validate: /^[a-z_][a-z0-9_]*(?:\[(?:\d*|[a-z0-9_]+)\])*$/i, key: /[a-z0-9_]+|(?=\[\])/gi, push: /^$/, fixed: /^\d+$/, named: /^[a-z0-9_]+$/i }; return r.patterns = t, r.serializeObject = function () { return new r(i, this).addPairs(this.serializeArray()).serialize() }, r.serializeJSON = function () { return new r(i, this).addPairs(this.serializeArray()).serializeJSON() }, "undefined" != typeof i.fn && (i.fn.serializeObject = r.serializeObject, i.fn.serializeJSON = r.serializeJSON), e.FormSerializer = r, r });
+
+</script>
+<script>
+
+// FADE IN FOR IMAGES
+
+var random = [5, 2, 4, 8, 9, 3, 10, 1, 6, 7, 12, 11, 13]
+	var showImages = function () {
+		// var random = Math.floor(Math.random() * 13)
+		if (random.length > 0) {
+			console.log('random', random.length)
+			var number = random.shift();
+			console.log(number)
+			$(`.photo:nth-child(${number})`).css('display', 'block')
+			$(`.photo:nth-child(${number})`).addClass(`photo-${number}`)
+		}
+	}
+
+
+	var interval = setInterval(showImages, 200)
+
+	setTimeout(function () {
+		clearInterval(interval)
+	}, 7000)
+
+// end fade in
+
+
+// Modal sign up
+	$('.sign-up').on('click', function () {
+		openModal();
+	})
+	$('.close').on('click', function () {
+		closeModal();
+	})
+	function centerModal() {
+		var modal = $('.home-modal.open');
+		var mWidth = modal.outerWidth()
+		console.log(mWidth)
+		var mHeight = modal.outerHeight();
+		var width = $(window).width();
+		var height = $(window).height();
+		if ((width % 1) != 0) {
+			width = Math.round(width)
+		}
+		if ((height % 1) != 0) {
+			height = Math.round(height)
+		}
+		var topPos = (height / 2) - (mHeight / 2);
+		var leftPos = (width / 2) - (mWidth / 2);
+		modal.css({ top: topPos, left: leftPos })
+	}
+	//open modal and overlay,
+	function openModal() {
+		$('.home-modal').removeClass('hidden').addClass('open');
+		$('.modal--overlay').removeClass('hidden').addClass('open');
+		$('body').css('overflow', 'hidden');
+		centerModal();
+	}
+
+	//close modal and overlay,
+	function closeModal(overlay) {
+		$('.modal--overlay').addClass('hidden').removeClass('open');
+		$('.home-modal.open').addClass('hidden').removeClass('open');
+		$('body').css('overflow', 'auto');
+	}
+
+	var $form = $('#sign-up'),
+		url = 'https://script.google.com/macros/s/AKfycbwVIoJvPnRT3eLdkldOD5iHAnWt2ZtKdaT30hWXhc7ioXLu_v6A/exec'
+
+	$('#sign-up').on('submit', function (e) {
+		console.log($form)
+		e.preventDefault();
+		var jqxhr = $.ajax({
+			url: url,
+			method: "GET",
+			dataType: "json",
+			data: $form.serializeObject()
+		}).success(
+			// do something
+			closeModal()
+			);
+	})
+
+// end modal sign up
+
+	// Select all links with hashes
+		$('a[href*="#"]')
+			// Remove links that don't actually link to anything
+			.not('[href="#"]')
+			.not('[href="#0"]')
+			.click(function (event) {
+				// On-page links
+				if (
+					location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+					&&
+					location.hostname == this.hostname
+				) {
+					// Figure out element to scroll to
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					// Does a scroll target exist?
+					if (target.length) {
+						// Only prevent default if animation is actually gonna happen
+						event.preventDefault();
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 1000, function () {
+							// Callback after animation
+							// Must change focus!
+							var $target = $(target);
+							$target.focus();
+							if ($target.is(":focus")) { // Checking if the target was focused
+								return false;
+							} else {
+								$target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+								$target.focus(); // Set focus again
+							};
+						});
+					}
+				}
+			});
+</script>
