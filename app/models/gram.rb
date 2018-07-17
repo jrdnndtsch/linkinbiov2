@@ -5,11 +5,12 @@ class Gram < ApplicationRecord
   scope :all_selected, -> { where( selected: true ) }
   scope :most_recent, -> { order('insta_posted_date DESC') }
   scope :least_recent, -> { order('insta_posted_date ASC') }
+  scope :owned_by_user, -> (current_user_id) {where(user_id: current_user_id)}
   validates :slug, presence: true
   validates :slug, uniqueness: true
 
   
-  
+ 
 
   extend FriendlyId
   friendly_id :friendly_slug, use: :slugged

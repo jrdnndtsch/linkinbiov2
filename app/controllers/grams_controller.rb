@@ -1,13 +1,15 @@
 class GramsController < ApplicationController
   before_action :set_gram, only: [:show, :edit, :update, :destroy, :remove]
+  before_action :validate_user_on_gram, only: [:show, :edit, :update, :destroy, :remove]
+  before_action :validate_insta_setup
   before_action :authenticate_user!
   # GET /grams
   # GET /grams.json
   def index
     filter = params['filter_grams'].present? ? params['filter_grams'] : 'all_selected'
     order = params['order_grams'].present? ? params['order_grams'] : 'most_recent'
-    @current_user_grams =  Gram.where(user_id: current_user.id, selected: true)
-    @grams = Gram.where(user_id: current_user.id).send(filter).send(order)
+    @current_user_grams =  Gram.owned_by_user(current_user.id).try(:all_selected)
+    @grams = Gram.owned_by_user(current_user.id).send(filter).send(order)
   end
 
   # GET /grams/1
@@ -134,6 +136,19 @@ class GramsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_gram
       @gram = Gram.friendly.find(params[:id])
+    end
+
+    def validate_user_on_gram
+      if current_user != Gram.find(params[:id]).user
+        redirect_to root_path
+      end
+    end
+
+    def validate_insta_setup
+      if !current_user.insta_client_token
+        # redirect_to edit_user_registration_path(current_user)
+        redirect_to edit_user_registration_path(current_user), notice: 'Please contact admin to set up your instagram account' 
+      end     
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
