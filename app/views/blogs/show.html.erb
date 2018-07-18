@@ -1,5 +1,9 @@
 <div class="gram-single wrapper--small">
-    <img src="<%= @gram.image_url%>" alt="">
+    <% if @gram.stored_image.present? %>
+        <%= image_tag  @gram.stored_image.url %> 
+    <% else %> 
+        <img src="<%= @gram.image_url%>" alt="">
+    <% end %> 
     <h2><%= @gram.post_title %></h2>
     <div class="gram-single-content">
         <%= @gram.blog_text.html_safe if @gram.blog_text.present? %>

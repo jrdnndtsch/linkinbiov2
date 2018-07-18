@@ -14,7 +14,11 @@
 </div>
 <div class="wrapper--flex">
   <div class="edit--single-img">
+  <% if @gram.stored_image.present? %>
+    <%= image_tag @gram.stored_image.url %>
+  <% else %>
     <img src="<%= @gram.image_url %>" alt="">
+  <% end %>
     <span class="link-action">
       <%= image_tag 'icons/calendar-icon.svg'%> 
       <span>Instagram post date: <%= @gram.insta_posted_date.strftime('%-d/%m/%y') if @gram.insta_posted_date.present? %></span>

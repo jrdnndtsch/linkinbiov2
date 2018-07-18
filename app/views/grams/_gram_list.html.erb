@@ -1,7 +1,11 @@
 <% @grams.each do |gram|%>
     <li>
         <span>
-            <img src="<%= gram.image_url %>" alt="">
+            <% if gram.stored_image.present? %>
+                <%= image_tag  gram.stored_image.url %>
+            <% else %>
+                <img src="<%= gram.image_url %>" alt="">
+            <% end %>
         </span>
         <span>
             <%= gram.campaign_name if gram.campaign_name.present? %>
