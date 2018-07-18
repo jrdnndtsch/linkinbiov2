@@ -139,7 +139,7 @@ class GramsController < ApplicationController
     end
 
     def validate_user_on_gram
-      if current_user != Gram.find(params[:id]).user
+      if current_user != Gram.friendly.find(params[:id]).user
         redirect_to root_path
       end
     end
