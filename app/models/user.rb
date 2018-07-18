@@ -38,7 +38,9 @@ class User < ApplicationRecord
       if !Gram.where(original_gram_id: g.id).present?
         created_time = Time.at(g.created_time.to_i)
         slug = SecureRandom.hex(10)
-        self.grams.create(image_url: g.images.standard_resolution.url, insta_posted_date: created_time, original_gram_id: g.id, slug: slug)
+        gram = self.grams.create(image_url: g.images.standard_resolution.url, insta_posted_date: created_time, original_gram_id: g.id, slug: slug)
+        gram.stored_image = URI.parse(g.images.standard_resolution.url).open
+        gram.save
       end   
     end
   end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180404165817) do
+ActiveRecord::Schema.define(version: 20180718122732) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,16 +32,20 @@ ActiveRecord::Schema.define(version: 20180404165817) do
     t.string   "link"
     t.text     "blog_text"
     t.string   "post_type"
-    t.boolean  "published",         default: false
+    t.boolean  "published",                 default: false
     t.datetime "insta_posted_date"
     t.integer  "user_id"
-    t.datetime "created_at",                        null: false
-    t.datetime "updated_at",                        null: false
-    t.boolean  "selected",          default: false
+    t.datetime "created_at",                                null: false
+    t.datetime "updated_at",                                null: false
+    t.boolean  "selected",                  default: false
     t.string   "campaign_name"
     t.string   "post_title"
     t.string   "original_gram_id"
     t.string   "slug"
+    t.string   "stored_image_file_name"
+    t.string   "stored_image_content_type"
+    t.integer  "stored_image_file_size"
+    t.datetime "stored_image_updated_at"
     t.index ["user_id"], name: "index_grams_on_user_id", using: :btree
   end
 

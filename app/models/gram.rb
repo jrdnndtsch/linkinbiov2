@@ -1,5 +1,9 @@
 class Gram < ApplicationRecord
   belongs_to :user
+
+  has_attached_file :stored_image, styles: { medium: "200x200>"}, default_url: "/images/:style/missing.png"
+    validates_attachment_content_type :stored_image, content_type: /\Aimage\/.*\z/
+    
   scope :published, -> { where( published: true, selected: true ) }
   scope :draft, -> { where( published: false, selected: true ) }
   scope :all_selected, -> { where( selected: true ) }

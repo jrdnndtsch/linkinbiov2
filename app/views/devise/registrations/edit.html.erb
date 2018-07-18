@@ -1,5 +1,7 @@
+ 
 <div class="profile-container wrapper--flex">
   <%= render 'profile_sidebar'%>
+  
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
     <%= devise_error_messages! %>
     <div class="profile tab-content active" id="profile-info">
@@ -18,6 +20,7 @@
           <%= f.email_field :email, disabled: true %>
         </div>
       </section>
+     
       <section>
         <h2 class="title">Delete Account</h2>
         <p>Want to part ways forever?</p>
@@ -53,4 +56,18 @@
         
     </div>
   <% end %>
+<section>
+        <form action="/charge/create" method="POST">
+          <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_qbsr3qbwRhzLL0EIzNPuezux"
+            data-name="Linkinbio"
+            data-description="Monthly Recurring Payment"
+            data-amount="1000"
+            data-label="Pay">
+          </script>
+        </form>
+      
+      </section>
 </div>
+

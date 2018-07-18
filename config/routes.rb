@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post 'charge/create'
+
   resources :grams
   devise_for :users
   root 'pages#home'
