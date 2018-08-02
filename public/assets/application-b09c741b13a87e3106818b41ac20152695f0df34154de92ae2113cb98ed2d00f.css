@@ -1,0 +1,5606 @@
+/* line 3, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+html {
+  font-size: 62.5%;
+}
+
+/* line 5, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+body {
+  color: #414C66;
+  padding-bottom: 60px;
+}
+
+/* line 8, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 36, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xxl {
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 38, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xl {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.8rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 40, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-lg {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1.3px;
+  font-weight: 400;
+}
+
+/* line 42, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-md, input[type="text"],
+input[type="email"],
+input[type="password"], input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+}
+
+/* line 44, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-sm, label, .field-with-label label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 46, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-sm-bold {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+/* line 48, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xs, label + em, input + a, .field-with-label p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 50, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xxs {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 53, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xxl {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 6.4rem;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+}
+
+/* line 55, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xl {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 6.4rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 57, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-lg {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 59, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-md {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 3.8rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 61, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-sm {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+}
+
+/* line 63, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xs {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 65, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xxs {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 72, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* line 76, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper--flex {
+  display: flex;
+}
+
+/* line 78, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper--small {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 736px;
+}
+
+/* line 83, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.bg-dark {
+  background: #F0F0F5;
+}
+
+/* line 86, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.full-page--center-content {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 92, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.full-page--top-align {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* line 97, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.tab-content {
+  display: none;
+}
+
+/* line 99, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.tab-content.active {
+  display: block;
+}
+
+/* line 104, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.hidden {
+  display: none;
+}
+
+/* line 106, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.center-content {
+  text-align: center;
+}
+
+/* line 108, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.flex {
+  display: flex;
+}
+
+/* line 116, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 2px solid #D5D5DE;
+  border-radius: 3px;
+  padding: 14px 24px;
+  width: 100%;
+  color: #D5D5DE;
+  line-height: 24px;
+}
+/* line 126, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #D5D5DE;
+}
+
+/* line 130, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+label {
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* line 134, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+label + em {
+  color: #878FA1;
+  font-style: normal;
+  margin: -14px 0 16px;
+  display: block;
+}
+
+/* line 140, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input + label {
+  margin-top: 48px;
+}
+
+/* line 142, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input + a {
+  margin-top: 16px;
+  letter-spacing: 1;
+  color: #878FA1;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+/* line 151, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.field-with-label label {
+  margin-bottom: 4px;
+}
+/* line 154, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.field-with-label p {
+  color: #878FA1;
+  margin: 0 0 16px;
+}
+/* line 3, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_check_toggle.scss */
+.published-checkbox + label {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: #D8D8D8;
+  width: 48px;
+  height: 18px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  margin: 0 0 0 12px;
+}
+/* line 15, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_check_toggle.scss */
+.published-checkbox + label:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #C5E88E;
+  border-radius: 100px;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9) 0.1s;
+  transform: translateZ(0) scale(0);
+}
+/* line 28, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_check_toggle.scss */
+.published-checkbox + label:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: block;
+  height: 10px;
+  width: 22px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transform: translateZ(0) translateX(0);
+}
+
+/* line 43, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_check_toggle.scss */
+input[type="checkbox"]:checked + label {
+  background: #C5E88E;
+}
+/* line 45, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_check_toggle.scss */
+input[type="checkbox"]:checked + label:after {
+  left: calc(100% - 26px);
+  transform: translateZ(0);
+}
+
+/* line 51, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_check_toggle.scss */
+.published-checkbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+}
+/* line 3, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+html {
+  font-size: 62.5%;
+}
+
+/* line 5, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+body {
+  color: #414C66;
+  padding-bottom: 60px;
+}
+
+/* line 8, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 36, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xxl {
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 38, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xl {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.8rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 40, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-lg {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1.3px;
+  font-weight: 400;
+}
+
+/* line 42, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-md, input[type="text"],
+input[type="email"],
+input[type="password"], input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder, .profile-container .username {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+}
+
+/* line 44, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-sm, label, .field-with-label label, .button, .button--secondary, .button--radio label, .button--light, .button--light-small, .link, .nav-main, .nav-main--links a, .profile-container .title, .profile-container p, .profile-sidebar ul {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 46, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-sm-bold {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+/* line 48, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xs, label + em, input + a, .field-with-label p, .link-action, .modal--action, .label--small, .form-element label + p, .nav-main--links > ul > li > a, .nav-main--links > ul .sub-nav a, .dashboard--gram-list li > span:nth-of-type(2), .dashboard--gram-list-actions form > div label, .dashboard--gram-list-actions select, .dashboard--gram-list .actions a, .dashboard--gram-list .publishing span:first-of-type, .profile-container .action-note, .profile-password a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 50, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xxs, .dashboard--gram-list .publishing span:last-of-type {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 53, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xxl, .dashboard--empty h2 {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 6.4rem;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+}
+
+/* line 55, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xl {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 6.4rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 57, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-lg {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 59, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-md, .modal h2, .modal-large h2, .gram-single h2 {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 3.8rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 61, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-sm, .form-element label {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+}
+
+/* line 63, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xs, .button--radio label, .modal-large h2, .dashboard--empty p, .blog-header h2, .profile-sidebar h2 {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 65, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xxs, a.site-main-link, .gram-grid-blog .title span {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 72, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* line 76, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper--flex {
+  display: flex;
+}
+
+/* line 78, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper--small {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 736px;
+}
+
+/* line 83, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.bg-dark {
+  background: #F0F0F5;
+}
+
+/* line 86, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.full-page--center-content {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 92, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.full-page--top-align {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* line 97, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.tab-content {
+  display: none;
+}
+
+/* line 99, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.tab-content.active {
+  display: block;
+}
+
+/* line 104, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.hidden {
+  display: none;
+}
+
+/* line 106, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.center-content {
+  text-align: center;
+}
+
+/* line 108, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.flex {
+  display: flex;
+}
+
+/* line 116, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 2px solid #D5D5DE;
+  border-radius: 3px;
+  padding: 14px 24px;
+  width: 100%;
+  color: #D5D5DE;
+  line-height: 24px;
+}
+/* line 126, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #D5D5DE;
+}
+
+/* line 130, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+label {
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* line 134, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+label + em {
+  color: #878FA1;
+  font-style: normal;
+  margin: -14px 0 16px;
+  display: block;
+}
+
+/* line 140, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input + label {
+  margin-top: 48px;
+}
+
+/* line 142, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input + a {
+  margin-top: 16px;
+  letter-spacing: 1;
+  color: #878FA1;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+/* line 151, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.field-with-label label {
+  margin-bottom: 4px;
+}
+/* line 154, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.field-with-label p {
+  color: #878FA1;
+  margin: 0 0 16px;
+}
+
+/* line 15, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button {
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  background: #414C66;
+  color: #D5D5DE;
+  padding: 8px 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 18, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--secondary {
+  border-radius: 3px;
+  border: none;
+  background: #F0F0F5;
+  color: #414C66;
+  padding: 8px 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 20, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--with-icon {
+  display: inline-flex;
+  align-items: center;
+}
+/* line 23, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--with-icon img {
+  margin-right: 8px;
+}
+/* line 27, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--radio label {
+  border-radius: 3px;
+  border: none;
+  background: #F0F0F5;
+  color: #414C66;
+  padding: 16px 24px;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+/* line 33, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--radio label span {
+  margin-left: 16px;
+}
+/* line 35, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--radio label img {
+  width: 28px;
+}
+/* line 37, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--radio label + input[type=radio] {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  visibility: hidden;
+}
+
+/* line 42, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--radio + .button--radio {
+  margin-left: 56px;
+}
+
+/* line 45, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--light {
+  border-radius: 3px;
+  border: none;
+  background: #F0F0F5;
+  color: #414C66;
+  padding: 18px 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 47, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--light-small {
+  border-radius: 3px;
+  border: none;
+  background: #F0F0F5;
+  color: #414C66;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 52, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button-group {
+  display: flex;
+  align-items: center;
+}
+/* line 55, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button-group > div {
+  margin-right: 24px;
+}
+/* line 57, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button-group > div:last-of-type {
+  margin-right: 0;
+}
+
+/* line 61, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.link {
+  color: #414C66;
+  text-decoration: none;
+}
+
+/* line 66, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.link + .button {
+  margin-left: 24px;
+}
+
+/* line 69, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.link-action, .modal--action {
+  text-decoration: none;
+  color: #878FA1;
+  display: flex;
+  align-items: flex-center;
+}
+/* line 75, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.link-action img + span, .modal--action img + span {
+  margin-left: 8px;
+}
+/* line 77, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.link-action span + img, .modal--action span + img {
+  margin-left: 8px;
+}
+
+/* line 79, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.actions-menu {
+  display: flex;
+  align-items: center;
+}
+/* line 82, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.actions-menu .link-action, .actions-menu .modal--action {
+  margin-right: 24px;
+}
+/* line 84, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.actions-menu .link-action:last-of-type, .actions-menu .modal--action:last-of-type {
+  margin-right: 0;
+}
+
+/* line 86, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 56px;
+}
+
+/* line 92, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.modal, .modal-large {
+  max-width: 586px;
+  width: 96%;
+  box-shadow: 0 0 44px rgba(65, 76, 102, 0.14);
+  background: #FFFFFF;
+  padding: 40px 80px 56px;
+  position: relative;
+}
+/* line 99, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.modal h2, .modal-large h2 {
+  text-align: center;
+  margin: 0 0 56px;
+}
+
+/* line 103, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.modal-large {
+  max-width: 1175px;
+  margin: 48px 2%;
+}
+/* line 107, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.modal-large h2 {
+  margin-bottom: 40px;
+}
+
+/* line 110, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.modal--close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+/* line 114, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.modal--action {
+  position: absolute;
+  top: 16px;
+  left: 30px;
+}
+
+/* line 122, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.label--small, .form-element label + p {
+  color: #878FA1;
+}
+
+/* line 128, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.form-element label + p {
+  margin: -8px 0 16px 0;
+}
+
+/* line 134, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main {
+  background: #414C66;
+  color: #D5D5DE;
+  padding: 6px 0;
+}
+/* line 139, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main a {
+  color: #D5D5DE;
+  text-decoration: none;
+}
+/* line 142, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--title {
+  font-size: 2.1rem;
+}
+/* line 145, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 149, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links svg g {
+  fill: #D5D5DE;
+}
+/* line 151, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links a:hover {
+  color: white;
+}
+/* line 153, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links a:hover svg g {
+  fill: white !important;
+}
+/* line 155, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links .nav-parent:hover .sub-nav {
+  display: block;
+}
+/* line 157, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul {
+  display: flex;
+  align-items: center;
+}
+/* line 160, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul > li {
+  position: relative;
+}
+/* line 162, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul > li > a {
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+}
+/* line 167, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul > li > a span {
+  display: inline-block;
+  line-height: 14px;
+}
+/* line 170, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul > li > a span.icon + span {
+  margin-left: 8px;
+}
+/* line 172, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul > li > a span + span.icon {
+  margin-left: 16px;
+  width: 32px;
+}
+/* line 175, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul .sub-nav {
+  position: absolute;
+  background: #414C66;
+  padding: 0 24px;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+  min-width: 180px;
+  display: none;
+}
+/* line 185, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul .sub-nav a {
+  padding: 16px 0;
+  display: block;
+  border-bottom: 1px solid #D5D5DE;
+}
+/* line 191, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul .sub-nav li:last-of-type a {
+  border-bottom: none;
+}
+/* line 195, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 203, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--empty {
+  text-align: center;
+}
+/* line 205, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--empty h2 {
+  margin: 160px 0 16px;
+}
+/* line 208, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--empty p {
+  margin: 0 0 48px;
+}
+/* line 211, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list {
+  margin: 0;
+  padding: 0;
+}
+/* line 214, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list li {
+  display: flex;
+  padding: 24px 0;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #D5D5DE;
+}
+/* line 220, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list li:last-of-type {
+  border-bottom: none;
+}
+/* line 223, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list li > span:nth-of-type(1) {
+  width: 80px;
+}
+/* line 225, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list li > span:nth-of-type(2) {
+  flex-basis: 350px;
+}
+/* line 228, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list li > span.actions {
+  flex-basis: 420px;
+  display: flex;
+  justify-content: center;
+}
+/* line 232, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list li > span.actions span {
+  margin-right: 24px;
+}
+/* line 234, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list li > span.actions span:last-of-type {
+  margin-right: 0;
+}
+/* line 236, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list li > span:nth-of-type(4) {
+  flex-basis: 200px;
+}
+/* line 238, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list-actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 48px 0;
+}
+/* line 242, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list-actions form {
+  display: flex;
+}
+/* line 244, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list-actions form > div {
+  display: flex;
+  align-items: center;
+  margin-right: 14px;
+}
+/* line 248, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list-actions form > div:last-of-type {
+  margin-right: 0;
+}
+/* line 250, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list-actions form > div label {
+  margin: 0;
+  color: #878FA1;
+  margin-right: 8px;
+}
+/* line 256, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list-actions select {
+  background: #F0F0F5;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  color: #414C66;
+  padding: 7px;
+  min-width: 135px;
+}
+/* line 268, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list .actions a {
+  text-decoration: none;
+  color: #878FA1;
+}
+/* line 272, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list .publishing {
+  display: flex;
+  justify-content: flex-end;
+  color: #878FA1;
+  align-items: center;
+}
+/* line 277, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list .publishing span {
+  margin-left: 12px;
+}
+/* line 279, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list .publishing span:first-of-type {
+  position: relative;
+  text-align: right;
+}
+/* line 283, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list .publishing span:first-of-type:after {
+  content: "Published";
+  height: 1px;
+  overflow: hidden;
+  visibility: hidden;
+  color: transparent;
+  display: block;
+}
+
+/* line 298, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 303, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid > div {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 313, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid > div:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+/* line 318, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid > div img {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+/* line 326, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid-new {
+  margin: 40px 0;
+}
+/* line 328, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid-new > div {
+  width: calc((100% - (24px * 4))/ 5);
+  margin-right: 24px;
+}
+/* line 331, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid-new > div:nth-of-type(5n + 5) {
+  margin-right: 0;
+}
+
+/* line 337, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.create-campaign > .wrapper--flex {
+  margin-top: 120px;
+}
+/* line 339, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.create-campaign > .wrapper--flex > div:first-of-type {
+  flex-basis: 336px;
+}
+/* line 341, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.create-campaign > .wrapper--flex > div:last-of-type {
+  flex-grow: 1;
+  padding: 20px 0 20px 80px;
+}
+/* line 344, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.create-campaign .form-element {
+  margin-bottom: 56px;
+}
+
+/* line 346, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.modal-large.create-campaign {
+  padding-top: 48px;
+}
+
+/* line 350, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #B3B8C3;
+  padding: 48px 0 8px;
+  margin-bottom: 64px;
+}
+/* line 357, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .title > div:first-of-type {
+  flex-basis: 300px;
+}
+/* line 359, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .title input {
+  border: none;
+  color: #414C66;
+  padding: 0;
+}
+/* line 364, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .title form img {
+  width: 20px;
+  margin-left: 12px;
+}
+/* line 368, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .wrapper--flex > div:first-of-type {
+  flex-basis: 276px;
+  flex-shrink: 1;
+  margin-right: 176px;
+}
+/* line 372, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .wrapper--flex > div:last-of-type {
+  flex-grow: 1;
+}
+/* line 375, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .edit--single-img > img {
+  margin-bottom: 24px;
+}
+/* line 377, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .edit--single-img .link-action, .edit--single .edit--single-img .modal--action {
+  margin-bottom: 24px;
+}
+/* line 380, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .edit--single-content .form-element {
+  margin-bottom: 48px;
+}
+/* line 382, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .edit--single-actions {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 391, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.cke_editor_gram_blog_text {
+  border-radius: 3px !important;
+  border-color: #D5D5DE !important;
+}
+
+/* line 395, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.cke_top {
+  border-color: #D5D5DE !important;
+}
+
+/* line 398, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.cke_bottom {
+  background: white !important;
+  border-top: none !important;
+}
+
+/* line 405, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.blog-header {
+  text-align: center;
+  padding: 24px 0 48px;
+  text-decoration: none;
+  color: #414C66;
+  display: block;
+}
+@media screen and (max-width: 499px) {
+  /* line 405, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .blog-header {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+  }
+}
+/* line 415, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.blog-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 499px) {
+  /* line 415, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .blog-header img {
+    width: 60px;
+    height: 60px;
+  }
+}
+/* line 422, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.blog-header h2 {
+  margin: 16px 0 0;
+}
+@media screen and (max-width: 499px) {
+  /* line 422, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .blog-header h2 {
+    font-size: 1.6rem;
+    margin: 0 0 0 16px;
+  }
+}
+
+/* line 428, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+a.site-main-link {
+  text-decoration: none;
+  color: #414C66;
+  display: inline-block;
+  position: fixed;
+  left: 0;
+  transition: 0.3s all ease;
+  z-index: 100;
+}
+/* line 437, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+a.site-main-link:hover {
+  background: #F0F0F5;
+}
+@media screen and (min-width: 1170px) {
+  /* line 428, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  a.site-main-link {
+    top: 24px;
+    padding: 16px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 428, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  a.site-main-link {
+    top: 24px;
+    padding: 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 428, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  a.site-main-link {
+    top: 24px;
+    padding: 16px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 428, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  a.site-main-link {
+    top: 24px;
+    padding: 16px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 428, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  a.site-main-link {
+    position: fixed;
+    bottom: 0;
+    padding: 12px 16px;
+    z-index: 100;
+    background: #F0F0F5;
+  }
+}
+
+/* line 450, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid-blog > div {
+  margin-right: 24px;
+}
+@media screen and (min-width: 1170px) {
+  /* line 450, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div {
+    width: calc((100% - (24px * 2))/ 3);
+  }
+  /* line 454, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div:nth-of-type(3n + 3) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 450, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div {
+    width: calc((100% - (24px * 2))/ 3);
+  }
+  /* line 454, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div:nth-of-type(3n + 3) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 450, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div {
+    width: calc((100% - 24px) / 2);
+  }
+  /* line 458, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div:nth-of-type(2n + 2) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 450, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div {
+    width: calc((100% - 24px) / 2);
+  }
+  /* line 458, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div:nth-of-type(2n + 2) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 450, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+/* line 463, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid-blog:after {
+  content: "";
+  position: fixed;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
+  width: 100%;
+  height: 128px;
+  bottom: 0;
+  left: 0;
+  display: block;
+  z-index: 10;
+  pointer-events: none;
+}
+/* line 474, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid-blog .title {
+  z-index: 10;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 40%, rgba(0, 0, 0, 0.7) 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 0.5s all ease;
+  opacity: 1;
+}
+/* line 484, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid-blog .title span {
+  color: #D5D5DE;
+  position: absolute;
+  top: calc(100% - (34px + 16px));
+  left: 16px;
+  right: 16px;
+  width: calc(100% - 32px);
+  line-height: 24px;
+}
+/* line 493, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid-blog .title:hover {
+  opacity: 0;
+}
+
+/* line 496, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-single img {
+  max-width: 343px;
+  width: 80%;
+  display: block;
+  margin: 64px auto 0;
+}
+/* line 501, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-single h2 {
+  font-weight: 900;
+  text-align: center;
+  margin: 80px 0 46px;
+}
+/* line 506, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-single .gram-single-content {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-family: "Source Sans Pro", sans-serif;
+}
+/* line 510, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-single .gram-single-content p + p {
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+/* line 513, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-single .gram-single-content a {
+  color: #414C66;
+}
+/* line 515, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-single .gram-single-content blockquote {
+  font-size: 2.5rem;
+  border-left: 8px solid #D5D5DE;
+  padding: 0 32px;
+  margin: 32px 0;
+}
+/* line 520, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-single .gram-single-content blockquote p {
+  margin: 0;
+}
+
+/* line 523, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-container section + section {
+  margin-top: 56px;
+}
+/* line 525, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-container .title {
+  color: #878FA1;
+  border-bottom: 1px solid #D5D5DE;
+  margin: 0 0 24px;
+  padding-bottom: 8px;
+}
+/* line 531, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-container .profile-form-container {
+  width: calc(100% - 336px);
+  max-width: 896px;
+  padding: 48px 64px;
+}
+/* line 535, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-container img {
+  width: 124px;
+}
+/* line 537, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-container p {
+  margin: 0;
+}
+/* line 540, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-container p + .button {
+  margin-top: 24px;
+}
+/* line 542, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-container .username {
+  font-weight: 500;
+  margin: 24px 0;
+}
+/* line 546, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-container .action-note {
+  margin: 16px 0 0;
+  color: #878FA1;
+}
+
+/* line 551, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.enter-token .field {
+  margin-bottom: 48px;
+}
+/* line 553, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.enter-token a {
+  color: #414C66;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* line 557, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.show-email, .pay-subscription {
+  margin-top: 56px;
+}
+
+/* line 560, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-password .field {
+  margin-bottom: 48px;
+}
+/* line 562, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-password a {
+  color: #878FA1;
+  text-decoration: none;
+  margin-left: 24px;
+  flex-grow: 1;
+}
+/* line 568, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-password .actions {
+  display: flex;
+  align-items: center;
+}
+
+/* line 572, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-sidebar {
+  min-height: calc(100vh - 66px);
+  background: #878FA1;
+  width: 336px;
+  color: #F0F0F5;
+}
+/* line 577, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-sidebar h2 {
+  padding: 48px 36px 24px;
+  margin: 0;
+}
+/* line 581, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 586, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-sidebar ul li {
+  padding: 12px 36px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* line 591, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-sidebar ul li img {
+  margin-right: 8px;
+  width: 18px;
+}
+/* line 594, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-sidebar ul li.active {
+  background: #65708A;
+}
+/* line 3, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+html {
+  font-size: 62.5%;
+}
+
+/* line 5, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+body {
+  color: #414C66;
+  padding-bottom: 60px;
+}
+
+/* line 8, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 36, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xxl {
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 38, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xl {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.8rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 40, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-lg {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1.3px;
+  font-weight: 400;
+}
+
+/* line 42, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-md, input[type="text"],
+input[type="email"],
+input[type="password"], input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+}
+
+/* line 44, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-sm, label, .field-with-label label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 46, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-sm-bold {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+/* line 48, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xs, label + em, input + a, .field-with-label p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 50, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xxs {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 53, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xxl {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 6.4rem;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+}
+
+/* line 55, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xl {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 6.4rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 57, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-lg {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 59, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-md {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 3.8rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 61, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-sm {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+}
+
+/* line 63, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xs {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 65, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xxs {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 72, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* line 76, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper--flex {
+  display: flex;
+}
+
+/* line 78, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper--small {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 736px;
+}
+
+/* line 83, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.bg-dark {
+  background: #F0F0F5;
+}
+
+/* line 86, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.full-page--center-content {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 92, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.full-page--top-align {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* line 97, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.tab-content {
+  display: none;
+}
+
+/* line 99, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.tab-content.active {
+  display: block;
+}
+
+/* line 104, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.hidden {
+  display: none;
+}
+
+/* line 106, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.center-content {
+  text-align: center;
+}
+
+/* line 108, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.flex {
+  display: flex;
+}
+
+/* line 116, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 2px solid #D5D5DE;
+  border-radius: 3px;
+  padding: 14px 24px;
+  width: 100%;
+  color: #D5D5DE;
+  line-height: 24px;
+}
+/* line 126, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #D5D5DE;
+}
+
+/* line 130, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+label {
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* line 134, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+label + em {
+  color: #878FA1;
+  font-style: normal;
+  margin: -14px 0 16px;
+  display: block;
+}
+
+/* line 140, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input + label {
+  margin-top: 48px;
+}
+
+/* line 142, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input + a {
+  margin-top: 16px;
+  letter-spacing: 1;
+  color: #878FA1;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+/* line 151, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.field-with-label label {
+  margin-bottom: 4px;
+}
+/* line 154, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.field-with-label p {
+  color: #878FA1;
+  margin: 0 0 16px;
+}
+
+/* line 4, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.home-layout {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+}
+
+/* line 6, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 11, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.nav-home ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+/* line 15, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.nav-home li {
+  margin-right: 30px;
+}
+
+/* line 18, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.above-fold {
+  max-height: 950px;
+  overflow: hidden;
+}
+@media screen and (max-width: 499px) {
+  /* line 18, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .above-fold {
+    max-height: 750px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 18, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .above-fold {
+    max-height: 750px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 18, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .above-fold {
+    max-height: 750px;
+  }
+}
+
+/* line 24, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.nav-home {
+  padding-top: 80px;
+  margin-right: 250px;
+  color: #414C66;
+}
+@media screen and (max-width: 499px) {
+  /* line 24, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .nav-home {
+    padding-top: 30px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 24, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .nav-home {
+    padding-top: 30px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 24, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .nav-home {
+    padding-top: 30px;
+    margin-right: 0;
+  }
+}
+/* line 31, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.nav-home ul {
+  margin: 0;
+}
+/* line 33, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.nav-home a {
+  color: #414C66;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* line 39, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* line 46, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.content {
+  margin: 72px 0;
+  z-index: 2;
+}
+/* line 49, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.content a {
+  display: block;
+  color: #878FA1;
+  font-size: 20px;
+  margin: 38px auto;
+  text-decoration: none;
+}
+/* line 55, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.content a img {
+  padding: 0 8px;
+}
+/* line 57, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.content .subtitle {
+  font-size: 38px;
+  color: #414C66;
+  margin: 0 auto 48px auto;
+  font-weight: lighter;
+}
+@media screen and (max-width: 499px) {
+  /* line 57, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .content .subtitle {
+    font-size: 28px;
+    color: #414C66;
+    margin: 0 auto 48px auto;
+    font-weight: lighter;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 57, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .content .subtitle {
+    font-size: 28px;
+    color: #414C66;
+    margin: 0 auto 48px auto;
+    font-weight: lighter;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 57, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .content .subtitle {
+    font-size: 28px;
+    color: #414C66;
+    margin: 0 auto 48px auto;
+    font-weight: lighter;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 46, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .content {
+    margin: 40px 0 68px 0;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 46, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .content {
+    margin: 40px 0 68px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 46, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .content {
+    margin: 40px 0 68px 0;
+  }
+}
+
+/* line 70, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.button.sign-up {
+  display: inline-block;
+  color: #D8D8D8;
+  background-color: #414C66;
+  border: 1px solid #414C66;
+  padding: 10px 42px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-appearance: none;
+}
+/* line 81, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.button.sign-up:hover {
+  color: #414C66;
+  background-color: #D8D8D8;
+  border-color: #D8D8D8;
+}
+
+/* line 86, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+h1.home-title {
+  text-align: center;
+  width: 100%;
+  font-size: 64px;
+  font-weight: bold;
+  color: #414C66;
+  margin: 0;
+  margin-bottom: 72px;
+}
+@media screen and (max-width: 499px) {
+  /* line 86, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  h1.home-title {
+    margin-bottom: 38px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 86, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  h1.home-title {
+    margin-bottom: 38px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 86, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  h1.home-title {
+    margin-bottom: 38px;
+  }
+}
+
+/* line 97, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+h2 {
+  font-size: 38px;
+  font-weight: normal;
+  margin: 0 0 36px 0;
+}
+@media screen and (max-width: 499px) {
+  /* line 97, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  h2 {
+    margin: 0 0 16px 0;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 97, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  h2 {
+    margin: 0 0 16px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 97, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  h2 {
+    margin: 0 0 16px 0;
+  }
+}
+
+/* line 104, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.home-modal p {
+  font-size: 1.4rem;
+}
+
+/* line 107, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.setup-instructions {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  padding: 80px 0;
+}
+/* line 110, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.setup-instructions section {
+  padding-bottom: 40px;
+}
+/* line 112, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.setup-instructions img {
+  width: 100%;
+  max-width: 650px;
+  display: block;
+}
+/* line 116, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.setup-instructions h1 {
+  font-size: 2.8rem;
+  margin-bottom: 80px;
+}
+/* line 119, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.setup-instructions h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+/* line 122, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.setup-instructions p, .setup-instructions li {
+  font-size: 1.6rem;
+}
+/* line 124, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.setup-instructions li {
+  padding-bottom: 14px;
+}
+/* line 126, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.setup-instructions strong {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+/*PHOTO GRID */
+/* line 132, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.grid-wrapper {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 90px 90px 90px 90px 90px 90px;
+  width: 1050px;
+  transition: all 1s ease;
+  transition: all 0.5s;
+  margin: 0 auto;
+}
+@media screen and (max-width: 499px) {
+  /* line 132, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .grid-wrapper {
+    margin-top: 0;
+    grid-template-rows: 25px 114px 25px 114px 25px 114px;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 132, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .grid-wrapper {
+    margin-top: 0;
+    grid-template-rows: 25px 114px 25px 114px 25px 114px;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 132, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .grid-wrapper {
+    margin-top: 0;
+    grid-template-rows: 25px 114px 25px 114px 25px 114px;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* line 148, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.hidden {
+  display: none;
+}
+
+/* line 151, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo {
+  grid-row: 3;
+  grid-column: 3;
+  position: relative;
+  transition: 1s;
+  opacity: 0;
+}
+@media screen and (max-width: 499px) {
+  /* line 151, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .photo {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 151, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .photo {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 151, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .photo {
+    width: 150px;
+  }
+}
+
+/* line 160, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+img {
+  max-width: 100%;
+  transition: all 2s;
+}
+
+/* line 164, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-1 {
+  grid-row: 3;
+  grid-column: 5;
+  opacity: 1;
+}
+
+/* line 169, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-2 {
+  grid-row: 2;
+  grid-column: 2;
+  opacity: 1;
+}
+
+/* line 174, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-3 {
+  grid-row: 1;
+  grid-column: 3;
+  opacity: 1;
+}
+
+/* line 179, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-4 {
+  grid-row: 2;
+  grid-column: 4;
+  opacity: 1;
+}
+
+/* line 184, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-5 {
+  grid-row: 3;
+  grid-column: 1;
+  opacity: 1;
+}
+
+/* line 189, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-6 {
+  grid-row: 4;
+  grid-column: 2;
+  opacity: 1;
+}
+
+/* line 194, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-7 {
+  grid-row: 3;
+  grid-column: 3;
+  opacity: 1;
+}
+
+/* line 199, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-8 {
+  grid-row: 4;
+  grid-column: 4;
+  opacity: 1;
+}
+
+/* line 204, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-9 {
+  grid-row: 5;
+  grid-column: 1;
+  opacity: 1;
+}
+
+/* line 209, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-10 {
+  grid-row: 5;
+  grid-column: 3;
+  opacity: 1;
+}
+
+/* line 214, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-11 {
+  grid-row: 6;
+  grid-column: 4;
+  opacity: 1;
+}
+
+/* line 219, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-12 {
+  grid-row: 6;
+  grid-column: 2;
+  opacity: 1;
+}
+
+/* line 224, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-13 {
+  grid-row: 5;
+  grid-column: 5;
+  opacity: 1;
+}
+
+/*FORM AND MODAL */
+/* line 231, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.form-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 235, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+form {
+  text-align: left;
+}
+
+/* line 238, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+fieldset {
+  border: none;
+}
+
+/* line 242, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.form-wrapper #sign-up input {
+  width: 100%;
+  padding: 16px 24px 16px 24px;
+  margin: 16px 0 48px 0;
+  font-size: 16px;
+  border: 1px solid #ddd;
+}
+@media screen and (max-width: 499px) {
+  /* line 242, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .form-wrapper #sign-up input {
+    margin: 16px 0;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 242, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .form-wrapper #sign-up input {
+    margin: 16px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 242, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .form-wrapper #sign-up input {
+    margin: 16px 0;
+  }
+}
+/* line 250, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.form-wrapper #sign-up label {
+  margin-top: 0;
+}
+
+/* line 253, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.home-modal {
+  position: fixed;
+  z-index: 100;
+  background: white;
+  padding: 40px 80px 56px 80px;
+  width: 586px;
+  max-width: 75%;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 499px) {
+  /* line 253, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .home-modal {
+    padding: 40px 40px 56px 40px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 253, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .home-modal {
+    padding: 40px 40px 56px 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 253, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .home-modal {
+    padding: 40px 40px 56px 40px;
+  }
+}
+/* line 263, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.home-modal p {
+  margin-bottom: 40px;
+}
+
+/* line 266, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.modal-relative {
+  position: relative;
+}
+
+/* line 269, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.home-modal .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* line 275, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.modal--overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 287, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.display {
+  background: #F0F0F5;
+  padding: 225px 138px;
+  color: #414C66;
+  position: relative;
+}
+@media screen and (max-width: 499px) {
+  /* line 287, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display {
+    padding: 60px 40px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 287, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display {
+    padding: 60px 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 287, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display {
+    padding: 60px 40px;
+  }
+}
+/* line 294, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.display .text {
+  width: 60%;
+  padding-right: 40px;
+}
+@media screen and (max-width: 499px) {
+  /* line 294, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 294, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 294, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .text {
+    width: 100%;
+  }
+}
+/* line 299, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.display .image {
+  width: 40%;
+}
+@media screen and (max-width: 499px) {
+  /* line 299, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .image {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 299, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .image {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 299, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .image {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+/* line 304, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.display .image img {
+  position: absolute;
+  right: 0;
+  top: 175px;
+  display: block;
+  width: 42%;
+}
+@media screen and (max-width: 499px) {
+  /* line 304, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .image img {
+    position: initial;
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 304, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .image img {
+    position: initial;
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 304, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .image img {
+    position: initial;
+    display: block;
+    width: 100%;
+  }
+}
+/* line 314, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.display h2 {
+  font-weight: bold;
+}
+/* line 316, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.display p {
+  font-size: 21px;
+  line-height: 32px;
+}
+/* line 319, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works {
+  max-width: 1190px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 245px;
+  color: #414C66;
+}
+
+@media screen and (max-width: 499px) {
+  /* line 328, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works {
+    padding-top: 115px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 328, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works {
+    padding-top: 115px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 328, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works {
+    padding-top: 115px;
+  }
+}
+/* line 331, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works h2 {
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* line 335, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works p {
+  font-size: 21px;
+  line-height: 32px;
+}
+/* line 338, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works .image {
+  width: 35%;
+}
+@media screen and (max-width: 499px) {
+  /* line 338, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .image {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 338, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .image {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 338, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .image {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+/* line 344, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works .text {
+  width: 65%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 499px) {
+  /* line 344, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 344, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 344, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .text {
+    width: 100%;
+  }
+}
+/* line 350, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works .text p {
+  margin: 0 60px 0 27px;
+}
+@media screen and (max-width: 499px) {
+  /* line 350, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .text p {
+    margin: 0 0 0 16px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 350, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .text p {
+    margin: 0 0 0 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 350, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .text p {
+    margin: 0 0 0 16px;
+  }
+}
+/* line 354, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works .steps .flex-wrapper {
+  margin-top: 75px;
+}
+/* line 357, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works .flip .text {
+  order: 2;
+}
+@media screen and (max-width: 499px) {
+  /* line 357, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .text {
+    order: 1;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 357, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .text {
+    order: 1;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 357, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .text {
+    order: 1;
+  }
+}
+/* line 361, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works .flip .text img {
+  padding-left: 40px;
+}
+@media screen and (max-width: 499px) {
+  /* line 361, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .text img {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 361, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .text img {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 361, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .text img {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 365, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .image {
+    order: 2;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 365, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .image {
+    order: 2;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 365, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .image {
+    order: 2;
+  }
+}
+/* line 368, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works .flip .image img {
+  width: 100%;
+}
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+b, strong {
+  font-weight: 700;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+sup {
+  top: -.5em;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+sub {
+  bottom: -.25em;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 2, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+/* line 2, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 2, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 2, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 2, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 2, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 2, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+body, figure {
+  margin: 0;
+}
+
+/* line 2, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 4, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 6, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 4, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/charge.scss */
+.charge-form {
+  margin-top: 20px;
+}
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+b, strong {
+  font-weight: 700;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+sup {
+  top: -.5em;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+sub {
+  bottom: -.25em;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 1, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 2, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+/* line 2, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 2, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 2, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 2, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 2, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 2, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+body, figure {
+  margin: 0;
+}
+
+/* line 2, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 4, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 6, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_normalize.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 3, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+html {
+  font-size: 62.5%;
+}
+
+/* line 5, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+body {
+  color: #414C66;
+  padding-bottom: 60px;
+}
+
+/* line 8, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 36, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xxl {
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 38, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xl {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.8rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 40, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-lg {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1.3px;
+  font-weight: 400;
+}
+
+/* line 42, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-md, input[type="text"],
+input[type="email"],
+input[type="password"], input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder, .profile-container .username {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+}
+
+/* line 44, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-sm, label, .field-with-label label, .button, .button--secondary, .button--radio label, .button--light, .button--light-small, .link, .nav-main, .nav-main--links a, .profile-container .title, .profile-container p, .profile-sidebar ul {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 46, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-sm-bold {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+/* line 48, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xs, label + em, input + a, .field-with-label p, .link-action, .modal--action, .label--small, .form-element label + p, .nav-main--links > ul > li > a, .nav-main--links > ul .sub-nav a, .dashboard--gram-list li > span:nth-of-type(2), .dashboard--gram-list-actions form > div label, .dashboard--gram-list-actions select, .dashboard--gram-list .actions a, .dashboard--gram-list .publishing span:first-of-type, .profile-container .action-note, .profile-password a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 50, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xxs, .dashboard--gram-list .publishing span:last-of-type {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 53, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xxl, .dashboard--empty h2 {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 6.4rem;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+}
+
+/* line 55, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xl {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 6.4rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 57, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-lg {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 59, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-md, .modal h2, .modal-large h2, .gram-single h2 {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 3.8rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 61, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-sm, .form-element label {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+}
+
+/* line 63, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xs, .button--radio label, .modal-large h2, .dashboard--empty p, .blog-header h2, .profile-sidebar h2 {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 65, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xxs, a.site-main-link, .gram-grid-blog .title span {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 72, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* line 76, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper--flex {
+  display: flex;
+}
+
+/* line 78, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper--small {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 736px;
+}
+
+/* line 83, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.bg-dark {
+  background: #F0F0F5;
+}
+
+/* line 86, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.full-page--center-content {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 92, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.full-page--top-align {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* line 97, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.tab-content {
+  display: none;
+}
+
+/* line 99, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.tab-content.active {
+  display: block;
+}
+
+/* line 104, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.hidden {
+  display: none;
+}
+
+/* line 106, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.center-content {
+  text-align: center;
+}
+
+/* line 108, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.flex {
+  display: flex;
+}
+
+/* line 116, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 2px solid #D5D5DE;
+  border-radius: 3px;
+  padding: 14px 24px;
+  width: 100%;
+  color: #D5D5DE;
+  line-height: 24px;
+}
+/* line 126, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #D5D5DE;
+}
+
+/* line 130, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+label {
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* line 134, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+label + em {
+  color: #878FA1;
+  font-style: normal;
+  margin: -14px 0 16px;
+  display: block;
+}
+
+/* line 140, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input + label {
+  margin-top: 48px;
+}
+
+/* line 142, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input + a {
+  margin-top: 16px;
+  letter-spacing: 1;
+  color: #878FA1;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+/* line 151, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.field-with-label label {
+  margin-bottom: 4px;
+}
+/* line 154, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.field-with-label p {
+  color: #878FA1;
+  margin: 0 0 16px;
+}
+
+/* line 3, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+html {
+  font-size: 62.5%;
+}
+
+/* line 5, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+body {
+  color: #414C66;
+  padding-bottom: 60px;
+}
+
+/* line 8, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 36, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xxl {
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 38, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xl {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.8rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 40, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-lg {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1.3px;
+  font-weight: 400;
+}
+
+/* line 42, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-md, input[type="text"],
+input[type="email"],
+input[type="password"], input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder, .profile-container .username {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+}
+
+/* line 44, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-sm, label, .field-with-label label, .button, .button--secondary, .button--radio label, .button--light, .button--light-small, .link, .nav-main, .nav-main--links a, .profile-container .title, .profile-container p, .profile-sidebar ul {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 46, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-sm-bold {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+/* line 48, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xs, label + em, input + a, .field-with-label p, .link-action, .modal--action, .label--small, .form-element label + p, .nav-main--links > ul > li > a, .nav-main--links > ul .sub-nav a, .dashboard--gram-list li > span:nth-of-type(2), .dashboard--gram-list-actions form > div label, .dashboard--gram-list-actions select, .dashboard--gram-list .actions a, .dashboard--gram-list .publishing span:first-of-type, .profile-container .action-note, .profile-password a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 50, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xxs, .dashboard--gram-list .publishing span:last-of-type {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 53, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xxl, .dashboard--empty h2 {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 6.4rem;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+}
+
+/* line 55, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xl {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 6.4rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 57, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-lg {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 59, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-md, .modal h2, .modal-large h2, .gram-single h2 {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 3.8rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 61, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-sm, .form-element label {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+}
+
+/* line 63, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xs, .button--radio label, .modal-large h2, .dashboard--empty p, .blog-header h2, .profile-sidebar h2 {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 65, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xxs, a.site-main-link, .gram-grid-blog .title span {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 72, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* line 76, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper--flex {
+  display: flex;
+}
+
+/* line 78, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper--small {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 736px;
+}
+
+/* line 83, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.bg-dark {
+  background: #F0F0F5;
+}
+
+/* line 86, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.full-page--center-content {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 92, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.full-page--top-align {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* line 97, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.tab-content {
+  display: none;
+}
+
+/* line 99, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.tab-content.active {
+  display: block;
+}
+
+/* line 104, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.hidden {
+  display: none;
+}
+
+/* line 106, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.center-content {
+  text-align: center;
+}
+
+/* line 108, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.flex {
+  display: flex;
+}
+
+/* line 116, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 2px solid #D5D5DE;
+  border-radius: 3px;
+  padding: 14px 24px;
+  width: 100%;
+  color: #D5D5DE;
+  line-height: 24px;
+}
+/* line 126, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #D5D5DE;
+}
+
+/* line 130, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+label {
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* line 134, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+label + em {
+  color: #878FA1;
+  font-style: normal;
+  margin: -14px 0 16px;
+  display: block;
+}
+
+/* line 140, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input + label {
+  margin-top: 48px;
+}
+
+/* line 142, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input + a {
+  margin-top: 16px;
+  letter-spacing: 1;
+  color: #878FA1;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+/* line 151, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.field-with-label label {
+  margin-bottom: 4px;
+}
+/* line 154, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.field-with-label p {
+  color: #878FA1;
+  margin: 0 0 16px;
+}
+
+/* line 15, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button {
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  background: #414C66;
+  color: #D5D5DE;
+  padding: 8px 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 18, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--secondary {
+  border-radius: 3px;
+  border: none;
+  background: #F0F0F5;
+  color: #414C66;
+  padding: 8px 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 20, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--with-icon {
+  display: inline-flex;
+  align-items: center;
+}
+/* line 23, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--with-icon img {
+  margin-right: 8px;
+}
+/* line 27, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--radio label {
+  border-radius: 3px;
+  border: none;
+  background: #F0F0F5;
+  color: #414C66;
+  padding: 16px 24px;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+/* line 33, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--radio label span {
+  margin-left: 16px;
+}
+/* line 35, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--radio label img {
+  width: 28px;
+}
+/* line 37, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--radio label + input[type=radio] {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  visibility: hidden;
+}
+
+/* line 42, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--radio + .button--radio {
+  margin-left: 56px;
+}
+
+/* line 45, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--light {
+  border-radius: 3px;
+  border: none;
+  background: #F0F0F5;
+  color: #414C66;
+  padding: 18px 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 47, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--light-small {
+  border-radius: 3px;
+  border: none;
+  background: #F0F0F5;
+  color: #414C66;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 52, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button-group {
+  display: flex;
+  align-items: center;
+}
+/* line 55, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button-group > div {
+  margin-right: 24px;
+}
+/* line 57, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button-group > div:last-of-type {
+  margin-right: 0;
+}
+
+/* line 61, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.link {
+  color: #414C66;
+  text-decoration: none;
+}
+
+/* line 66, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.link + .button {
+  margin-left: 24px;
+}
+
+/* line 69, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.link-action, .modal--action {
+  text-decoration: none;
+  color: #878FA1;
+  display: flex;
+  align-items: flex-center;
+}
+/* line 75, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.link-action img + span, .modal--action img + span {
+  margin-left: 8px;
+}
+/* line 77, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.link-action span + img, .modal--action span + img {
+  margin-left: 8px;
+}
+
+/* line 79, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.actions-menu {
+  display: flex;
+  align-items: center;
+}
+/* line 82, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.actions-menu .link-action, .actions-menu .modal--action {
+  margin-right: 24px;
+}
+/* line 84, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.actions-menu .link-action:last-of-type, .actions-menu .modal--action:last-of-type {
+  margin-right: 0;
+}
+
+/* line 86, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.button--group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 56px;
+}
+
+/* line 92, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.modal, .modal-large {
+  max-width: 586px;
+  width: 96%;
+  box-shadow: 0 0 44px rgba(65, 76, 102, 0.14);
+  background: #FFFFFF;
+  padding: 40px 80px 56px;
+  position: relative;
+}
+/* line 99, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.modal h2, .modal-large h2 {
+  text-align: center;
+  margin: 0 0 56px;
+}
+
+/* line 103, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.modal-large {
+  max-width: 1175px;
+  margin: 48px 2%;
+}
+/* line 107, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.modal-large h2 {
+  margin-bottom: 40px;
+}
+
+/* line 110, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.modal--close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+/* line 114, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.modal--action {
+  position: absolute;
+  top: 16px;
+  left: 30px;
+}
+
+/* line 122, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.label--small, .form-element label + p {
+  color: #878FA1;
+}
+
+/* line 128, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.form-element label + p {
+  margin: -8px 0 16px 0;
+}
+
+/* line 134, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main {
+  background: #414C66;
+  color: #D5D5DE;
+  padding: 6px 0;
+}
+/* line 139, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main a {
+  color: #D5D5DE;
+  text-decoration: none;
+}
+/* line 142, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--title {
+  font-size: 2.1rem;
+}
+/* line 145, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 149, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links svg g {
+  fill: #D5D5DE;
+}
+/* line 151, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links a:hover {
+  color: white;
+}
+/* line 153, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links a:hover svg g {
+  fill: white !important;
+}
+/* line 155, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links .nav-parent:hover .sub-nav {
+  display: block;
+}
+/* line 157, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul {
+  display: flex;
+  align-items: center;
+}
+/* line 160, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul > li {
+  position: relative;
+}
+/* line 162, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul > li > a {
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+}
+/* line 167, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul > li > a span {
+  display: inline-block;
+  line-height: 14px;
+}
+/* line 170, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul > li > a span.icon + span {
+  margin-left: 8px;
+}
+/* line 172, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul > li > a span + span.icon {
+  margin-left: 16px;
+  width: 32px;
+}
+/* line 175, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul .sub-nav {
+  position: absolute;
+  background: #414C66;
+  padding: 0 24px;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+  min-width: 180px;
+  display: none;
+}
+/* line 185, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul .sub-nav a {
+  padding: 16px 0;
+  display: block;
+  border-bottom: 1px solid #D5D5DE;
+}
+/* line 191, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main--links > ul .sub-nav li:last-of-type a {
+  border-bottom: none;
+}
+/* line 195, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.nav-main .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 203, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--empty {
+  text-align: center;
+}
+/* line 205, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--empty h2 {
+  margin: 160px 0 16px;
+}
+/* line 208, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--empty p {
+  margin: 0 0 48px;
+}
+/* line 211, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list {
+  margin: 0;
+  padding: 0;
+}
+/* line 214, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list li {
+  display: flex;
+  padding: 24px 0;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #D5D5DE;
+}
+/* line 220, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list li:last-of-type {
+  border-bottom: none;
+}
+/* line 223, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list li > span:nth-of-type(1) {
+  width: 80px;
+}
+/* line 225, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list li > span:nth-of-type(2) {
+  flex-basis: 350px;
+}
+/* line 228, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list li > span.actions {
+  flex-basis: 420px;
+  display: flex;
+  justify-content: center;
+}
+/* line 232, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list li > span.actions span {
+  margin-right: 24px;
+}
+/* line 234, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list li > span.actions span:last-of-type {
+  margin-right: 0;
+}
+/* line 236, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list li > span:nth-of-type(4) {
+  flex-basis: 200px;
+}
+/* line 238, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list-actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 48px 0;
+}
+/* line 242, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list-actions form {
+  display: flex;
+}
+/* line 244, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list-actions form > div {
+  display: flex;
+  align-items: center;
+  margin-right: 14px;
+}
+/* line 248, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list-actions form > div:last-of-type {
+  margin-right: 0;
+}
+/* line 250, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list-actions form > div label {
+  margin: 0;
+  color: #878FA1;
+  margin-right: 8px;
+}
+/* line 256, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list-actions select {
+  background: #F0F0F5;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  color: #414C66;
+  padding: 7px;
+  min-width: 135px;
+}
+/* line 268, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list .actions a {
+  text-decoration: none;
+  color: #878FA1;
+}
+/* line 272, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list .publishing {
+  display: flex;
+  justify-content: flex-end;
+  color: #878FA1;
+  align-items: center;
+}
+/* line 277, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list .publishing span {
+  margin-left: 12px;
+}
+/* line 279, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list .publishing span:first-of-type {
+  position: relative;
+  text-align: right;
+}
+/* line 283, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.dashboard--gram-list .publishing span:first-of-type:after {
+  content: "Published";
+  height: 1px;
+  overflow: hidden;
+  visibility: hidden;
+  color: transparent;
+  display: block;
+}
+
+/* line 298, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 303, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid > div {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 313, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid > div:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+/* line 318, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid > div img {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+/* line 326, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid-new {
+  margin: 40px 0;
+}
+/* line 328, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid-new > div {
+  width: calc((100% - (24px * 4))/ 5);
+  margin-right: 24px;
+}
+/* line 331, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid-new > div:nth-of-type(5n + 5) {
+  margin-right: 0;
+}
+
+/* line 337, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.create-campaign > .wrapper--flex {
+  margin-top: 120px;
+}
+/* line 339, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.create-campaign > .wrapper--flex > div:first-of-type {
+  flex-basis: 336px;
+}
+/* line 341, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.create-campaign > .wrapper--flex > div:last-of-type {
+  flex-grow: 1;
+  padding: 20px 0 20px 80px;
+}
+/* line 344, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.create-campaign .form-element {
+  margin-bottom: 56px;
+}
+
+/* line 346, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.modal-large.create-campaign {
+  padding-top: 48px;
+}
+
+/* line 350, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #B3B8C3;
+  padding: 48px 0 8px;
+  margin-bottom: 64px;
+}
+/* line 357, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .title > div:first-of-type {
+  flex-basis: 300px;
+}
+/* line 359, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .title input {
+  border: none;
+  color: #414C66;
+  padding: 0;
+}
+/* line 364, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .title form img {
+  width: 20px;
+  margin-left: 12px;
+}
+/* line 368, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .wrapper--flex > div:first-of-type {
+  flex-basis: 276px;
+  flex-shrink: 1;
+  margin-right: 176px;
+}
+/* line 372, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .wrapper--flex > div:last-of-type {
+  flex-grow: 1;
+}
+/* line 375, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .edit--single-img > img {
+  margin-bottom: 24px;
+}
+/* line 377, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .edit--single-img .link-action, .edit--single .edit--single-img .modal--action {
+  margin-bottom: 24px;
+}
+/* line 380, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .edit--single-content .form-element {
+  margin-bottom: 48px;
+}
+/* line 382, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.edit--single .edit--single-actions {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 391, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.cke_editor_gram_blog_text {
+  border-radius: 3px !important;
+  border-color: #D5D5DE !important;
+}
+
+/* line 395, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.cke_top {
+  border-color: #D5D5DE !important;
+}
+
+/* line 398, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.cke_bottom {
+  background: white !important;
+  border-top: none !important;
+}
+
+/* line 405, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.blog-header {
+  text-align: center;
+  padding: 24px 0 48px;
+  text-decoration: none;
+  color: #414C66;
+  display: block;
+}
+@media screen and (max-width: 499px) {
+  /* line 405, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .blog-header {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+  }
+}
+/* line 415, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.blog-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 499px) {
+  /* line 415, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .blog-header img {
+    width: 60px;
+    height: 60px;
+  }
+}
+/* line 422, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.blog-header h2 {
+  margin: 16px 0 0;
+}
+@media screen and (max-width: 499px) {
+  /* line 422, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .blog-header h2 {
+    font-size: 1.6rem;
+    margin: 0 0 0 16px;
+  }
+}
+
+/* line 428, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+a.site-main-link {
+  text-decoration: none;
+  color: #414C66;
+  display: inline-block;
+  position: fixed;
+  left: 0;
+  transition: 0.3s all ease;
+  z-index: 100;
+}
+/* line 437, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+a.site-main-link:hover {
+  background: #F0F0F5;
+}
+@media screen and (min-width: 1170px) {
+  /* line 428, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  a.site-main-link {
+    top: 24px;
+    padding: 16px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 428, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  a.site-main-link {
+    top: 24px;
+    padding: 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 428, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  a.site-main-link {
+    top: 24px;
+    padding: 16px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 428, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  a.site-main-link {
+    top: 24px;
+    padding: 16px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 428, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  a.site-main-link {
+    position: fixed;
+    bottom: 0;
+    padding: 12px 16px;
+    z-index: 100;
+    background: #F0F0F5;
+  }
+}
+
+/* line 450, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid-blog > div {
+  margin-right: 24px;
+}
+@media screen and (min-width: 1170px) {
+  /* line 450, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div {
+    width: calc((100% - (24px * 2))/ 3);
+  }
+  /* line 454, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div:nth-of-type(3n + 3) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 450, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div {
+    width: calc((100% - (24px * 2))/ 3);
+  }
+  /* line 454, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div:nth-of-type(3n + 3) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 450, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div {
+    width: calc((100% - 24px) / 2);
+  }
+  /* line 458, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div:nth-of-type(2n + 2) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 450, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div {
+    width: calc((100% - 24px) / 2);
+  }
+  /* line 458, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div:nth-of-type(2n + 2) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 450, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+  .gram-grid-blog > div {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+/* line 463, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid-blog:after {
+  content: "";
+  position: fixed;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
+  width: 100%;
+  height: 128px;
+  bottom: 0;
+  left: 0;
+  display: block;
+  z-index: 10;
+  pointer-events: none;
+}
+/* line 474, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid-blog .title {
+  z-index: 10;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 40%, rgba(0, 0, 0, 0.7) 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 0.5s all ease;
+  opacity: 1;
+}
+/* line 484, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid-blog .title span {
+  color: #D5D5DE;
+  position: absolute;
+  top: calc(100% - (34px + 16px));
+  left: 16px;
+  right: 16px;
+  width: calc(100% - 32px);
+  line-height: 24px;
+}
+/* line 493, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-grid-blog .title:hover {
+  opacity: 0;
+}
+
+/* line 496, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-single img {
+  max-width: 343px;
+  width: 80%;
+  display: block;
+  margin: 64px auto 0;
+}
+/* line 501, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-single h2 {
+  font-weight: 900;
+  text-align: center;
+  margin: 80px 0 46px;
+}
+/* line 506, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-single .gram-single-content {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-family: "Source Sans Pro", sans-serif;
+}
+/* line 510, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-single .gram-single-content p + p {
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+/* line 513, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-single .gram-single-content a {
+  color: #414C66;
+}
+/* line 515, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-single .gram-single-content blockquote {
+  font-size: 2.5rem;
+  border-left: 8px solid #D5D5DE;
+  padding: 0 32px;
+  margin: 32px 0;
+}
+/* line 520, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.gram-single .gram-single-content blockquote p {
+  margin: 0;
+}
+
+/* line 523, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-container section + section {
+  margin-top: 56px;
+}
+/* line 525, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-container .title {
+  color: #878FA1;
+  border-bottom: 1px solid #D5D5DE;
+  margin: 0 0 24px;
+  padding-bottom: 8px;
+}
+/* line 531, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-container .profile-form-container {
+  width: calc(100% - 336px);
+  max-width: 896px;
+  padding: 48px 64px;
+}
+/* line 535, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-container img {
+  width: 124px;
+}
+/* line 537, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-container p {
+  margin: 0;
+}
+/* line 540, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-container p + .button {
+  margin-top: 24px;
+}
+/* line 542, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-container .username {
+  font-weight: 500;
+  margin: 24px 0;
+}
+/* line 546, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-container .action-note {
+  margin: 16px 0 0;
+  color: #878FA1;
+}
+
+/* line 551, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.enter-token .field {
+  margin-bottom: 48px;
+}
+/* line 553, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.enter-token a {
+  color: #414C66;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* line 557, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.show-email, .pay-subscription {
+  margin-top: 56px;
+}
+
+/* line 560, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-password .field {
+  margin-bottom: 48px;
+}
+/* line 562, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-password a {
+  color: #878FA1;
+  text-decoration: none;
+  margin-left: 24px;
+  flex-grow: 1;
+}
+/* line 568, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-password .actions {
+  display: flex;
+  align-items: center;
+}
+
+/* line 572, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-sidebar {
+  min-height: calc(100vh - 66px);
+  background: #878FA1;
+  width: 336px;
+  color: #F0F0F5;
+}
+/* line 577, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-sidebar h2 {
+  padding: 48px 36px 24px;
+  margin: 0;
+}
+/* line 581, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 586, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-sidebar ul li {
+  padding: 12px 36px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* line 591, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-sidebar ul li img {
+  margin-right: 8px;
+  width: 18px;
+}
+/* line 594, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_components.sass */
+.profile-sidebar ul li.active {
+  background: #65708A;
+}
+
+/* line 3, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_check_toggle.scss */
+.published-checkbox + label {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: #D8D8D8;
+  width: 48px;
+  height: 18px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  margin: 0 0 0 12px;
+}
+/* line 15, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_check_toggle.scss */
+.published-checkbox + label:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #C5E88E;
+  border-radius: 100px;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9) 0.1s;
+  transform: translateZ(0) scale(0);
+}
+/* line 28, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_check_toggle.scss */
+.published-checkbox + label:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: block;
+  height: 10px;
+  width: 22px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transform: translateZ(0) translateX(0);
+}
+
+/* line 43, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_check_toggle.scss */
+input[type="checkbox"]:checked + label {
+  background: #C5E88E;
+}
+/* line 45, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_check_toggle.scss */
+input[type="checkbox"]:checked + label:after {
+  left: calc(100% - 26px);
+  transform: translateZ(0);
+}
+
+/* line 51, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_check_toggle.scss */
+.published-checkbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+}
+
+/* line 3, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+html {
+  font-size: 62.5%;
+}
+
+/* line 5, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+body {
+  color: #414C66;
+  padding-bottom: 60px;
+}
+
+/* line 8, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 36, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xxl {
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 38, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xl {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.8rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 40, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-lg {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1.3px;
+  font-weight: 400;
+}
+
+/* line 42, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-md, input[type="text"],
+input[type="email"],
+input[type="password"], input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder, .profile-container .username {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+}
+
+/* line 44, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-sm, label, .field-with-label label, .button, .button--secondary, .button--radio label, .button--light, .button--light-small, .link, .nav-main, .nav-main--links a, .profile-container .title, .profile-container p, .profile-sidebar ul {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 46, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-sm-bold {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+/* line 48, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xs, label + em, input + a, .field-with-label p, .link-action, .modal--action, .label--small, .form-element label + p, .nav-main--links > ul > li > a, .nav-main--links > ul .sub-nav a, .dashboard--gram-list li > span:nth-of-type(2), .dashboard--gram-list-actions form > div label, .dashboard--gram-list-actions select, .dashboard--gram-list .actions a, .dashboard--gram-list .publishing span:first-of-type, .profile-container .action-note, .profile-password a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 50, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-ui-xxs, .dashboard--gram-list .publishing span:last-of-type {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 53, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xxl, .dashboard--empty h2 {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 6.4rem;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+}
+
+/* line 55, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xl {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 6.4rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 57, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-lg {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 59, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-md, .modal h2, .modal-large h2, .gram-single h2 {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 3.8rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 61, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-sm, .form-element label {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+}
+
+/* line 63, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xs, .button--radio label, .modal-large h2, .dashboard--empty p, .blog-header h2, .profile-sidebar h2 {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* line 65, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.type-site-xxs, a.site-main-link, .gram-grid-blog .title span {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+/* line 72, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* line 76, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper--flex {
+  display: flex;
+}
+
+/* line 78, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.wrapper--small {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 736px;
+}
+
+/* line 83, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.bg-dark {
+  background: #F0F0F5;
+}
+
+/* line 86, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.full-page--center-content {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 92, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.full-page--top-align {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* line 97, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.tab-content {
+  display: none;
+}
+
+/* line 99, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.tab-content.active {
+  display: block;
+}
+
+/* line 104, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.hidden {
+  display: none;
+}
+
+/* line 106, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.center-content {
+  text-align: center;
+}
+
+/* line 108, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.flex {
+  display: flex;
+}
+
+/* line 116, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 2px solid #D5D5DE;
+  border-radius: 3px;
+  padding: 14px 24px;
+  width: 100%;
+  color: #D5D5DE;
+  line-height: 24px;
+}
+/* line 126, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #D5D5DE;
+}
+
+/* line 130, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+label {
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* line 134, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+label + em {
+  color: #878FA1;
+  font-style: normal;
+  margin: -14px 0 16px;
+  display: block;
+}
+
+/* line 140, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input + label {
+  margin-top: 48px;
+}
+
+/* line 142, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+input + a {
+  margin-top: 16px;
+  letter-spacing: 1;
+  color: #878FA1;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+/* line 151, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.field-with-label label {
+  margin-bottom: 4px;
+}
+/* line 154, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_base.sass */
+.field-with-label p {
+  color: #878FA1;
+  margin: 0 0 16px;
+}
+
+/* line 4, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.home-layout {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+}
+
+/* line 6, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 11, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.nav-home ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+/* line 15, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.nav-home li {
+  margin-right: 30px;
+}
+
+/* line 18, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.above-fold {
+  max-height: 950px;
+  overflow: hidden;
+}
+@media screen and (max-width: 499px) {
+  /* line 18, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .above-fold {
+    max-height: 750px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 18, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .above-fold {
+    max-height: 750px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 18, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .above-fold {
+    max-height: 750px;
+  }
+}
+
+/* line 24, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.nav-home {
+  padding-top: 80px;
+  margin-right: 250px;
+  color: #414C66;
+}
+@media screen and (max-width: 499px) {
+  /* line 24, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .nav-home {
+    padding-top: 30px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 24, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .nav-home {
+    padding-top: 30px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 24, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .nav-home {
+    padding-top: 30px;
+    margin-right: 0;
+  }
+}
+/* line 31, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.nav-home ul {
+  margin: 0;
+}
+/* line 33, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.nav-home a {
+  color: #414C66;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* line 39, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* line 46, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.content {
+  margin: 72px 0;
+  z-index: 2;
+}
+/* line 49, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.content a {
+  display: block;
+  color: #878FA1;
+  font-size: 20px;
+  margin: 38px auto;
+  text-decoration: none;
+}
+/* line 55, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.content a img {
+  padding: 0 8px;
+}
+/* line 57, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.content .subtitle {
+  font-size: 38px;
+  color: #414C66;
+  margin: 0 auto 48px auto;
+  font-weight: lighter;
+}
+@media screen and (max-width: 499px) {
+  /* line 57, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .content .subtitle {
+    font-size: 28px;
+    color: #414C66;
+    margin: 0 auto 48px auto;
+    font-weight: lighter;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 57, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .content .subtitle {
+    font-size: 28px;
+    color: #414C66;
+    margin: 0 auto 48px auto;
+    font-weight: lighter;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 57, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .content .subtitle {
+    font-size: 28px;
+    color: #414C66;
+    margin: 0 auto 48px auto;
+    font-weight: lighter;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 46, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .content {
+    margin: 40px 0 68px 0;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 46, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .content {
+    margin: 40px 0 68px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 46, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .content {
+    margin: 40px 0 68px 0;
+  }
+}
+
+/* line 70, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.button.sign-up {
+  display: inline-block;
+  color: #D8D8D8;
+  background-color: #414C66;
+  border: 1px solid #414C66;
+  padding: 10px 42px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-appearance: none;
+}
+/* line 81, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.button.sign-up:hover {
+  color: #414C66;
+  background-color: #D8D8D8;
+  border-color: #D8D8D8;
+}
+
+/* line 86, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+h1.home-title {
+  text-align: center;
+  width: 100%;
+  font-size: 64px;
+  font-weight: bold;
+  color: #414C66;
+  margin: 0;
+  margin-bottom: 72px;
+}
+@media screen and (max-width: 499px) {
+  /* line 86, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  h1.home-title {
+    margin-bottom: 38px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 86, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  h1.home-title {
+    margin-bottom: 38px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 86, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  h1.home-title {
+    margin-bottom: 38px;
+  }
+}
+
+/* line 97, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+h2 {
+  font-size: 38px;
+  font-weight: normal;
+  margin: 0 0 36px 0;
+}
+@media screen and (max-width: 499px) {
+  /* line 97, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  h2 {
+    margin: 0 0 16px 0;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 97, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  h2 {
+    margin: 0 0 16px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 97, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  h2 {
+    margin: 0 0 16px 0;
+  }
+}
+
+/* line 104, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.home-modal p {
+  font-size: 1.4rem;
+}
+
+/* line 107, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.setup-instructions {
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  padding: 80px 0;
+}
+/* line 110, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.setup-instructions section {
+  padding-bottom: 40px;
+}
+/* line 112, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.setup-instructions img {
+  width: 100%;
+  max-width: 650px;
+  display: block;
+}
+/* line 116, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.setup-instructions h1 {
+  font-size: 2.8rem;
+  margin-bottom: 80px;
+}
+/* line 119, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.setup-instructions h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+/* line 122, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.setup-instructions p, .setup-instructions li {
+  font-size: 1.6rem;
+}
+/* line 124, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.setup-instructions li {
+  padding-bottom: 14px;
+}
+/* line 126, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.setup-instructions strong {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+/*PHOTO GRID */
+/* line 132, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.grid-wrapper {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 90px 90px 90px 90px 90px 90px;
+  width: 1050px;
+  transition: all 1s ease;
+  transition: all 0.5s;
+  margin: 0 auto;
+}
+@media screen and (max-width: 499px) {
+  /* line 132, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .grid-wrapper {
+    margin-top: 0;
+    grid-template-rows: 25px 114px 25px 114px 25px 114px;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 132, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .grid-wrapper {
+    margin-top: 0;
+    grid-template-rows: 25px 114px 25px 114px 25px 114px;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 132, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .grid-wrapper {
+    margin-top: 0;
+    grid-template-rows: 25px 114px 25px 114px 25px 114px;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* line 148, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.hidden {
+  display: none;
+}
+
+/* line 151, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo {
+  grid-row: 3;
+  grid-column: 3;
+  position: relative;
+  transition: 1s;
+  opacity: 0;
+}
+@media screen and (max-width: 499px) {
+  /* line 151, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .photo {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 151, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .photo {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 151, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .photo {
+    width: 150px;
+  }
+}
+
+/* line 160, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+img {
+  max-width: 100%;
+  transition: all 2s;
+}
+
+/* line 164, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-1 {
+  grid-row: 3;
+  grid-column: 5;
+  opacity: 1;
+}
+
+/* line 169, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-2 {
+  grid-row: 2;
+  grid-column: 2;
+  opacity: 1;
+}
+
+/* line 174, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-3 {
+  grid-row: 1;
+  grid-column: 3;
+  opacity: 1;
+}
+
+/* line 179, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-4 {
+  grid-row: 2;
+  grid-column: 4;
+  opacity: 1;
+}
+
+/* line 184, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-5 {
+  grid-row: 3;
+  grid-column: 1;
+  opacity: 1;
+}
+
+/* line 189, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-6 {
+  grid-row: 4;
+  grid-column: 2;
+  opacity: 1;
+}
+
+/* line 194, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-7 {
+  grid-row: 3;
+  grid-column: 3;
+  opacity: 1;
+}
+
+/* line 199, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-8 {
+  grid-row: 4;
+  grid-column: 4;
+  opacity: 1;
+}
+
+/* line 204, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-9 {
+  grid-row: 5;
+  grid-column: 1;
+  opacity: 1;
+}
+
+/* line 209, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-10 {
+  grid-row: 5;
+  grid-column: 3;
+  opacity: 1;
+}
+
+/* line 214, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-11 {
+  grid-row: 6;
+  grid-column: 4;
+  opacity: 1;
+}
+
+/* line 219, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-12 {
+  grid-row: 6;
+  grid-column: 2;
+  opacity: 1;
+}
+
+/* line 224, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.photo-13 {
+  grid-row: 5;
+  grid-column: 5;
+  opacity: 1;
+}
+
+/*FORM AND MODAL */
+/* line 231, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.form-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 235, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+form {
+  text-align: left;
+}
+
+/* line 238, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+fieldset {
+  border: none;
+}
+
+/* line 242, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.form-wrapper #sign-up input {
+  width: 100%;
+  padding: 16px 24px 16px 24px;
+  margin: 16px 0 48px 0;
+  font-size: 16px;
+  border: 1px solid #ddd;
+}
+@media screen and (max-width: 499px) {
+  /* line 242, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .form-wrapper #sign-up input {
+    margin: 16px 0;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 242, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .form-wrapper #sign-up input {
+    margin: 16px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 242, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .form-wrapper #sign-up input {
+    margin: 16px 0;
+  }
+}
+/* line 250, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.form-wrapper #sign-up label {
+  margin-top: 0;
+}
+
+/* line 253, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.home-modal {
+  position: fixed;
+  z-index: 100;
+  background: white;
+  padding: 40px 80px 56px 80px;
+  width: 586px;
+  max-width: 75%;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 499px) {
+  /* line 253, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .home-modal {
+    padding: 40px 40px 56px 40px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 253, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .home-modal {
+    padding: 40px 40px 56px 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 253, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  .home-modal {
+    padding: 40px 40px 56px 40px;
+  }
+}
+/* line 263, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.home-modal p {
+  margin-bottom: 40px;
+}
+
+/* line 266, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.modal-relative {
+  position: relative;
+}
+
+/* line 269, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.home-modal .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* line 275, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+.modal--overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 287, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.display {
+  background: #F0F0F5;
+  padding: 225px 138px;
+  color: #414C66;
+  position: relative;
+}
+@media screen and (max-width: 499px) {
+  /* line 287, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display {
+    padding: 60px 40px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 287, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display {
+    padding: 60px 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 287, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display {
+    padding: 60px 40px;
+  }
+}
+/* line 294, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.display .text {
+  width: 60%;
+  padding-right: 40px;
+}
+@media screen and (max-width: 499px) {
+  /* line 294, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 294, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 294, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .text {
+    width: 100%;
+  }
+}
+/* line 299, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.display .image {
+  width: 40%;
+}
+@media screen and (max-width: 499px) {
+  /* line 299, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .image {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 299, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .image {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 299, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .image {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+/* line 304, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.display .image img {
+  position: absolute;
+  right: 0;
+  top: 175px;
+  display: block;
+  width: 42%;
+}
+@media screen and (max-width: 499px) {
+  /* line 304, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .image img {
+    position: initial;
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 304, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .image img {
+    position: initial;
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 304, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.display .image img {
+    position: initial;
+    display: block;
+    width: 100%;
+  }
+}
+/* line 314, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.display h2 {
+  font-weight: bold;
+}
+/* line 316, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.display p {
+  font-size: 21px;
+  line-height: 32px;
+}
+/* line 319, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works {
+  max-width: 1190px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 245px;
+  color: #414C66;
+}
+
+@media screen and (max-width: 499px) {
+  /* line 328, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works {
+    padding-top: 115px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 328, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works {
+    padding-top: 115px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 328, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works {
+    padding-top: 115px;
+  }
+}
+/* line 331, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works h2 {
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* line 335, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works p {
+  font-size: 21px;
+  line-height: 32px;
+}
+/* line 338, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works .image {
+  width: 35%;
+}
+@media screen and (max-width: 499px) {
+  /* line 338, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .image {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 338, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .image {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 338, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .image {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+/* line 344, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works .text {
+  width: 65%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 499px) {
+  /* line 344, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 344, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 344, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .text {
+    width: 100%;
+  }
+}
+/* line 350, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works .text p {
+  margin: 0 60px 0 27px;
+}
+@media screen and (max-width: 499px) {
+  /* line 350, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .text p {
+    margin: 0 0 0 16px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 350, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .text p {
+    margin: 0 0 0 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 350, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .text p {
+    margin: 0 0 0 16px;
+  }
+}
+/* line 354, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works .steps .flex-wrapper {
+  margin-top: 75px;
+}
+/* line 357, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works .flip .text {
+  order: 2;
+}
+@media screen and (max-width: 499px) {
+  /* line 357, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .text {
+    order: 1;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 357, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .text {
+    order: 1;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 357, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .text {
+    order: 1;
+  }
+}
+/* line 361, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works .flip .text img {
+  padding-left: 40px;
+}
+@media screen and (max-width: 499px) {
+  /* line 361, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .text img {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 361, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .text img {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 361, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .text img {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 365, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .image {
+    order: 2;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 365, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .image {
+    order: 2;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 365, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+  section.how-it-works .flip .image {
+    order: 2;
+  }
+}
+/* line 368, /Users/trudymacnabb/Code/linkinbiov2/app/assets/stylesheets/_home_page.sass */
+section.how-it-works .flip .image img {
+  width: 100%;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
