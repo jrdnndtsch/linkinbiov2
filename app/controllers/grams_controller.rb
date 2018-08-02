@@ -147,7 +147,7 @@ class GramsController < ApplicationController
     def validate_insta_setup
       if !current_user.insta_client_token
         # redirect_to edit_user_registration_path(current_user)
-        redirect_to edit_user_registration_path(current_user), notice: 'Please contact admin to set up your instagram account' 
+        redirect_to edit_user_registration_path(current_user), notice: 'Please follow the instructions or contact the admin to set up your instagram account' 
       end     
     end
 

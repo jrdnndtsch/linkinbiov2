@@ -29,23 +29,26 @@
           </div>
           <div class="actions">
             <%= f.submit "Update Instagram Token", class:'button' %>
-            <p class="action-note">To obtain an instagram access token please follow the instructions <a href="/">here</a>.</p>
+            <p class="action-note">To obtain an instagram access token please follow the instructions <%= link_to 'here', instagram_setup_path %>.</p>
           </div>
         </section>
         <% end %>
       <% end %>
       <section class="pay-subscription">
         <h2 class="title">Pay Subscription</h2>
-         <form action="/charge/create" method="POST">
-          <script
-            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-            data-key="pk_test_qbsr3qbwRhzLL0EIzNPuezux"
-            data-name="Linkinbio"
-            data-description="Monthly Recurring Payment"
-            data-amount="1000"
-            data-label="Pay">
-          </script>
-        </form>
+        <p class="action-note">After your free trial it's just $10/month.</p>
+        <div class="charge-form">
+          <form action="/charge/create" method="POST">
+            <script
+              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="pk_test_qbsr3qbwRhzLL0EIzNPuezux"
+              data-name="Linkinbio"
+              data-description="Monthly Recurring Payment"
+              data-amount="1000"
+              data-label="Pay">
+            </script>
+          </form>
+        </div>
         
       </section>
       <section class="show-email">

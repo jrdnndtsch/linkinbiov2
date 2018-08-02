@@ -15,7 +15,8 @@
 			<div class="content">
 				<h1 class="home-title">Linkinbio</h1>
 				<p class="subtitle">The only link in bio you will ever need on Instagram.</p>
-				<button class="sign-up button">Sign up</button>
+				<!-- <button class="sign-up button">Sign up</button> -->
+				<%= link_to "Sign up", new_user_registration_path, class: '' %>
 				<a href="#display" id="learn-more">	<%= image_tag  "icons/arrow-down.svg" %>scroll down to learn more</a>
 			</div>
 	
@@ -168,9 +169,9 @@ var random = [5, 2, 4, 8, 9, 3, 10, 1, 6, 7, 12, 11, 13]
 
 
 // Modal sign up
-	$('.sign-up').on('click', function () {
-		openModal();
-	})
+	// $('.sign-up').on('click', function () {
+	// 	openModal();
+	// })
 	$('.close').on('click', function () {
 		closeModal();
 	})
@@ -209,19 +210,19 @@ var random = [5, 2, 4, 8, 9, 3, 10, 1, 6, 7, 12, 11, 13]
 	var $form = $('#sign-up'),
 		url = 'https://script.google.com/macros/s/AKfycbwVIoJvPnRT3eLdkldOD5iHAnWt2ZtKdaT30hWXhc7ioXLu_v6A/exec'
 
-	$('#sign-up').on('submit', function (e) {
-		console.log($form)
-		e.preventDefault();
-		var jqxhr = $.ajax({
-			url: url,
-			method: "GET",
-			dataType: "json",
-			data: $form.serializeObject()
-		}).success(
-			// do something
-			closeModal()
-			);
-	})
+	// $('#sign-up').on('submit', function (e) {
+	// 	console.log($form)
+	// 	e.preventDefault();
+	// 	var jqxhr = $.ajax({
+	// 		url: url,
+	// 		method: "GET",
+	// 		dataType: "json",
+	// 		data: $form.serializeObject()
+	// 	}).success(
+	// 		// do something
+	// 		closeModal()
+	// 		);
+	// })
 
 // end modal sign up
 
