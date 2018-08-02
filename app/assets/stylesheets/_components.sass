@@ -527,7 +527,7 @@ a.site-main-link
 		:border-bottom 1px solid $concrete
 		:margin 0 0 24px
 		:padding-bottom 8px 
-	form 
+	.profile-form-container
 		:width calc(100% - 336px)
 		:max-width 896px
 		:padding 48px 64px
@@ -546,7 +546,16 @@ a.site-main-link
 		:margin 16px 0 0
 		@extend .type-ui-xs
 		:color $regent
-.profile-password 
+.enter-token
+	.field 
+		:margin-bottom 48px
+	a 
+		:color $fiord
+		:font-weight bold
+		:text-decoration none
+.show-email, .pay-subscription
+	:margin-top 56px
+.profile-password
 	.field 
 		:margin-bottom 48px
 	a 

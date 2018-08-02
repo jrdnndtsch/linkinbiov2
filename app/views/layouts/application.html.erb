@@ -31,43 +31,47 @@
         <div class="nav-main--links">
           <ul>
             <% if user_signed_in? %>
-              <li>
-                <%= link_to grams_path do %>
-                  <span class="icon">
-                    <svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <defs>
-                          <polygon id="path-1" points="8 17 4 17 4 10 2 10 10 3 18 10 16 10 16 17 12 17 12 12.0634697 8 12.0634697"></polygon>
-                      </defs>
-                      <g id="icons-/-home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-2.000000, -3.000000)">
-                          <mask id="mask-2" fill="white">
-                              <use xlink:href="#path-1"></use>
-                          </mask>
-                          <use id="home---material" xlink:href="#path-1"></use>
-                      </g>
-                    </svg>
-                  </span>
-                  <span>Dashboard</span>
-                <% end %>
-              </li>
-              <li>
-                <%= link_to blogs_path(current_user), target: '_blank' do %>
-                  <span class="icon">
-                 
-                 <svg width="15px" height="11px" viewBox="0 0 15 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                   <defs>
-                       <path d="M14,5 L17,5 L17,8 L14,8 L14,5 Z M14,16 L14,13 L17,13 L17,16 L14,16 Z M10,16 L10,13 L13,13 L13,16 L10,16 Z M6,16 L6,13 L9,13 L9,16 L6,16 Z M2,16 L2,13 L5,13 L5,16 L2,16 Z M14,12 L14,9 L17,9 L17,12 L14,12 Z M10,5 L13,5 L13,8 L10,8 L10,5 Z M6,8 L6,5 L9,5 L9,8 L6,8 Z M10,12 L10,9 L13,9 L13,12 L10,12 Z M6,12 L6,9 L9,9 L9,12 L6,12 Z M2,12 L2,9 L5,9 L5,12 L2,12 Z M2,8 L2,5 L5,5 L5,8 L2,8 Z" id="view-blog"></path>
-                   </defs>
-                   <g id="icons-/-grid" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-2.000000, -5.000000)">
-                       <mask id="mask-2" fill="white">
-                           <use xlink:href="#view-blog"></use>
-                       </mask>
-                       <use id="view_comfy---material" xlink:href="#view-blog"></use>
-                   </g>
-                 </svg>
-                  </span>
-                  <span>View Blog</span>
-                <% end %>
-              </li>
+              <% if current_user.insta_client_token.present? %>
+                <li>
+                  <%= link_to grams_path do %>
+                    <span class="icon">
+                      <svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <polygon id="path-1" points="8 17 4 17 4 10 2 10 10 3 18 10 16 10 16 17 12 17 12 12.0634697 8 12.0634697"></polygon>
+                        </defs>
+                        <g id="icons-/-home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-2.000000, -3.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="home---material" xlink:href="#path-1"></use>
+                        </g>
+                      </svg>
+                    </span>
+                    <span>Dashboard</span>
+                  <% end %>
+                </li>
+              <% end %>
+              <% if current_user.insta_client_token.present? %>
+                <li>
+                  <%= link_to blogs_path(current_user), target: '_blank' do %>
+                    <span class="icon">
+                  
+                  <svg width="15px" height="11px" viewBox="0 0 15 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <path d="M14,5 L17,5 L17,8 L14,8 L14,5 Z M14,16 L14,13 L17,13 L17,16 L14,16 Z M10,16 L10,13 L13,13 L13,16 L10,16 Z M6,16 L6,13 L9,13 L9,16 L6,16 Z M2,16 L2,13 L5,13 L5,16 L2,16 Z M14,12 L14,9 L17,9 L17,12 L14,12 Z M10,5 L13,5 L13,8 L10,8 L10,5 Z M6,8 L6,5 L9,5 L9,8 L6,8 Z M10,12 L10,9 L13,9 L13,12 L10,12 Z M6,12 L6,9 L9,9 L9,12 L6,12 Z M2,12 L2,9 L5,9 L5,12 L2,12 Z M2,8 L2,5 L5,5 L5,8 L2,8 Z" id="view-blog"></path>
+                    </defs>
+                    <g id="icons-/-grid" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-2.000000, -5.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#view-blog"></use>
+                        </mask>
+                        <use id="view_comfy---material" xlink:href="#view-blog"></use>
+                    </g>
+                  </svg>
+                    </span>
+                    <span>View Blog</span>
+                  <% end %>
+                </li>
+              <% end %>
             <% else %>  
               <li>
                 <%= link_to  new_user_session_path  do %>

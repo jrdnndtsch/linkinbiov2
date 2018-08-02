@@ -1,23 +1,59 @@
- 
+ <!-- 44205033.d90570a.ba2f562738ca4c8aacf62342d3687aa6 -->
 <div class="profile-container wrapper--flex">
   <%= render 'profile_sidebar'%>
   
-  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-    <%= devise_error_messages! %>
+  <div class="profile-form-container">
     <div class="profile tab-content active" id="profile-info">
-      <section>
-        <h2 class="title">Edit Profile</h2>
-        <img src="<%= @user.insta_profile_picture %>" alt="">
-        <p class="username"><%= @user.insta_full_name%></p>
-        <%= link_to 'Update user info', get_user_gram_info_path(current_user.id), class: 'button' %>
-        <p class="action-note">Username and profile picture are pulled in from your Instagram account.</p>
+      <% if current_user.insta_client_token.present? %>
+        <section>
+          <h2 class="title">Edit Profile</h2>
+          <img src="<%= @user.insta_profile_picture %>" alt="">
+          <p class="username"><%= @user.insta_full_name%></p>
+          <%= link_to 'Update user info', get_user_gram_info_path(current_user.id), class: 'button' %>
+          <p class="action-note">Username and profile picture are pulled in from your Instagram account.</p>
+        </section>
+      <% else %>
+       <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+        <%= devise_error_messages! %>
+        <section class="enter-token">
+          <h2 class="title">Enter Instagram Access Token</h2>
+
+        <div class="field">
+          <%= f.label :insta_client_token %>
+          <%= f.text_field :insta_client_token %> 
+        </div>
+
+          <div class="field">
+            <%= f.label :current_password, 'Current password' %>
+            <%= f.password_field :current_password, autocomplete: "off" %>
+          </div>
+          <div class="actions">
+            <%= f.submit "Update Instagram Token", class:'button' %>
+            <p class="action-note">To obtain an instagram access token please follow the instructions <a href="/">here</a>.</p>
+          </div>
+        </section>
+        <% end %>
+      <% end %>
+      <section class="pay-subscription">
+        <h2 class="title">Pay Subscription</h2>
+         <form action="/charge/create" method="POST">
+          <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_qbsr3qbwRhzLL0EIzNPuezux"
+            data-name="Linkinbio"
+            data-description="Monthly Recurring Payment"
+            data-amount="1000"
+            data-label="Pay">
+          </script>
+        </form>
+        
       </section>
-      <section>
+      <section class="show-email">
         <h2 class="title">Email</h2>
         <div class="field-with-label">
-          <%= f.label :email %>
+          <label for="user_email">Email</label>
           <p>It is not possible to change your email at this time</p>
-          <%= f.email_field :email, disabled: true %>
+          <input disabled="disabled" type="email" value="<%= resource.email %>" name="user[email]" id="user_email">
         </div>
       </section>
      
@@ -28,6 +64,8 @@
         <p class="action-note">Once you delete your account there is no going back!</p>
       </section>
     </div>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+    <%= devise_error_messages! %>
     <div class="profile tab-content profile-password" id="profile-password">
         <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
           <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
@@ -56,17 +94,9 @@
         
     </div>
   <% end %>
+  </div>
 <section>
-        <form action="/charge/create" method="POST">
-          <script
-            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-            data-key="pk_test_qbsr3qbwRhzLL0EIzNPuezux"
-            data-name="Linkinbio"
-            data-description="Monthly Recurring Payment"
-            data-amount="1000"
-            data-label="Pay">
-          </script>
-        </form>
+       
       
       </section>
 </div>
