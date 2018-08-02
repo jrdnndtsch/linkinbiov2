@@ -1,0 +1,46 @@
+<main class="setup-instructions">
+	<h1 class="wrapper">Authenticate Your Instagram</h1>
+	<section>
+		<div class="wrapper">
+			<h2>Step 1: Create a New Instagram Client</h2>
+			<ol>
+				<li>Navigate to the Instagram developers' site <a href="https://www.instagram.com/developer/authentication/" target="_blank">www.instagram.com/developer/authentication/</a></li>
+				<li>On the top right of the screen click <strong>Manage Clients</strong> and then click the <strong>Register a New Client</strong> button to create a new client.</li>
+				<li>Fill out the form as indicated below:
+					<img src="https://s3-us-west-2.amazonaws.com/shopify-hy/Screen+Shot+2018-07-31+at+4.24.55+PM.png">
+				</li>
+				
+				<li>Once the client has been created click manage. Under the security tab, make sure <strong>Disable implicit OAuth</strong> is unchecked.
+					
+					<img src="https://s3-us-west-2.amazonaws.com/shopify-hy/Screen+Shot+2018-07-31+at+4.30.12+PM.png">
+				</li>
+			
+			</ol>
+		</div>
+	</section>
+	<section>
+		<div class="wrapper">
+			<h2>Authorize the App</h2>
+			<ol>
+				<li>
+					Copy the URL below and replace the bolded information with the keys from your newly created client.
+					<p>http://instagram.com/oauth/authorize/?client_id=<strong>YOURCLIENTIDHERE</strong>&redirect_uri=<strong>HTTP://YOURREDIRECTURLHERE.COM</strong>&response_type=token</p>
+					<p>You'll get a screen that looks like this:</p>
+					<img src="https://s3-us-west-2.amazonaws.com/shopify-hy/Screen+Shot+2018-07-31+at+4.32.01+PM.png">
+				</li>
+				<li>Click <strong>Authorize</strong></li>
+				<li>
+					<p>You'll be redirected to linkinbio.club. In the URL bar you will find your access token. Something like this:</p>
+					<p>http://www.linkinbio.club/#access_token=a_bunch_of_letters_and_numbers</p>
+				</li>
+				<li>Copy everything after the <strong>access_token=</strong> this will be the key to authenticate your instagram account.</li>
+			</ol>
+		</div>
+	</section>
+	<section>
+		<div class="wrapper">	
+			<h2>Safety First</h2>
+			<p>Treat your token like a password for your instagram account.</p>
+		</div>
+	</section>
+</main>
